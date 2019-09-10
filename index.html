@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
+    <title>Justine Fortier | Portfolio</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-115882733-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-115882733-1");
+    </script> -->
+
+    <script src="./libraries/p5.js"></script>
+    <script src="./libraries/p5.dom.js"></script>
+    <!-- <script src="./libraries/p5.sound.js"></script> -->
+    <script src="./js/home.js"></script>
+  </head>
+
+  <body>
+    <div id="nav">
+      <nav id="overlay">
+        <img
+          src="./images/svg/close.svg"
+          class="close-btn"
+          id="close-menu"
+          alt=""
+        />
+
+        <ul>
+          <li>
+            <a href="#">accueil</a>
+            <!-- <span></span> -->
+          </li>
+          <li>
+            <a href="#">à propos</a>
+            <!-- <span></span> -->
+          </li>
+          <li>
+            <a href="#">galerie</a>
+            <!-- <span></span> -->
+          </li>
+          <li>
+            <a href="#">contact</a>
+            <!-- <span></span> -->
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="home">
+      <header>
+        <a href="#" class="logo">JUSTINE FORTIER</a>
+        <img
+          src="./images/svg/menu.svg"
+          class="menu-btn"
+          id="open-menu"
+          alt=""
+        />
+      </header>
+
+      <section>
+        <h1>HELLO, je suis Justine Fortier</h1>
+        <span>et je suis graphiste illustratrice</span>
+      </section>
+    </div>
+
+    <script src="./js/menu.js"></script>
+
+    <div id="about"></div>
+    <div id="gallery"></div>
+    <div id="contact"></div>
+    <div id="footer"></div>
+  </body>
+</html>
