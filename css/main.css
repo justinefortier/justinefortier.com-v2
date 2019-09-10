@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700|Oswald:200,300,400,500,600,700&display=swap");
 :root {
   --blue: #121b35;
   --clearBlue: #002445;
-  --yellow: #e9a050;
+  --yellow: #DFAF6A;
+  --grey: #f3f3f3;
 }
 
 html {
@@ -10,26 +11,53 @@ html {
 }
 
 html body {
-  font-family: "Montserrat";
+  font-family: 'Old Standard TT', serif;
+  color: var(--grey);
+  margin: 0;
 }
 
 html body a {
   text-decoration: none;
 }
 
-header {
-  padding: 2em;
+html body h2 {
+  font-family: 'Oswald', sans-serif;
+  color: var(--blue);
+  font-size: 2em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  line-height: 1.3em;
+  text-align: center;
+  margin: 0;
 }
 
-header .logo {
-  color: white;
-  font-weight: bold;
+#content {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "home" "about" "gallery" "contact" "footer";
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: minmax(auto, 680px) auto 1fr 300px 300px;
+      grid-template-rows: minmax(auto, 680px) auto 1fr 300px 300px;
+}
+
+#home {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: home;
 }
 
 header .menu-btn {
+  z-index: 0;
+  margin: 1em;
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  right: 0;
   width: 20px;
   float: right;
   cursor: pointer;
+  background-color: rgba(18, 27, 53, 0.1);
 }
 
 section {
@@ -37,23 +65,37 @@ section {
 }
 
 section h1 {
+  font-family: 'Oswald', sans-serif;
   color: var(--yellow);
-  font-size: 4em;
-  width: 70%;
+  font-size: 2.7em;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  margin: 4.5em 0 0 3em;
+  line-height: 1.3em;
+}
+
+section h1 em {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3em;
+  margin: 0 0 0 -0.05em;
 }
 
 section span {
-  color: white;
-  display: block;
-  font-size: 0.75em;
-  margin-top: 20px;
+  font-family: 'Old Standard TT', serif;
+  color: var(--grey);
+  font-size: 2em;
+  margin: 0 0 0 7em;
 }
 
 nav {
-  position: absolute;
+  z-index: 1;
+  position: fixed;
   top: 0;
   right: 0;
   background: var(--yellow);
+  -webkit-box-shadow: 10px 0px 30px var(--blue);
+          box-shadow: 10px 0px 30px var(--blue);
   padding: 2.5em;
   width: 10em;
   height: calc(100vh - 4em);
@@ -74,7 +116,7 @@ nav .close-btn {
 nav ul {
   list-style-type: none;
   margin: 10% auto 0 auto;
-  padding: 0;
+  padding: 3em 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (25%)[4];
@@ -83,13 +125,16 @@ nav ul {
 }
 
 nav ul a {
-  color: white;
-  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  color: var(--grey);
+  font-weight: 400;
   font-size: 1.4em;
+  letter-spacing: 0.2em;
 }
 
 nav ul li {
   opacity: 0;
+  margin: .9em 0;
 }
 
 .show-menu {
@@ -275,5 +320,42 @@ nav ul li {
     -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
             transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
+}
+
+#about {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: about;
+  padding: 5em 8em;
+  background-color: var(--yellow);
+}
+
+#about p {
+  font-family: 'Oswald', serif;
+  font-size: 1.3em;
+  font-weight: 300;
+  text-align: center;
+}
+
+#gallery {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: gallery;
+  background-color: var(--grey);
+  color: var(--blue);
+}
+
+#contact {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: contact;
+  background-color: var(--clearBlue);
+}
+
+#footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  background-color: var(--blue);
 }
 /*# sourceMappingURL=main.css.map */

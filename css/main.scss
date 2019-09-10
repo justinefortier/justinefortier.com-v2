@@ -1,39 +1,77 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+// @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700|Oswald:200,300,400,500,600,700&display=swap');
 
 :root {
     --blue: #121b35;
     --clearBlue: #002445;
-    --yellow: #e9a050;
+    // --yellow: #e9a050;
+    --yellow: #DFAF6A;
+    --grey: #f3f3f3;
 }
 
 html {
     background: var(--yellow);
 
     body {
-        font-family: "Montserrat";
+        // font-family: "Montserrat";
+        font-family: 'Old Standard TT', serif;
+        color: var(--grey);
+        margin: 0;
 
         a {
             text-decoration: none;
         }
+
+        h2 {
+            font-family: 'Oswald', sans-serif;
+            color: var(--blue);
+            font-size: 2em;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            line-height: 1.3em;
+            text-align: center;
+            margin: 0;
+        }
     }
 }
 
-// #home {
-//     height: 700px;
-// }
+#content {
+    display: grid;
+    grid-template-areas:
+        "home"
+        "about"
+        "gallery"
+        "contact"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(auto, 680px) auto 1fr 300px 300px;
+}
+
+#home {
+    grid-area: home;
+}
 
 header {
-    padding: 2em;
 
-    .logo {
-        color: white;
-        font-weight: bold;
-    }
+    // .logo {
+    //     padding: 2em;
+    //     position: absolute;
+    //     top: 0;
+    //     color: var(--grey);
+    //     font-weight: bold;
+    // }
 
     .menu-btn {
+        z-index: 0;
+        margin: 1em;
+        padding: 1em;
+        position: fixed;
+        top: 0;
+        right: 0;
         width: 20px;
         float: right;
         cursor: pointer;
+        background-color: rgba($color: #121b35, $alpha: 0.1)
     }
 }
 
@@ -41,28 +79,39 @@ section {
     padding: 4em;
 
     h1 {
+        font-family: 'Oswald', sans-serif;
         color: var(--yellow);
-        font-size: 4em;
-        // margin: 1em auto;
-        width: 70%;
+        font-size: 2.7em;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        margin: 4.5em 0 0 3em;
+        line-height: 1.3em;
+
+        em {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 3em;
+            margin: 0 0 0 -0.05em;
+        }
     }
 
     span {
-        color: white;
-        display: block;
-        font-size: 0.75em;
-        margin-top: 20px;
+        font-family: 'Old Standard TT', serif;
+        color: var(--grey);
+        font-size: 2em;
+        margin: 0 0 0 7em;
     }
 }
 
 nav {
-    position: absolute;
+    z-index: 1;
+    position: fixed;
     top: 0;
     right: 0;
     background: var(--yellow);
+    box-shadow: 10px 0px 30px var(--blue);
     padding: 2.5em;
     width: 10em;
-    // width: calc(100% - 4em);
     height: calc(100vh - 4em);
     display: none;
     transform: scaleX(0);
@@ -78,16 +127,18 @@ nav {
     ul {
         list-style-type: none;
         margin: 10% auto 0 auto;
-        padding: 0;
+        padding: 3em 0;
         display: grid;
         grid-template-rows: repeat(4, 25%);
         width: 80%;
 
 
         a {
-            color: white;
-            font-weight: bold;
+            font-family: 'Oswald', sans-serif;
+            color: var(--grey);
+            font-weight: 400;
             font-size: 1.4em;
+            letter-spacing: 0.2em;
         }
 
         // span {
@@ -99,6 +150,7 @@ nav {
 
         li {
             opacity: 0;
+            margin: .9em 0;
         }
     }
 }
@@ -138,8 +190,6 @@ nav {
     }
 
 }
-
-
 
 @keyframes show-x {
     from {
@@ -205,4 +255,33 @@ nav {
         opacity: 1;
         transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     }
+}
+
+#about {
+    grid-area: about;
+    padding: 5em 8em;
+    background-color: var(--yellow);
+
+    p {
+        font-family: 'Oswald', serif;
+        font-size: 1.3em;
+        font-weight: 300;
+        text-align: center;
+    }
+}
+
+#gallery {
+    grid-area: gallery;
+    background-color: var(--grey);
+    color: var(--blue);
+}
+
+#contact {
+    grid-area: contact;
+    background-color: var(--clearBlue);
+}
+
+#footer {
+    grid-area: footer;
+    background-color: var(--blue);
 }
