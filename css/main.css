@@ -54,6 +54,11 @@
   font-family: 'jubbew-bold';
 }
 
+.font-alt1 {
+  -webkit-font-feature-settings: "aalt" 1;
+          font-feature-settings: "aalt" 1;
+}
+
 :root {
   --blue: #121b35;
   --clearBlue: #002445;
@@ -185,7 +190,7 @@ nav {
   -webkit-box-shadow: 8px 0px 10px var(--blue);
           box-shadow: 8px 0px 10px var(--blue);
   padding: 2.5em;
-  width: 10em;
+  width: 11em;
   height: calc(100vh - 4em);
   display: none;
   -webkit-transform: scaleX(0);
@@ -212,6 +217,11 @@ nav ul {
   width: 80%;
 }
 
+nav ul li {
+  opacity: 0;
+  margin: 0.9em 0;
+}
+
 nav ul a {
   font-family: "Montserrat", sans-serif;
   color: var(--grey);
@@ -219,11 +229,19 @@ nav ul a {
   font-size: 1.1em;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  padding: 6px 8px;
+  background-size: 200% auto;
+  background-position: 0 0;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, var(--blue)));
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, var(--blue) 50%);
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
 }
 
-nav ul li {
-  opacity: 0;
-  margin: 0.9em 0;
+nav ul a:hover {
+  background-position: -100% 0;
+  padding: 6px 8px;
+  color: var(--grey);
 }
 
 .show-menu {

@@ -74,6 +74,14 @@
     font-family: 'jubbew-bold';
 }
 
+.font-alt1 {
+    font-feature-settings: "aalt"1;
+}
+
+// .font-alt2 {
+//     font-feature-settings: "aalt"2;
+// }
+
 /////////// COLORS ///////////
 
 :root {
@@ -223,7 +231,7 @@ nav {
     background: var(--yellow);
     box-shadow: 8px 0px 10px var(--blue);
     padding: 2.5em;
-    width: 10em;
+    width: 11em;
     height: calc(100vh - 4em);
     display: none;
     transform: scaleX(0);
@@ -244,6 +252,11 @@ nav {
         grid-template-rows: repeat(4, 25%);
         width: 80%;
 
+        li {
+            opacity: 0;
+            margin: 0.9em 0;
+        }
+
         a {
             font-family: "Montserrat", sans-serif;
             color: var(--grey);
@@ -251,6 +264,18 @@ nav {
             font-size: 1.1em;
             letter-spacing: 0.2em;
             text-transform: uppercase;
+
+            padding: 6px 8px;
+            background-size: 200% auto;
+            background-position: 0 0;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, var(--blue) 50%);
+            transition: all 500ms ease-out;
+        }
+
+        a:hover {
+            background-position: -100% 0;
+            padding: 6px 8px;
+            color: var(--grey);
         }
 
         // span {
@@ -259,11 +284,6 @@ nav {
         //     font-size: .75em;
         //     margin-top: 20px;
         // }
-
-        li {
-            opacity: 0;
-            margin: 0.9em 0;
-        }
     }
 }
 
