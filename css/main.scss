@@ -74,31 +74,23 @@
     font-family: 'jubbew-bold';
 }
 
-.font-alt1 {
-    font-feature-settings: "aalt"1;
-}
-
-// .font-alt2 {
-//     font-feature-settings: "aalt"2;
-// }
-
 /////////// COLORS ///////////
 
 :root {
-    --blue: #121b35;
-    --clearBlue: #002445;
-    --yellow: #e9a050;
-    --grey: #f3f3f3;
+    --primary: #121b35;
+    --light-blue: #002445;
+    --secondary: #e9a050;
+    --light: #f3f3f3;
 }
 
 /////////// GENERAL //////////
 
 html {
-    background: var(--yellow);
+    background: var(--secondary);
 
     body {
         font-family: "Montserrat", serif;
-        color: var(--grey);
+        color: var(--light);
         margin: 0;
 
         a {
@@ -112,7 +104,7 @@ html {
 
         h2 {
             font-family: "jubbew-semibold";
-            color: var(--clearBlue);
+            color: var(--light-blue);
             font-size: 2.5em;
             letter-spacing: 0.1em;
             line-height: 1.3em;
@@ -138,8 +130,8 @@ html {
             background: none;
             font-family: "Montserrat", sans-serif;
             font-size: .8em;
-            border: .15em solid var(--grey);
-            color: var(--grey);
+            border: .15em solid var(--light);
+            color: var(--light);
             text-transform: uppercase;
             font-weight: 400;
             letter-spacing: .1em;
@@ -163,7 +155,7 @@ html {
         "contact"
         "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(auto, 680px) auto auto auto 300px;
+    grid-template-rows: minmax(auto, 680px) auto auto auto auto;
 }
 
 //////////// HOME ////////////
@@ -177,7 +169,7 @@ header {
     //     padding: 2em;
     //     position: absolute;
     //     top: 0;
-    //     color: var(--grey);
+    //     color: var(--light);
     //     font-weight: bold;
     // }
 
@@ -199,7 +191,7 @@ section {
     padding: 4em;
 
     h1 {
-        color: var(--yellow);
+        color: var(--secondary);
         margin: 4.5em 0 0 3em;
         line-height: 1.3em;
 
@@ -215,7 +207,7 @@ section {
     span {
         font-family: "Montserrat", sans-serif;
         font-weight: 200;
-        color: var(--grey);
+        color: var(--light);
         font-size: 1.5em;
         margin: 0 0 0 8.5em;
     }
@@ -228,8 +220,8 @@ nav {
     position: fixed;
     top: 0;
     right: 0;
-    background: var(--yellow);
-    box-shadow: 8px 0px 10px var(--blue);
+    background: var(--secondary);
+    box-shadow: 8px 0px 10px var(--primary);
     padding: 2.5em;
     width: 11em;
     height: calc(100vh - 4em);
@@ -259,7 +251,7 @@ nav {
 
         a {
             font-family: "Montserrat", sans-serif;
-            color: var(--grey);
+            color: var(--light);
             font-weight: 400;
             font-size: 1.1em;
             letter-spacing: 0.2em;
@@ -268,14 +260,14 @@ nav {
             padding: 6px 8px;
             background-size: 200% auto;
             background-position: 0 0;
-            background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, var(--blue) 50%);
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, var(--primary) 50%);
             transition: all 500ms ease-out;
         }
 
         a:hover {
             background-position: -100% 0;
             padding: 6px 8px;
-            color: var(--grey);
+            color: var(--light);
         }
 
         // span {
@@ -393,10 +385,10 @@ nav {
 #about {
     grid-area: about;
     padding: 5em 10em;
-    background-color: var(--yellow);
+    background-color: var(--secondary);
 
     h2 {
-        color: var(--grey);
+        color: var(--light);
         text-align: left;
     }
 
@@ -405,7 +397,7 @@ nav {
     }
 
     button:hover {
-        background-color: var(--blue);
+        background-color: var(--primary);
     }
 
     #cv-button {
@@ -421,8 +413,8 @@ nav {
 
 #gallery {
     grid-area: gallery;
-    background-color: var(--grey);
-    color: var(--blue);
+    background-color: var(--light);
+    color: var(--primary);
     padding: 5em 10em;
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
@@ -460,7 +452,7 @@ nav {
     margin: 1em 0 2em 0;
 
     li span:hover {
-        color: var(--yellow);
+        color: var(--secondary);
     }
 
     li {
@@ -472,13 +464,13 @@ nav {
         margin: 3px 12px;
         padding: 6px 8px;
         text-decoration: none;
-        color: var(--blue);
+        color: var(--primary);
         cursor: pointer;
     }
 
     li span.active {
-        background: var(--yellow);
-        color: var(--grey);
+        background: var(--secondary);
+        color: var(--light);
     }
 }
 
@@ -496,7 +488,7 @@ nav {
 .gallery-wrapper {
     overflow: hidden;
     position: relative !important;
-    background: var(--blue);
+    background: var(--primary);
     cursor: pointer;
 }
 
@@ -519,7 +511,7 @@ nav {
     }
 
     .label-bg {
-        background: var(--blue);
+        background: var(--primary);
         width: 100%;
         height: 100%;
         position: absolute;
@@ -528,7 +520,7 @@ nav {
     }
 
     .artwork-label {
-        color: var(--grey);
+        color: var(--light);
         position: relative;
         z-index: 2;
         padding: 5px 8px;
@@ -536,7 +528,7 @@ nav {
     }
 
     .artwork-title {
-        color: var(--grey);
+        color: var(--light);
         font-weight: 400;
         font-size: 1em;
     }
@@ -561,11 +553,11 @@ nav {
 
 #contact {
     grid-area: contact;
-    background-color: var(--clearBlue);
+    background-color: var(--light-blue);
     padding: 5em 10em 5.5em 10em;
 
     h2 {
-        color: var(--grey);
+        color: var(--light);
     }
 
     p {
@@ -573,8 +565,8 @@ nav {
     }
 
     button:hover {
-        background-color: var(--grey);
-        color: var(--clearBlue);
+        background-color: var(--light);
+        color: var(--light-blue);
     }
 }
 
@@ -582,5 +574,66 @@ nav {
 
 #footer {
     grid-area: footer;
-    background-color: var(--blue);
+    background-color: var(--primary);
+    padding: 2em 10em;
+
+    display: grid;
+    grid-template-areas:
+        "right-footer left-footer";
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr;
+
+    p {
+        font-size: 0.7em;
+        text-transform: uppercase;
+    }
+
+    #right-footer {
+        grid-area: right-footer;
+        padding: 0 3em 0 0;
+        border-right: 1px solid var(--light);
+        margin: 1fr 0 .6em 0;
+        position: relative;
+
+        p {
+            position: absolute;
+            bottom: 0;
+            line-height: 1.9em;
+        }
+    }
+
+    #left-footer {
+        grid-area: left-footer;
+        padding: 0 0 0 3em;
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            padding: 0;
+        }
+
+        li {
+            cursor: pointer;
+        }
+
+        #linkedin {
+            margin: 0 .6em 0 0;
+        }
+
+        #github {
+            margin: 0 0 0 .6em;
+        }
+
+        svg {
+            width: 3em;
+            stroke: var(--light);
+            stroke-width: 1em;
+            fill: var(--primary);
+        }
+
+        svg:hover {
+            fill: var(--light);
+            transition: all 500ms ease-out;
+        }
+    }
 }

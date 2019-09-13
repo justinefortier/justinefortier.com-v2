@@ -54,25 +54,20 @@
   font-family: 'jubbew-bold';
 }
 
-.font-alt1 {
-  -webkit-font-feature-settings: "aalt" 1;
-          font-feature-settings: "aalt" 1;
-}
-
 :root {
-  --blue: #121b35;
-  --clearBlue: #002445;
-  --yellow: #e9a050;
-  --grey: #f3f3f3;
+  --primary: #121b35;
+  --light-blue: #002445;
+  --secondary: #e9a050;
+  --light: #f3f3f3;
 }
 
 html {
-  background: var(--yellow);
+  background: var(--secondary);
 }
 
 html body {
   font-family: "Montserrat", serif;
-  color: var(--grey);
+  color: var(--light);
   margin: 0;
 }
 
@@ -87,7 +82,7 @@ html body h1 {
 
 html body h2 {
   font-family: "jubbew-semibold";
-  color: var(--clearBlue);
+  color: var(--light-blue);
   font-size: 2.5em;
   letter-spacing: 0.1em;
   line-height: 1.3em;
@@ -113,8 +108,8 @@ html body button {
   background: none;
   font-family: "Montserrat", sans-serif;
   font-size: .8em;
-  border: 0.15em solid var(--grey);
-  color: var(--grey);
+  border: 0.15em solid var(--light);
+  color: var(--light);
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: .1em;
@@ -133,8 +128,8 @@ html body button:hover {
       grid-template-areas: "home" "about" "gallery" "contact" "footer";
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: minmax(auto, 680px) auto auto auto 300px;
-      grid-template-rows: minmax(auto, 680px) auto auto auto 300px;
+  -ms-grid-rows: minmax(auto, 680px) auto auto auto auto;
+      grid-template-rows: minmax(auto, 680px) auto auto auto auto;
 }
 
 #home {
@@ -161,7 +156,7 @@ section {
 }
 
 section h1 {
-  color: var(--yellow);
+  color: var(--secondary);
   margin: 4.5em 0 0 3em;
   line-height: 1.3em;
 }
@@ -176,7 +171,7 @@ section h1 em {
 section span {
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
-  color: var(--grey);
+  color: var(--light);
   font-size: 1.5em;
   margin: 0 0 0 8.5em;
 }
@@ -186,9 +181,9 @@ nav {
   position: fixed;
   top: 0;
   right: 0;
-  background: var(--yellow);
-  -webkit-box-shadow: 8px 0px 10px var(--blue);
-          box-shadow: 8px 0px 10px var(--blue);
+  background: var(--secondary);
+  -webkit-box-shadow: 8px 0px 10px var(--primary);
+          box-shadow: 8px 0px 10px var(--primary);
   padding: 2.5em;
   width: 11em;
   height: calc(100vh - 4em);
@@ -224,7 +219,7 @@ nav ul li {
 
 nav ul a {
   font-family: "Montserrat", sans-serif;
-  color: var(--grey);
+  color: var(--light);
   font-weight: 400;
   font-size: 1.1em;
   letter-spacing: 0.2em;
@@ -232,8 +227,8 @@ nav ul a {
   padding: 6px 8px;
   background-size: 200% auto;
   background-position: 0 0;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, var(--blue)));
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, var(--blue) 50%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, var(--primary)));
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, var(--primary) 50%);
   -webkit-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
 }
@@ -241,7 +236,7 @@ nav ul a {
 nav ul a:hover {
   background-position: -100% 0;
   padding: 6px 8px;
-  color: var(--grey);
+  color: var(--light);
 }
 
 .show-menu {
@@ -434,11 +429,11 @@ nav ul a:hover {
   -ms-grid-column: 1;
   grid-area: about;
   padding: 5em 10em;
-  background-color: var(--yellow);
+  background-color: var(--secondary);
 }
 
 #about h2 {
-  color: var(--grey);
+  color: var(--light);
   text-align: left;
 }
 
@@ -447,7 +442,7 @@ nav ul a:hover {
 }
 
 #about button:hover {
-  background-color: var(--blue);
+  background-color: var(--primary);
 }
 
 #about #cv-button {
@@ -462,8 +457,8 @@ nav ul a:hover {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: gallery;
-  background-color: var(--grey);
-  color: var(--blue);
+  background-color: var(--light);
+  color: var(--primary);
   padding: 5em 10em;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
@@ -506,7 +501,7 @@ nav ul a:hover {
 }
 
 #filters li span:hover {
-  color: var(--yellow);
+  color: var(--secondary);
 }
 
 #filters li {
@@ -518,13 +513,13 @@ nav ul a:hover {
   margin: 3px 12px;
   padding: 6px 8px;
   text-decoration: none;
-  color: var(--blue);
+  color: var(--primary);
   cursor: pointer;
 }
 
 #filters li span.active {
-  background: var(--yellow);
-  color: var(--grey);
+  background: var(--secondary);
+  color: var(--light);
 }
 
 #artworks-list .gallery {
@@ -541,7 +536,7 @@ nav ul a:hover {
 .gallery-wrapper {
   overflow: hidden;
   position: relative !important;
-  background: var(--blue);
+  background: var(--primary);
   cursor: pointer;
 }
 
@@ -563,7 +558,7 @@ nav ul a:hover {
 }
 
 .gallery .label-bg {
-  background: var(--blue);
+  background: var(--primary);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -572,7 +567,7 @@ nav ul a:hover {
 }
 
 .gallery .artwork-label {
-  color: var(--grey);
+  color: var(--light);
   position: relative;
   z-index: 2;
   padding: 5px 8px;
@@ -580,7 +575,7 @@ nav ul a:hover {
 }
 
 .gallery .artwork-title {
-  color: var(--grey);
+  color: var(--light);
   font-weight: 400;
   font-size: 1em;
 }
@@ -604,12 +599,12 @@ nav ul a:hover {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: contact;
-  background-color: var(--clearBlue);
+  background-color: var(--light-blue);
   padding: 5em 10em 5.5em 10em;
 }
 
 #contact h2 {
-  color: var(--grey);
+  color: var(--light);
 }
 
 #contact p {
@@ -617,14 +612,83 @@ nav ul a:hover {
 }
 
 #contact button:hover {
-  background-color: var(--grey);
-  color: var(--clearBlue);
+  background-color: var(--light);
+  color: var(--light-blue);
 }
 
 #footer {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: footer;
-  background-color: var(--blue);
+  background-color: var(--primary);
+  padding: 2em 10em;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "right-footer left-footer";
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+#footer p {
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+
+#footer #right-footer {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: right-footer;
+  padding: 0 3em 0 0;
+  border-right: 1px solid var(--light);
+  margin: 1fr 0 .6em 0;
+  position: relative;
+}
+
+#footer #right-footer p {
+  position: absolute;
+  bottom: 0;
+  line-height: 1.9em;
+}
+
+#footer #left-footer {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: left-footer;
+  padding: 0 0 0 3em;
+}
+
+#footer #left-footer ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+#footer #left-footer li {
+  cursor: pointer;
+}
+
+#footer #left-footer #linkedin {
+  margin: 0 .6em 0 0;
+}
+
+#footer #left-footer #github {
+  margin: 0 0 0 .6em;
+}
+
+#footer #left-footer svg {
+  width: 3em;
+  stroke: var(--light);
+  stroke-width: 1em;
+  fill: var(--primary);
+}
+
+#footer #left-footer svg:hover {
+  fill: var(--light);
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
 }
 /*# sourceMappingURL=main.css.map */
