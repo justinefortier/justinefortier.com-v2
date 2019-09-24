@@ -1,57 +1,57 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
 @font-face {
-  font-family: 'jubbew-light';
+  font-family: "jubbew-light";
   src: url("../typo/jubbew-light-webfont.woff2") format("woff2"), url("../typo/jubbew-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'jubbew-regular';
+  font-family: "jubbew-regular";
   src: url("../typo/jubbew-regular-webfont.woff2") format("woff2"), url("../typo/jubbew-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'jubbew-medium';
+  font-family: "jubbew-medium";
   src: url("../typo/jubbew-medium-webfont.woff2") format("woff2"), url("../typo/jubbew-medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'jubbew-semibold';
+  font-family: "jubbew-semibold";
   src: url("../typo/jubbew-semibold-webfont.woff2") format("woff2"), url("../typo/jubbew-semibold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'jubbew-bold';
+  font-family: "jubbew-bold";
   src: url("../typo/jubbew-bold-webfont.woff2") format("woff2"), url("../typo/jubbew-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 .fs-jubbew-light {
-  font-family: 'jubbew-light';
+  font-family: "jubbew-light";
 }
 
 .fs-jubbew-regular {
-  font-family: 'jubbew-regular';
+  font-family: "jubbew-regular";
 }
 
 .fs-jubbew-medium {
-  font-family: 'jubbew-medium';
+  font-family: "jubbew-medium";
 }
 
 .fs-jubbew-semibold {
-  font-family: 'jubbew-semibold';
+  font-family: "jubbew-semibold";
 }
 
 .fs-jubbew-bold {
-  font-family: 'jubbew-bold';
+  font-family: "jubbew-bold";
 }
 
 :root {
@@ -87,7 +87,7 @@ html body h2 {
   letter-spacing: 0.1em;
   line-height: 1.3em;
   text-align: center;
-  margin: 0 0 .7em 0;
+  margin: 0 0 0.7em 0;
 }
 
 html body p {
@@ -107,18 +107,24 @@ html body button {
   height: 3em;
   background: none;
   font-family: "Montserrat", sans-serif;
-  font-size: .8em;
+  font-size: 0.8em;
   border: 0.15em solid var(--light);
   color: var(--light);
   text-transform: uppercase;
   font-weight: 400;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   margin-top: 2.1em;
 }
 
 html body button:hover {
   font-weight: 500;
   border: none;
+  cursor: pointer;
+}
+
+html body .close-btn {
+  width: 20px;
+  float: right;
   cursor: pointer;
 }
 
@@ -165,7 +171,7 @@ section h1 em {
   font-family: "jubbew-bold", sans-serif;
   font-style: normal;
   font-size: 3.5em;
-  margin: 0 0 0 -.03em;
+  margin: 0 0 0 -0.03em;
 }
 
 section span {
@@ -177,15 +183,15 @@ section span {
 }
 
 nav {
-  z-index: 1;
+  z-index: 3;
   position: fixed;
   top: 0;
   right: 0;
   background: var(--secondary);
   -webkit-box-shadow: 8px 0px 10px var(--primary);
           box-shadow: 8px 0px 10px var(--primary);
-  padding: 2.5em;
-  width: 11em;
+  padding: 2.2em;
+  width: 11.5em;
   height: calc(100vh - 4em);
   display: none;
   -webkit-transform: scaleX(0);
@@ -195,9 +201,6 @@ nav {
 }
 
 nav .close-btn {
-  width: 20px;
-  float: right;
-  cursor: pointer;
   opacity: 0;
 }
 
@@ -527,7 +530,7 @@ nav ul a:hover {
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   width: 30%;
-  margin: .9em;
+  margin: 0.9em;
   display: none;
   float: left;
   overflow: hidden;
@@ -569,9 +572,9 @@ nav ul a:hover {
 .gallery .artwork-label {
   color: var(--light);
   position: relative;
-  z-index: 2;
+  z-index: 1;
   padding: 5px 8px;
-  margin: .5em .7em;
+  margin: 0.5em 0.7em;
 }
 
 .gallery .artwork-title {
@@ -583,8 +586,8 @@ nav ul a:hover {
 .gallery .artwork-category {
   display: block;
   font-weight: 300;
-  font-size: .8em;
-  margin: .4em 0;
+  font-size: 0.8em;
+  margin: 0.4em 0;
 }
 
 .gallery :hover .label {
@@ -595,6 +598,40 @@ nav ul a:hover {
   top: -30px;
 }
 
+.modal {
+  z-index: 2;
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(18, 27, 53, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-content {
+  background-color: violet;
+  padding: 2em;
+  width: 70%;
+  height: 70%;
+  border-radius: 10px 10px 0 0;
+}
+
+.modal-content .close-btn {
+  padding: 2em;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
 #contact {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
@@ -642,7 +679,7 @@ nav ul a:hover {
   grid-area: right-footer;
   padding: 0 3em 0 0;
   border-right: 1px solid var(--light);
-  margin: 1fr 0 .6em 0;
+  margin: 1fr 0 0.6em 0;
   position: relative;
 }
 
@@ -672,11 +709,11 @@ nav ul a:hover {
 }
 
 #footer #left-footer #linkedin {
-  margin: 0 .6em 0 0;
+  margin: 0 0.6em 0 0;
 }
 
 #footer #left-footer #github {
-  margin: 0 0 0 .6em;
+  margin: 0 0 0 0.6em;
 }
 
 #footer #left-footer svg {
