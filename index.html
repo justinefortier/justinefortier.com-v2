@@ -25,29 +25,7 @@
 	<script src="./js/libraries/p5.js"></script>
 	<script src="./js/libraries/p5.dom.js"></script>
 	<!-- <script src="./libraries/p5.sound.js"></script> -->
-	<script src="./js/home.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script type="text/javascript" src="./js/libraries/jquery.mixitup.min.js"></script>
-
-	<script>
-		type = "text/javascript" >
-			$(function () {
-				var filterList = {
-					init: function () {
-						$('#artworks-list').mixItUp({
-							selectors: {
-								target: '.gallery',
-								filter: '.filter'
-							},
-							load: {
-								filter: '.ill, .typ, .inst, .app'
-							}
-						});
-					}
-				};
-				filterList.init();
-			});
-	</script>
+	<script src="./js/background.js"></script>
 
 </head>
 
@@ -83,244 +61,30 @@
 			<img src="./images/svg/menu.svg" class="menu-btn" id="open-menu" alt="Menu button" />
 		</header>
 		<div id="home">
-			<section>
+			<section class="hello">
 				<h1>
 					<em>H&#61442;&#61445;&#61445;O</em><br />
 					JE SUIS &#61444;U&#61449;&#61458;IN&#61442; FOR&#61458;I&#61442;R
 				</h1>
-				<span>et je suis graphiste illustratrice</span>
+				<span class="subtitle">et je suis graphiste illustratrice</span>
+
+				<div class="scrolldown">
+					<div class="scroll-line"></div>
+					<p>Scrolldown</p>
+				</div>
+
 			</section>
 		</div>
 
 		<script src="./js/menu.js"></script>
 
-		<div id="about">
+		<div id="about-me">
 			<h2>À PROPOS</h2>
-			<p>
-				Passionnée par l'Art, la musique et les technologies numériques, j'ai
-				entrepris une Licence d'Arts plastiques, au cours de laquelle j'ai pu
-				développer, aux côtés des pratiques traditionnelles, une pratique liée
-				au design graphique et à l'élaboration de sites web.
-			</p>
-
-			<p>
-				J'ai par la suite intégré le Master Création numérique de l'Université
-				Rennes 2 durant lequel j'ai mené une réflexion sur l'esthétique
-				aseptisée dans les œuvres d'art numérique sonores et visuelles, ce qui
-				m'a permis de découvrir de nouveaux domaines de création tels que la
-				programmation, l'animation ou encore la 3D.
-			</p>
-
-			<p>
-				Curieuse et créative, j'aime apprendre constamment et utiliser de
-				nouveaux outils, aussi bien numériques que traditionnels, pour réaliser mes projets.
-			</p>
-
-			<p id="buttons"><a href="../resources/cv/cv-justine_fortier-graphiste_illustratrice.pdf"><button
-						id="cv-button" type="button">Télécharger mon CV</button></a>
-				<a href="../resources/cv/cv-justine_fortier-graphiste_illustratrice.pdf"><button id="book-button"
-						type="button">Télécharger mon
-						book</button></a></p>
+			<img src="./resources/portfolio/pygoscelis_adeliae/pygoscelis_adeliae.jpg" alt="">
 		</div>
 
+		<div id="works">
 
-		<div id="gallery">
-			<div id="gallery-title">
-				<h2>GALERIE</h2>
-			</div>
-
-			<div class="filters">
-				<ul id="filters" class="clearfix">
-					<li><span class="filter active" data-filter=".ill, .typ, .inst, .app">Toutes les catégories</span>
-					</li>
-					<li><span class="filter" data-filter=".ill">Illustrations</span></li>
-					<li><span class="filter" data-filter=".typ">Typographies</span></li>
-					<li><span class="filter" data-filter=".inst">Installations</span></li>
-					<li><span class="filter" data-filter=".app">Applications</span></li>
-				</ul>
-			</div>
-
-			<div id="artworks-list">
-				<div class="gallery typ" data-cat="typ">
-					<div class="gallery-wrapper">
-						<img src="./resources/portfolio/portfolio_window/codestrata.jpg" onclick="openModal();"
-							alt="" />
-						<div class="label">
-							<div class="artwork-label">
-								<a sclass="artwork-title">Jubbew</a>
-								<span class="artwork-category">Typographie</span>
-							</div>
-							<div class="label-bg"></div>
-						</div>
-					</div>
-				</div>
-
-				<a href="./html/portfolio/codestrata.html">
-					<div class="gallery app" data-cat="app">
-						<div class="gallery-wrapper">
-							<img src="./resources/portfolio/portfolio_window/codestrata.jpg" alt="" />
-							<div class="label">
-								<div class="artwork-label">
-									<a class="artwork-title">code{strata}</a>
-									<span class="artwork-category">Application web</span>
-								</div>
-								<div class="label-bg"></div>
-							</div>
-						</div>
-					</div>
-				</a>
-
-				<a href="./html/portfolio/modulations.html">
-					<div class="gallery app" data-cat="app">
-						<div class="gallery-wrapper">
-							<img src="./resources/portfolio/portfolio_window/modulations.jpg" alt="" />
-							<div class="label">
-								<div class="artwork-label">
-									<a class="artwork-title">Modulations</a>
-									<span class="artwork-category">Réalité virtuelle</span>
-								</div>
-								<div class="label-bg"></div>
-							</div>
-						</div>
-					</div>
-				</a>
-
-				<a href="./html/portfolio/talkingspeakers.html">
-					<div class="gallery inst" data-cat="inst">
-						<div class="gallery-wrapper">
-							<img src="./resources/portfolio/portfolio_window/talkingspeakers.jpg" alt="" />
-							<div class="label">
-								<div class="artwork-label">
-									<a class="artwork-title">talkingSpeakers</a>
-									<span class="artwork-category">Installation sonore</span>
-								</div>
-								<div class="label-bg"></div>
-							</div>
-						</div>
-					</div>
-				</a>
-
-				<a href="./html/portfolio/ondes_sonores.html">
-					<div class="gallery inst" data-cat="inst">
-						<div class="gallery-wrapper">
-							<img src="./resources/portfolio/portfolio_window/ondes_sonores.jpg" alt="" />
-							<div class="label">
-								<div class="artwork-label">
-									<a class="artwork-title">Ondes sonores</a>
-									<span class="artwork-category">Gravures sur bois</span>
-								</div>
-								<div class="label-bg"></div>
-							</div>
-						</div>
-					</div>
-				</a>
-
-				<a href="./html/portfolio/portraits.html">
-					<div class="gallery ill" data-cat="ill">
-						<div class="gallery-wrapper">
-							<img src="./resources/portfolio/portfolio_window/portraits.jpg" alt="" />
-							<div class="label">
-								<div class="artwork-label">
-									<a class="artwork-title">Portraits</a>
-									<span class="artwork-category">Illustrations</span>
-								</div>
-								<div class="label-bg"></div>
-							</div>
-						</div>
-					</div>
-				</a>
-
-				<a href="./html/portfolio/catostylus_mosaicus.html">
-					<div class="gallery ill" data-cat="ill">
-						<div class="gallery-wrapper">
-							<img src="./resources/portfolio/portfolio_window/catostylus_mosaicus.jpg" alt="" />
-							<div class="label">
-								<div class="artwork-label">
-									<a class="artwork-title">Catostylus mosaicus</a>
-									<span class="artwork-category">Illustrations</span>
-								</div>
-								<div class="label-bg"></div>
-							</div>
-						</div>
-					</div>
-				</a>
-
-				<a href="./html/portfolio/cartographies.html">
-					<div class="gallery ill" data-cat="ill">
-						<div class="gallery-wrapper">
-							<img src="./resources/portfolio/portfolio_window/cartographies.jpg" alt="" />
-							<div class="label">
-								<div class="artwork-label">
-									<a class="artwork-title">Cartographies</a>
-									<span class="artwork-category">Illustrations</span>
-								</div>
-								<div class="label-bg"></div>
-							</div>
-						</div>
-					</div>
-				</a>
-
-				<a href="./html/portfolio/pygoscelis_adeliae.html">
-					<div class="gallery ill" data-cat="ill">
-						<div class="gallery-wrapper">
-							<img src="./resources/portfolio/portfolio_window/pygoscelis_adeliae.jpg" alt="" />
-							<div class="label">
-								<div class="artwork-label">
-									<a class="artwork-title">Pygoscelis adeliae</a>
-									<span class="artwork-category">Illustration</span>
-								</div>
-								<div class="label-bg"></div>
-							</div>
-						</div>
-					</div>
-				</a>
-
-				<a href="./html/portfolio/structures.html">
-					<div class="gallery ill" data-cat="ill">
-						<div class="gallery-wrapper">
-							<img src="./resources/portfolio/portfolio_window/structures.jpg" alt="" />
-							<div class="label">
-								<div class="artwork-label">
-									<a class="artwork-title">Structures</a>
-									<span class="artwork-category">Illustrations</span>
-								</div>
-								<div class="label-bg"></div>
-							</div>
-						</div>
-					</div>
-				</a>
-
-				<a href="./html/portfolio/panthera_tigris.html">
-					<div class="gallery ill" data-cat="ill">
-						<div class="gallery-wrapper">
-							<img src="./resources/portfolio/portfolio_window/panthera_tigris.jpg" alt="" />
-							<div class="label">
-								<div class="artwork-label">
-									<a class="artwork-title">Panthera tigris</a>
-									<span class="artwork-category">Illustration</span>
-								</div>
-								<div class="label-bg"></div>
-							</div>
-						</div>
-					</div>
-				</a>
-
-				<a href="./html/portfolio/animaux.html">
-					<div class="gallery ill" data-cat="ill">
-						<div class="gallery-wrapper">
-							<img src="./resources/portfolio/portfolio_window/animaux.jpg" alt="" />
-							<div class="label">
-								<div class="artwork-label">
-									<a class="artwork-title">Animaux</a>
-									<span class="artwork-category">Illustrations</span>
-								</div>
-								<div class="label-bg"></div>
-							</div>
-						</div>
-					</div>
-				</a>
-
-			</div>
 		</div>
 
 		<div id="contact">

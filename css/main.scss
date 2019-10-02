@@ -108,7 +108,7 @@ html {
       font-size: 2.5em;
       letter-spacing: 0.1em;
       line-height: 1.3em;
-      text-align: center;
+      // text-align: center;
       margin: 0 0 0.7em 0;
     }
 
@@ -156,12 +156,13 @@ html {
   display: grid;
   grid-template-areas:
     "home"
-    "about"
-    "gallery"
+    "aboutme"
+    "works"
     "contact"
     "footer";
   grid-template-columns: 1fr;
-  grid-template-rows: minmax(auto, 680px) auto auto auto auto;
+  // grid-template-rows: minmax(auto, 680px) auto auto auto auto;
+  grid-template-rows: 100vh 650px 650px auto auto;
 }
 
 //////////// HOME ////////////
@@ -193,7 +194,7 @@ header {
   }
 }
 
-section {
+.hello {
   padding: 4em;
 
   h1 {
@@ -215,6 +216,30 @@ section {
     color: var(--light);
     font-size: 1.5em;
     margin: 0 0 0 8.5em;
+  }
+
+  .scrolldown {
+    .scroll-line {
+      width: 2px;
+      background: var(--light);
+      position: absolute;
+      height: 70px;
+      left: 50px;
+      bottom: 0;
+    }
+
+    p {
+      margin: 0;
+      line-height: 0;
+      position: absolute;
+      font-size: 0.9em;
+      bottom: 90px;
+      left: 51px;
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+    }
   }
 }
 
@@ -262,11 +287,9 @@ nav {
       padding: 6px 8px;
       background-size: 200% auto;
       background-position: 0 0;
-      background-image: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 0) 50%,
-        var(--primary) 50%
-      );
+      background-image: linear-gradient(to right,
+          rgba(255, 255, 255, 0) 50%,
+          var(--primary) 50%);
       transition: all 500ms ease-out;
     }
 
@@ -388,171 +411,20 @@ nav {
 
 ////////// ABOUT ME //////////
 
-#about {
-  grid-area: about;
-  padding: 5em 10em;
-  background-color: var(--secondary);
+.about-me {
+  grid-area: aboutme;
+  position: relative;
 
-  h2 {
-    color: var(--light);
-    text-align: left;
-  }
+  background-color: #f3f3f3;
 
-  p {
-    padding: 0 25em 0 0;
-  }
-
-  button:hover {
-    background-color: var(--primary);
-  }
-
-  #cv-button {
-    margin-right: 1.2em;
-  }
-
-  #book-button {
-    margin-left: 1.2em;
-  }
-}
-
-////// ARTWORKS GALLERY //////
-
-#gallery {
-  grid-area: gallery;
-  background-color: var(--light);
-  color: var(--primary);
-  padding: 5em 10em;
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease;
-  display: grid;
-  grid-template-areas:
-    "gallery-title"
-    "filters"
-    "artworks-list";
-  grid-template-columns: 1fr;
-  grid-template-rows: 80px 1fr;
-}
-
-#gallery-title {
-  grid-area: gallery-title;
-}
-
-.filters {
-  grid-area: filters;
-}
-
-#artworks-list {
-  grid-area: artworks-list;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
-#filters {
-  font-weight: 300;
-  font-size: 1em;
-  list-style: none;
-  text-align: center;
-  padding: 0;
-  margin: 1em 0 2em 0;
-
-  li span:hover {
-    color: var(--secondary);
-  }
-
-  li {
-    display: inline-block;
-  }
-
-  li span {
-    display: block;
-    margin: 3px 12px;
-    padding: 6px 8px;
-    text-decoration: none;
-    color: var(--primary);
-    cursor: pointer;
-  }
-
-  li span.active {
-    background: var(--secondary);
-    color: var(--light);
-  }
-}
-
-#artworks-list .gallery {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  width: 30%;
-  margin: 0.9em;
-  display: none;
-  float: left;
-  overflow: hidden;
-}
-
-.gallery-wrapper {
-  overflow: hidden;
-  position: relative !important;
-  background: var(--primary);
-  cursor: pointer;
-}
-
-.gallery {
   img {
-    max-width: 100%;
-    position: relative;
-    top: 0;
-    -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
-    transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
-  }
-
-  .label {
     position: absolute;
-    width: 100%;
-    height: 65px;
-    bottom: -60px;
-    -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
-    transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
-  }
-
-  .label-bg {
-    background: var(--primary);
-    width: 100%;
     height: 100%;
-    position: absolute;
+    right: 0;
     top: 0;
-    left: 0;
+    width: 50%;
   }
 
-  .artwork-label {
-    color: var(--light);
-    position: relative;
-    z-index: 1;
-    padding: 5px 8px;
-    margin: 0.5em 0.7em;
-  }
-
-  .artwork-title {
-    color: var(--light);
-    font-weight: 400;
-    font-size: 1em;
-  }
-
-  .artwork-category {
-    display: block;
-    font-weight: 300;
-    font-size: 0.8em;
-    margin: 0.4em 0;
-  }
-
-  :hover .label {
-    bottom: 0;
-  }
-
-  :hover img {
-    top: -30px;
-  }
 }
 
 ////////// CONTACT //////////
