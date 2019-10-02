@@ -92,6 +92,7 @@ html {
     font-family: "Montserrat", serif;
     color: var(--light);
     margin: 0;
+    overflow-x: hidden;
 
     a {
       text-decoration: none;
@@ -99,17 +100,14 @@ html {
 
     h1 {
       font-family: "jubbew-semibold";
-      font-size: 3em;
+      font-size: 4em;
     }
 
     h2 {
-      font-family: "jubbew-semibold";
+      font-family: "jubbew-bold";
       color: var(--light-blue);
-      font-size: 2.5em;
+      font-size: 3em;
       letter-spacing: 0.1em;
-      line-height: 1.3em;
-      // text-align: center;
-      margin: 0 0 0.7em 0;
     }
 
     p {
@@ -181,7 +179,7 @@ header {
   // }
 
   .menu-btn {
-    z-index: 0;
+    z-index: 2;
     margin: 1em;
     padding: 1em;
     position: fixed;
@@ -199,7 +197,7 @@ header {
 
   h1 {
     color: var(--secondary);
-    margin: 4.5em 0 0 3em;
+    margin: 3.5em 0 0 3em;
     line-height: 1.3em;
 
     em {
@@ -214,8 +212,8 @@ header {
     font-family: "Montserrat", sans-serif;
     font-weight: 200;
     color: var(--light);
-    font-size: 1.5em;
-    margin: 0 0 0 8.5em;
+    font-size: 1.8em;
+    margin: 0 0 0 11em;
   }
 
   .scrolldown {
@@ -411,11 +409,19 @@ nav {
 
 ////////// ABOUT ME //////////
 
-.about-me {
+#about-me {
   grid-area: aboutme;
   position: relative;
 
-  background-color: #f3f3f3;
+  background-color: var(--light);
+
+  h2 {
+    color: var(--secondary);
+    position: absolute;
+    margin-top: 560px;
+    margin-left: 50px;
+    font-size: 8em;
+  }
 
   img {
     position: absolute;
@@ -424,7 +430,32 @@ nav {
     top: 0;
     width: 50%;
   }
+}
 
+////////// WORKS //////////
+
+#works {
+  grid-area: works;
+  position: relative;
+
+  background-color: var(--secondary);
+
+  h2 {
+    color: var(--light-blue);
+    position: absolute;
+    right: 0;
+    margin-top: 560px;
+    margin-right: 50px;
+    font-size: 8em;
+  }
+
+  img {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 50%;
+  }
 }
 
 ////////// CONTACT //////////
@@ -435,7 +466,9 @@ nav {
   padding: 5em 10em 5.5em 10em;
 
   h2 {
+    font-family: "jubbew-semibold";
     color: var(--light);
+    text-align: center;
   }
 
   p {

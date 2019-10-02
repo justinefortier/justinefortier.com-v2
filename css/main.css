@@ -69,6 +69,7 @@ html body {
   font-family: "Montserrat", serif;
   color: var(--light);
   margin: 0;
+  overflow-x: hidden;
 }
 
 html body a {
@@ -77,16 +78,14 @@ html body a {
 
 html body h1 {
   font-family: "jubbew-semibold";
-  font-size: 3em;
+  font-size: 4em;
 }
 
 html body h2 {
-  font-family: "jubbew-semibold";
+  font-family: "jubbew-bold";
   color: var(--light-blue);
-  font-size: 2.5em;
+  font-size: 3em;
   letter-spacing: 0.1em;
-  line-height: 1.3em;
-  margin: 0 0 0.7em 0;
 }
 
 html body p {
@@ -144,7 +143,7 @@ html body .close-btn {
 }
 
 header .menu-btn {
-  z-index: 0;
+  z-index: 2;
   margin: 1em;
   padding: 1em;
   position: fixed;
@@ -162,7 +161,7 @@ header .menu-btn {
 
 .hello h1 {
   color: var(--secondary);
-  margin: 4.5em 0 0 3em;
+  margin: 3.5em 0 0 3em;
   line-height: 1.3em;
 }
 
@@ -177,8 +176,8 @@ header .menu-btn {
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
   color: var(--light);
-  font-size: 1.5em;
-  margin: 0 0 0 8.5em;
+  font-size: 1.8em;
+  margin: 0 0 0 11em;
 }
 
 .hello .scrolldown .scroll-line {
@@ -451,18 +450,51 @@ nav ul a:hover {
   }
 }
 
-.about-me {
+#about-me {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: aboutme;
   position: relative;
-  background-color: #f3f3f3;
+  background-color: var(--light);
 }
 
-.about-me img {
+#about-me h2 {
+  color: var(--secondary);
+  position: absolute;
+  margin-top: 560px;
+  margin-left: 50px;
+  font-size: 8em;
+}
+
+#about-me img {
   position: absolute;
   height: 100%;
   right: 0;
+  top: 0;
+  width: 50%;
+}
+
+#works {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: works;
+  position: relative;
+  background-color: var(--secondary);
+}
+
+#works h2 {
+  color: var(--light-blue);
+  position: absolute;
+  right: 0;
+  margin-top: 560px;
+  margin-right: 50px;
+  font-size: 8em;
+}
+
+#works img {
+  position: absolute;
+  height: 100%;
+  left: 0;
   top: 0;
   width: 50%;
 }
@@ -476,7 +508,9 @@ nav ul a:hover {
 }
 
 #contact h2 {
+  font-family: "jubbew-semibold";
   color: var(--light);
+  text-align: center;
 }
 
 #contact p {

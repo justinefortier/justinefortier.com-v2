@@ -63,55 +63,66 @@
 		</header>
 		<div id="home">
 			<section class="hello">
-				<h1>
+				<h1 data-sal-duration="400" data-sal="slide-left" data-sal-delay="100"
+					data-sal-easing="ease-out-bounce">
 					<em>H&#61442;&#61445;&#61445;O</em><br />
 					JE SUIS &#61444;U&#61449;&#61458;IN&#61442; FOR&#61458;I&#61442;R
 				</h1>
-				<span class="subtitle">et je suis graphiste illustratrice</span>
+				<div class="subtitle" data-sal-duration="600" data-sal="slide-right" data-sal-delay="300"
+					data-sal-easing="ease-out-bounce">
+					<span>et je suis graphiste illustratrice</span></div>
 
 				<div class="scrolldown">
-					<div class="scroll-line"></div>
-					<p>Scrolldown</p>
+					<div class="scroll-line" data-sal-duration="1000" data-sal="slide-up" data-sal-delay="700"
+						data-sal-easing="ease-out-bounce"></div>
+					<p data-sal-duration="1000" data-sal="fade" data-sal-delay="700" data-sal-easing="ease-out-bounce">
+						Scrolldown</p>
 				</div>
-
 			</section>
 		</div>
 
 		<script src="./js/menu.js"></script>
 
 		<div id="about-me">
-			<h2>À PROPOS</h2>
-			<img src="./resources/portfolio/pygoscelis_adeliae/pygoscelis_adeliae.jpg" alt="">
+			<h2>À propos</h2>
+			<img src="./resources/portfolio/pygoscelis_adeliae/pygoscelis_adeliae.jpg" alt="" data-sal-duration="600"
+				data-sal="slide-left" data-sal-delay="300" data-sal-easing="ease-out-bounce">
 		</div>
 
 		<div id="works">
+			<h2>Projets</h2>
+			<img src="./resources/portfolio/pygoscelis_adeliae/pygoscelis_adeliae.jpg" alt="" data-sal-duration="600"
+				data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease-out-bounce">
 
 		</div>
 
-		<div id="contact">
-			<h2>Contact</h2>
-			<p><a href="mailto:fortier.justine@gmail.com"><button id="mail-button" type="button">Envoyer un
-						e-mail</button></a></p>
+	</div>
+
+
+
+	<div id="contact">
+		<h2>Contact</h2>
+		<p><a href="mailto:fortier.justine@gmail.com"><button id="mail-button" type="button">Envoyer un
+					e-mail</button></a></p>
+	</div>
+	<div id="footer">
+		<div id="right-footer">
+			<p>Conception et réalisation Justine Fortier <br> © Copyright 2019 Justine Fortier | Tous droits
+				réservés</p>
 		</div>
-		<div id="footer">
-			<div id="right-footer">
-				<p>Conception et réalisation Justine Fortier <br> © Copyright 2019 Justine Fortier | Tous droits
-					réservés</p>
-			</div>
-			<div id="left-footer">
-				<p>Me suivre</p>
-				<p>
-					<ul>
-						<li id="linkedin"><a href="https://www.linkedin.com/in/justine-fortier/"><svg
-									viewBox="-10 -10 535 535" xmlns="https://www.w3.org/2000/svg">
-									<path
-										d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm-74.390625 387h-62.347656v-187.574219h62.347656zm-31.171875-213.1875h-.40625c-20.921875 0-34.453125-14.402344-34.453125-32.402344 0-18.40625 13.945313-32.410156 35.273437-32.410156 21.328126 0 34.453126 14.003906 34.859376 32.410156 0 18-13.53125 32.402344-35.273438 32.402344zm255.984375 213.1875h-62.339844v-100.347656c0-25.21875-9.027343-42.417969-31.585937-42.417969-17.222656 0-27.480469 11.601563-31.988282 22.800781-1.648437 4.007813-2.050781 9.609375-2.050781 15.214844v104.75h-62.34375s.816407-169.976562 0-187.574219h62.34375v26.558594c8.285157-12.78125 23.109375-30.960937 56.1875-30.960937 41.019531 0 71.777344 26.808593 71.777344 84.421874zm0 0" />
-								</svg></a></li>
-						<li id="github"><a href="https://github.com/justinefortier"><svg
-									xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"
-									viewBox="-10 -10 460 460" style="enable-background:new 0 0 438.549 438.549;"
-									xml:space="preserve">
-									<path d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365
+		<div id="left-footer">
+			<p>Me suivre</p>
+			<p>
+				<ul>
+					<li id="linkedin"><a href="https://www.linkedin.com/in/justine-fortier/"><svg
+								viewBox="-10 -10 535 535" xmlns="https://www.w3.org/2000/svg">
+								<path
+									d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm-74.390625 387h-62.347656v-187.574219h62.347656zm-31.171875-213.1875h-.40625c-20.921875 0-34.453125-14.402344-34.453125-32.402344 0-18.40625 13.945313-32.410156 35.273437-32.410156 21.328126 0 34.453126 14.003906 34.859376 32.410156 0 18-13.53125 32.402344-35.273438 32.402344zm255.984375 213.1875h-62.339844v-100.347656c0-25.21875-9.027343-42.417969-31.585937-42.417969-17.222656 0-27.480469 11.601563-31.988282 22.800781-1.648437 4.007813-2.050781 9.609375-2.050781 15.214844v104.75h-62.34375s.816407-169.976562 0-187.574219h62.34375v26.558594c8.285157-12.78125 23.109375-30.960937 56.1875-30.960937 41.019531 0 71.777344 26.808593 71.777344 84.421874zm0 0" />
+							</svg></a></li>
+					<li id="github"><a href="https://github.com/justinefortier"><svg xmlns="https://www.w3.org/2000/svg"
+								xmlns:xlink="https://www.w3.org/1999/xlink" viewBox="-10 -10 460 460"
+								style="enable-background:new 0 0 438.549 438.549;" xml:space="preserve">
+								<path d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365
 					   c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63
 					   c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996
 					   c2.475-2.282,3.711-5.14,3.711-8.562c0-0.571-0.049-5.708-0.144-15.417c-0.098-9.709-0.144-18.179-0.144-25.406l-6.567,1.136
@@ -131,16 +142,20 @@
 					   c9.894,8.562,14.842,22.077,14.842,40.539v60.237c0,3.422,1.19,6.279,3.572,8.562c2.379,2.279,6.136,2.95,11.276,1.995
 					   c44.163-14.653,80.185-41.062,108.068-79.226c27.88-38.161,41.825-81.126,41.825-128.906
 					   C438.536,184.851,428.728,148.168,409.132,114.573z" />
-								</svg></a></li>
-					</ul>
-				</p>
-			</div>
+							</svg></a></li>
+				</ul>
+			</p>
 		</div>
+	</div>
 	</div>
 
 	<script src="./node_modules/sal.js/dist/sal.js"></script>
 	<script>
-		sal();
+		// sal();
+		sal({
+			threshold: 0.5,
+			once: false,
+		});
 	</script>
 </body>
 
