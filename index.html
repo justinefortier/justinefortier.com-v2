@@ -26,40 +26,44 @@
 	<script src="./js/libraries/p5.js"></script>
 	<script src="./js/libraries/p5.dom.js"></script>
 	<!-- <script src="./libraries/p5.sound.js"></script> -->
-	<script src="./js/background.js"></script>
+
+
 
 </head>
 
+
 <body>
+
+	<script src="./js/background.js"></script>
 	<div id="content">
-		<div id="nav">
-			<nav id="overlay">
+		<!-- <div id="nav"> -->
+		<!-- <nav id="overlay">
 				<img src="./images/svg/close.svg" class="close-btn" id="close-menu" alt="Close menu" />
 
 				<ul>
 					<li>
 						<a href="#home">ACCUEIL</a>
-						<!-- <span></span> -->
+						 <span></span>
 					</li>
 					<li>
 						<a href="#about">À PROPOS</a>
-						<!-- <span></span> -->
+						 <span></span>
 					</li>
 					<li>
 						<a href="#gallery">GALERIE</a>
-						<!-- <span></span> -->
+						 <span></span>
 					</li>
 					<li>
 						<a href="#contact">CONTACT</a>
-						<!-- <span></span> -->
+						 <span></span>
 					</li>
 				</ul>
-			</nav>
-		</div>
+			</nav> -->
+		<!-- </div> -->
 
 		<header>
 			<!-- <a href="#" class="logo">JUSTINE FORTIER</a> -->
-			<img src="./images/svg/menu.svg" class="menu-btn" id="open-menu" alt="Menu button" />
+			<!-- <img src="./images/svg/menu.svg" class="menu-btn" id="open-menu" alt="Menu button" /> -->
 		</header>
 		<div id="home">
 			<section class="hello">
@@ -70,7 +74,7 @@
 				</h1>
 				<div class="subtitle" data-sal-duration="600" data-sal="slide-right" data-sal-delay="300"
 					data-sal-easing="ease-out-bounce">
-					<span>et je suis graphiste illustratrice</span></div>
+					<span>et je suis graphiste illustratrice multimédia</span></div>
 
 				<div class="scrolldown">
 					<div class="scroll-line" data-sal-duration="1000" data-sal="slide-up" data-sal-delay="700"
@@ -81,18 +85,48 @@
 			</section>
 		</div>
 
-		<script src="./js/menu.js"></script>
+		<!-- <script src="./js/menu.js"></script> -->
 
 		<div id="about-me">
-			<h2>À propos</h2>
-			<img src="./resources/portfolio/pygoscelis_adeliae/pygoscelis_adeliae.jpg" alt="" data-sal-duration="1000"
-				data-sal="slide-left" data-sal-delay="100" data-sal-easing="ease-out-bounce">
+			<h2>A propos</h2>
+			<!-- <img src="./resources/portfolio/pygoscelis_adeliae/pygoscelis_adeliae.jpg" alt="" data-sal-duration="1000"
+				data-sal="slide-left" data-sal-delay="100" data-sal-easing="ease-out-bounce"> -->
 		</div>
 
-		<div id="works">
-			<h2>Projets</h2>
-			<img src="./resources/portfolio/pygoscelis_adeliae/pygoscelis_adeliae.jpg" alt="" data-sal-duration="1000"
-				data-sal="slide-right" data-sal-delay="100" data-sal-easing="ease-out-bounce">
+		<div class="works">
+			<div class="row">
+				<div class="col-left">
+					<ul>
+						<li><a href="#">work1</a></li>
+						<li><a href="#">work2</a></li>
+						<li><a href="#">work3</a></li>
+						<li><a href="#">work4</a></li>
+					</ul>
+				</div>
+				<div class="col-right">
+					<p>Hello coucou</p>
+				</div>
+			</div>
+			<!-- <script language="javascript">
+				let bgImage = ["./resources/portfolio/modulations/modulations-01.jpg",
+					"./resources/portfolio/modulations/modulations-02.jpg",
+					"./resources/portfolio/modulations/modulations-03.jpg"
+				];
+
+
+				function changeBg(imgIndex) {
+					if (document.body) {
+						document.body.background = bgImage[imgIndex];
+					}
+				}
+			</script> -->
+
+			<!-- <h2>Projets</h2>
+
+			<a href="#" onMouseOver="javascript:changeBGImage(2)">Change</a> -->
+
+
+
 
 		</div>
 
@@ -151,11 +185,11 @@
 
 	<script src="./node_modules/sal.js/dist/sal.js"></script>
 	<script>
-		// sal();
-		sal({
-			threshold: 0.5,
-			once: false,
-		});
+		sal();
+		// sal({
+		// 	threshold: 0.5,
+		// 	once: false,
+		// });
 	</script>
 </body>
 
