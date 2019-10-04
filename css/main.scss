@@ -92,7 +92,7 @@ html {
     font-family: "Montserrat", serif;
     color: var(--light);
     margin: 0;
-    // overflow-x: hidden;
+    overflow-x: hidden;
 
     a {
       text-decoration: none;
@@ -190,32 +190,32 @@ html {
     font-weight: 200;
     color: var(--light);
     font-size: 1.8em;
-    margin: 0 0 0 11em;
+    margin: 0 0 0 10em;
   }
 
-  .scrolldown {
-    .scroll-line {
-      width: 2px;
-      background: var(--light);
-      position: absolute;
-      height: 70px;
-      left: 50px;
-      bottom: 0;
-    }
+  // .scrolldown {
+  //   .scroll-line {
+  //     width: 2px;
+  //     background: var(--light);
+  //     position: absolute;
+  //     height: 70px;
+  //     left: 50px;
+  //     bottom: 0;
+  //   }
 
-    p {
-      margin: 0;
-      line-height: 0;
-      position: absolute;
-      font-size: 0.9em;
-      bottom: 90px;
-      left: 51px;
-      writing-mode: vertical-lr;
-      transform: rotate(180deg);
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-    }
-  }
+  //   p {
+  //     margin: 0;
+  //     line-height: 0;
+  //     position: absolute;
+  //     font-size: 0.9em;
+  //     bottom: 90px;
+  //     left: 51px;
+  //     writing-mode: vertical-lr;
+  //     transform: rotate(180deg);
+  //     text-transform: uppercase;
+  //     letter-spacing: 0.2em;
+  //   }
+  // }
 }
 
 ///////// NAVIGATION /////////
@@ -439,7 +439,7 @@ html {
 
     .col-left {
       position: relative;
-      padding: 9em 10em 2em 4em;
+      padding: 9em 2em 2em 4em;
 
       p {
         font-family: "Montserrat", sans-serif;
@@ -453,7 +453,6 @@ html {
 
       a {
         font-family: "Montserrat", sans-serif;
-        // font-size: 1em;
         font-weight: 400;
         text-transform: uppercase;
         color: var(--light);
@@ -467,6 +466,12 @@ html {
             rgba(255, 255, 255, 0) 50%,
             var(--primary) 50%);
         transition: all 500ms ease-out;
+
+        span {
+          opacity: 0;
+          font-weight: 200;
+          text-transform: lowercase;
+        }
       }
 
       a:hover {
@@ -474,93 +479,162 @@ html {
         padding: 6px 8px;
         color: var(--light);
 
+        span {
+          opacity: 1;
+          -webkit-transition: opacity .8s ease-in-out;
+          -moz-transition: opacity .8s ease-in-out;
+          -o-transition: opacity .8s ease-in-out;
+          -ms-transition: opacity .8s ease-in-out;
+        }
+      }
 
+      a:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0;
+      }
+
+      a:hover:before {
+        opacity: 1;
+        color: rgb(233, 160, 80);
+      }
+
+      .link11:hover:before {
+        // background-image: linear-gradient(to left, rgba(233, 160, 80, .1), rgba(233, 160, 80, 1)), url(../resources/portfolio/modulations/modulations-01.jpg);
+        background-image: url(../resources/portfolio/modulations/modulations-01.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -o-transition: opacity .5s ease-in-out;
+        -ms-transition: opacity .5s ease-in-out;
+      }
+
+      .link10:hover:before {
+        background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -o-transition: opacity .5s ease-in-out;
+        -ms-transition: opacity .5s ease-in-out;
+      }
+
+      .link9:hover:before {
+        background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -o-transition: opacity .5s ease-in-out;
+        -ms-transition: opacity .5s ease-in-out;
+      }
+
+      .link8:hover:before {
+        background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -o-transition: opacity .5s ease-in-out;
+        -ms-transition: opacity .5s ease-in-out;
+      }
+
+      .link7:hover:before {
+        background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -o-transition: opacity .5s ease-in-out;
+        -ms-transition: opacity .5s ease-in-out;
+      }
+
+      .link6:hover:before {
+        background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -o-transition: opacity .5s ease-in-out;
+        -ms-transition: opacity .5s ease-in-out;
+      }
+
+      .link5:hover:before {
+        background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -o-transition: opacity .5s ease-in-out;
+        -ms-transition: opacity .5s ease-in-out;
+      }
+
+      .link4:hover:before {
+        background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -o-transition: opacity .5s ease-in-out;
+        -ms-transition: opacity .5s ease-in-out;
+      }
+
+      .link3:hover:before {
+        background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -o-transition: opacity .5s ease-in-out;
+        -ms-transition: opacity .5s ease-in-out;
+      }
+
+      .link2:hover:before {
+        background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -o-transition: opacity .5s ease-in-out;
+        -ms-transition: opacity .5s ease-in-out;
+      }
+
+      .link1:hover:before {
+        background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -o-transition: opacity .5s ease-in-out;
+        -ms-transition: opacity .5s ease-in-out;
       }
 
       span {
         padding: 0 8px;
       }
-
     }
 
-    // p:hover {
-    //   background-position: -100% 0;
-    //   padding: 6px 8px;
-    //   color: var(--light);
-    // }
 
-    p:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 100%;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      opacity: 0;
-    }
-
-    p:hover:before {
-      opacity: 1;
-    }
-
-    .link11:hover:before {
-      background-image: url(../resources/portfolio/modulations/modulations-01.jpg);
-    }
-
-    .link10:hover:before {
-      background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
-    }
-
-    .link9:hover:before {
-      background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
-    }
-
-    .link8:hover:before {
-      background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
-    }
-
-    .link7:hover:before {
-      background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
-    }
-
-    .link6:hover:before {
-      background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
-    }
-
-    .link5:hover:before {
-      background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
-    }
-
-    .link4:hover:before {
-      background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
-    }
-
-    .link3:hover:before {
-      background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
-    }
-
-    .link2:hover:before {
-      background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
-    }
-
-    .link1:hover:before {
-      background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
-    }
   }
 }
 
-.col-right {
-  position: relative;
-  padding: 50px;
-  box-sizing: border-box;
+// .col-right {
+//   position: relative;
+//   padding: 50px;
+//   box-sizing: border-box;
 
-  p {
-    position: relative;
-    font-size: 30px;
-    z-index: 2;
-  }
-}
+//   p {
+//     position: relative;
+//     font-size: 30px;
+//     z-index: 2;
+//   }
+// }
 
 ////////// CONTACT //////////
 
