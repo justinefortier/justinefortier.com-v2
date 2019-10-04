@@ -244,7 +244,7 @@ html body button:hover {
 
 .works .row .col-left {
   position: relative;
-  padding: 9em 2em 2em 4em;
+  padding: 11em 4em 3em 4em;
 }
 
 .works .row .col-left p {
@@ -254,7 +254,7 @@ html body button:hover {
   color: var(--light);
   line-height: 1.2em;
   margin: 0;
-  padding: .4em;
+  padding: .2em 0;
 }
 
 .works .row .col-left a {
@@ -306,10 +306,10 @@ html body button:hover {
 
 .works .row .col-left a:hover:before {
   opacity: 1;
-  color: #e9a050;
 }
 
 .works .row .col-left .link11:hover:before {
+  z-index: 2;
   background-image: url(../resources/portfolio/modulations/modulations-01.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -320,6 +320,7 @@ html body button:hover {
 }
 
 .works .row .col-left .link10:hover:before {
+  z-index: 2;
   background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -330,6 +331,7 @@ html body button:hover {
 }
 
 .works .row .col-left .link9:hover:before {
+  z-index: 2;
   background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -340,6 +342,7 @@ html body button:hover {
 }
 
 .works .row .col-left .link8:hover:before {
+  z-index: 2;
   background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -350,6 +353,7 @@ html body button:hover {
 }
 
 .works .row .col-left .link7:hover:before {
+  z-index: 2;
   background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -360,6 +364,7 @@ html body button:hover {
 }
 
 .works .row .col-left .link6:hover:before {
+  z-index: 2;
   background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -370,6 +375,7 @@ html body button:hover {
 }
 
 .works .row .col-left .link5:hover:before {
+  z-index: 2;
   background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -380,6 +386,7 @@ html body button:hover {
 }
 
 .works .row .col-left .link4:hover:before {
+  z-index: 2;
   background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -390,6 +397,7 @@ html body button:hover {
 }
 
 .works .row .col-left .link3:hover:before {
+  z-index: 2;
   background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -400,6 +408,7 @@ html body button:hover {
 }
 
 .works .row .col-left .link2:hover:before {
+  z-index: 2;
   background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -410,6 +419,7 @@ html body button:hover {
 }
 
 .works .row .col-left .link1:hover:before {
+  z-index: 2;
   background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -421,6 +431,11 @@ html body button:hover {
 
 .works .row .col-left span {
   padding: 0 8px;
+}
+
+.works .row .col-right {
+  z-index: 1;
+  background-image: url(../resources/portfolio/cartographies/paris.jpg);
 }
 
 #contact {
