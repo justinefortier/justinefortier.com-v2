@@ -160,7 +160,7 @@ html {
     "footer";
   grid-template-columns: 1fr;
   // grid-template-rows: minmax(auto, 680px) auto auto auto auto;
-  grid-template-rows: 100vh 450px auto auto auto;
+  grid-template-rows: 100vh auto auto auto auto;
 }
 
 //////////// HOME ////////////
@@ -390,22 +390,50 @@ html {
   grid-area: aboutme;
   position: relative;
   background-color: var(--light);
+  display: grid;
+  grid-template-areas:
+    "colleft colright";
+  grid-template-columns: 54% 46%;
 
-  h2 {
-    color: var(--primary);
-    position: absolute;
-    margin: 0;
-    top: -5px;
-    right: 50px;
-    font-size: 10em;
+  .aboutme-col-left {
+    grid-area: colleft;
+
   }
 
-  img {
-    position: absolute;
-    height: 100%;
-    right: 0;
-    top: 0;
-    width: 50%;
+  .aboutme-col-right {
+    grid-area: colright;
+
+    h2 {
+      color: var(--primary);
+      position: absolute;
+      margin: 0;
+      top: -5px;
+      font-size: 10em;
+    }
+
+    .presentation {
+      margin-top: 14em;
+      margin-bottom: 8em;
+
+      p {
+        color: var(--primary);
+        font-size: 1.4em;
+      }
+
+      button {
+        width: 13em;
+        background: var(--primary);
+        font-size: 0.8rem;
+        color: var(--light);
+        margin-top: 2em;
+        border-radius: 50px;
+      }
+
+      button:hover {
+        background-color: var(--secondary);
+        color: var(--light);
+      }
+    }
   }
 }
 
@@ -505,7 +533,6 @@ html {
 
       .link11:hover:before {
         z-index: 2;
-        // background-image: linear-gradient(to left, rgba(233, 160, 80, .1), rgba(233, 160, 80, 1)), url(../resources/portfolio/modulations/modulations-01.jpg);
         background-image: url(../resources/portfolio/modulations/modulations-01.jpg);
         background-size: cover;
         background-repeat: no-repeat;

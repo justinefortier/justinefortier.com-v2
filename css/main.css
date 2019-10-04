@@ -126,8 +126,8 @@ html body button:hover {
       grid-template-areas: "home" "aboutme" "works" "contact" "footer";
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 100vh 450px auto auto auto;
-      grid-template-rows: 100vh 450px auto auto auto;
+  -ms-grid-rows: 100vh auto auto auto auto;
+      grid-template-rows: 100vh auto auto auto auto;
 }
 
 #home {
@@ -192,23 +192,55 @@ html body button:hover {
   grid-area: aboutme;
   position: relative;
   background-color: var(--light);
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "colleft colright";
+  -ms-grid-columns: 54% 46%;
+      grid-template-columns: 54% 46%;
 }
 
-#about-me h2 {
+#about-me .aboutme-col-left {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: colleft;
+}
+
+#about-me .aboutme-col-right {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: colright;
+}
+
+#about-me .aboutme-col-right h2 {
   color: var(--primary);
   position: absolute;
   margin: 0;
   top: -5px;
-  right: 50px;
   font-size: 10em;
 }
 
-#about-me img {
-  position: absolute;
-  height: 100%;
-  right: 0;
-  top: 0;
-  width: 50%;
+#about-me .aboutme-col-right .presentation {
+  margin-top: 14em;
+  margin-bottom: 8em;
+}
+
+#about-me .aboutme-col-right .presentation p {
+  color: var(--primary);
+  font-size: 1.4em;
+}
+
+#about-me .aboutme-col-right .presentation button {
+  width: 13em;
+  background: var(--primary);
+  font-size: 0.8rem;
+  color: var(--light);
+  margin-top: 2em;
+  border-radius: 50px;
+}
+
+#about-me .aboutme-col-right .presentation button:hover {
+  background-color: var(--secondary);
+  color: var(--light);
 }
 
 .works {
