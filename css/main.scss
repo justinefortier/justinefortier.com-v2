@@ -193,29 +193,29 @@ html {
     margin: 0 0 0 10em;
   }
 
-  // .scrolldown {
-  //   .scroll-line {
-  //     width: 2px;
-  //     background: var(--light);
-  //     position: absolute;
-  //     height: 70px;
-  //     left: 50px;
-  //     bottom: 0;
-  //   }
+  .scrolldown {
+    .scroll-line {
+      width: 2px;
+      background: var(--light);
+      position: absolute;
+      height: 70px;
+      left: 50px;
+      bottom: 0;
+    }
 
-  //   p {
-  //     margin: 0;
-  //     line-height: 0;
-  //     position: absolute;
-  //     font-size: 0.9em;
-  //     bottom: 90px;
-  //     left: 51px;
-  //     writing-mode: vertical-lr;
-  //     transform: rotate(180deg);
-  //     text-transform: uppercase;
-  //     letter-spacing: 0.2em;
-  //   }
-  // }
+    p {
+      margin: 0;
+      line-height: 0;
+      position: absolute;
+      font-size: 0.9em;
+      bottom: 90px;
+      left: 51px;
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+    }
+  }
 }
 
 ///////// NAVIGATION /////////
@@ -481,10 +481,10 @@ html {
 
         span {
           opacity: 1;
-          -webkit-transition: opacity .8s ease-in-out;
-          -moz-transition: opacity .8s ease-in-out;
-          -o-transition: opacity .8s ease-in-out;
-          -ms-transition: opacity .8s ease-in-out;
+          -webkit-transition: opacity 1.2s ease-in-out;
+          -moz-transition: opacity 1.2s ease-in-out;
+          -o-transition: opacity 1.2s ease-in-out;
+          -ms-transition: opacity 1.2s ease-in-out;
         }
       }
 

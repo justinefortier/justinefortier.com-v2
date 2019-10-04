@@ -161,6 +161,31 @@ html body button:hover {
   margin: 0 0 0 10em;
 }
 
+.hello .scrolldown .scroll-line {
+  width: 2px;
+  background: var(--light);
+  position: absolute;
+  height: 70px;
+  left: 50px;
+  bottom: 0;
+}
+
+.hello .scrolldown p {
+  margin: 0;
+  line-height: 0;
+  position: absolute;
+  font-size: 0.9em;
+  bottom: 90px;
+  left: 51px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
 #about-me {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -262,10 +287,10 @@ html body button:hover {
 
 .works .row .col-left a:hover span {
   opacity: 1;
-  -webkit-transition: opacity .8s ease-in-out;
-  -moz-transition: opacity .8s ease-in-out;
-  -o-transition: opacity .8s ease-in-out;
-  -ms-transition: opacity .8s ease-in-out;
+  -webkit-transition: opacity 1.2s ease-in-out;
+  -moz-transition: opacity 1.2s ease-in-out;
+  -o-transition: opacity 1.2s ease-in-out;
+  -ms-transition: opacity 1.2s ease-in-out;
 }
 
 .works .row .col-left a:before {
