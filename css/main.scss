@@ -391,13 +391,11 @@ html {
   position: relative;
   background-color: var(--light);
   display: grid;
-  grid-template-areas:
-    "colleft colright";
+  grid-template-areas: "colleft colright";
   grid-template-columns: 54% 46%;
 
   .aboutme-col-left {
     grid-area: colleft;
-
   }
 
   .aboutme-col-right {
@@ -446,12 +444,11 @@ html {
   width: 100%;
 
   h2 {
-
     color: var(--light);
     position: absolute;
     margin: 0;
     top: -5px;
-    left: .4em;
+    left: 0.4em;
     font-size: 10em;
   }
 
@@ -476,7 +473,7 @@ html {
         color: var(--light);
         line-height: 1.2em;
         margin: 0;
-        padding: .2em 0;
+        padding: 0.2em 0;
       }
 
       a {
@@ -490,9 +487,11 @@ html {
         padding: 6px 8px;
         background-size: 200% auto;
         background-position: 0 0;
-        background-image: linear-gradient(to right,
-            rgba(255, 255, 255, 0) 50%,
-            var(--primary) 50%);
+        background-image: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0) 50%,
+          var(--primary) 50%
+        );
         transition: all 500ms ease-out;
 
         span {
@@ -517,7 +516,7 @@ html {
       }
 
       a:before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 100%;
@@ -533,123 +532,123 @@ html {
 
       .link11:hover:before {
         z-index: 2;
-        background-image: url(../resources/portfolio/modulations/modulations-01.jpg);
+        background-image: url(../resources/previsualisation/jr_automobile.png);
         background-size: cover;
         background-repeat: no-repeat;
-        -webkit-transition: opacity .5s ease-in-out;
-        -moz-transition: opacity .5s ease-in-out;
-        -o-transition: opacity .5s ease-in-out;
-        -ms-transition: opacity .5s ease-in-out;
+        -webkit-transition: opacity 0.2s ease-in-out;
+        -moz-transition: opacity 0.2s ease-in-out;
+        -o-transition: opacity 0.2s ease-in-out;
+        -ms-transition: opacity 0.2s ease-in-out;
       }
 
       .link10:hover:before {
         z-index: 2;
-        background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
+        background-image: url(../resources/previsualisation/jubbew.png);
         background-size: cover;
         background-repeat: no-repeat;
-        -webkit-transition: opacity .5s ease-in-out;
-        -moz-transition: opacity .5s ease-in-out;
-        -o-transition: opacity .5s ease-in-out;
-        -ms-transition: opacity .5s ease-in-out;
+        -webkit-transition: opacity 0.2s ease-in-out;
+        -moz-transition: opacity 0.2s ease-in-out;
+        -o-transition: opacity 0.2s ease-in-out;
+        -ms-transition: opacity 0.2s ease-in-out;
       }
 
       .link9:hover:before {
         z-index: 2;
-        background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
+        background-image: url(../resources/previsualisation/codestrata.png);
         background-size: cover;
         background-repeat: no-repeat;
-        -webkit-transition: opacity .5s ease-in-out;
-        -moz-transition: opacity .5s ease-in-out;
-        -o-transition: opacity .5s ease-in-out;
-        -ms-transition: opacity .5s ease-in-out;
+        -webkit-transition: opacity 0.2s ease-in-out;
+        -moz-transition: opacity 0.2s ease-in-out;
+        -o-transition: opacity 0.2s ease-in-out;
+        -ms-transition: opacity 0.2s ease-in-out;
       }
 
       .link8:hover:before {
         z-index: 2;
-        background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
+        background-image: url(../resources/previsualisation/modulations.png);
         background-size: cover;
         background-repeat: no-repeat;
-        -webkit-transition: opacity .5s ease-in-out;
-        -moz-transition: opacity .5s ease-in-out;
-        -o-transition: opacity .5s ease-in-out;
-        -ms-transition: opacity .5s ease-in-out;
+        -webkit-transition: opacity 0.5s ease-in-out;
+        -moz-transition: opacity 0.5s ease-in-out;
+        -o-transition: opacity 0.5s ease-in-out;
+        -ms-transition: opacity 0.5s ease-in-out;
       }
 
       .link7:hover:before {
         z-index: 2;
-        background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
+        background-image: url(../resources/previsualisation/talkingspeakers.png);
         background-size: cover;
         background-repeat: no-repeat;
-        -webkit-transition: opacity .5s ease-in-out;
-        -moz-transition: opacity .5s ease-in-out;
-        -o-transition: opacity .5s ease-in-out;
-        -ms-transition: opacity .5s ease-in-out;
+        -webkit-transition: opacity 0.5s ease-in-out;
+        -moz-transition: opacity 0.5s ease-in-out;
+        -o-transition: opacity 0.5s ease-in-out;
+        -ms-transition: opacity 0.5s ease-in-out;
       }
 
       .link6:hover:before {
         z-index: 2;
-        background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
+        background-image: url(../resources/previsualisation/ondes_sonores.png);
         background-size: cover;
         background-repeat: no-repeat;
-        -webkit-transition: opacity .5s ease-in-out;
-        -moz-transition: opacity .5s ease-in-out;
-        -o-transition: opacity .5s ease-in-out;
-        -ms-transition: opacity .5s ease-in-out;
+        -webkit-transition: opacity 0.5s ease-in-out;
+        -moz-transition: opacity 0.5s ease-in-out;
+        -o-transition: opacity 0.5s ease-in-out;
+        -ms-transition: opacity 0.5s ease-in-out;
       }
 
       .link5:hover:before {
         z-index: 2;
-        background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
+        background-image: url(../resources/previsualisation/untitled.png);
         background-size: cover;
         background-repeat: no-repeat;
-        -webkit-transition: opacity .5s ease-in-out;
-        -moz-transition: opacity .5s ease-in-out;
-        -o-transition: opacity .5s ease-in-out;
-        -ms-transition: opacity .5s ease-in-out;
+        -webkit-transition: opacity 0.5s ease-in-out;
+        -moz-transition: opacity 0.5s ease-in-out;
+        -o-transition: opacity 0.5s ease-in-out;
+        -ms-transition: opacity 0.5s ease-in-out;
       }
 
-      .link4:hover:before {
-        z-index: 2;
-        background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        -webkit-transition: opacity .5s ease-in-out;
-        -moz-transition: opacity .5s ease-in-out;
-        -o-transition: opacity .5s ease-in-out;
-        -ms-transition: opacity .5s ease-in-out;
-      }
+      // .link4:hover:before {
+      //   z-index: 2;
+      //   background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
+      //   background-size: cover;
+      //   background-repeat: no-repeat;
+      //   -webkit-transition: opacity 0.5s ease-in-out;
+      //   -moz-transition: opacity 0.5s ease-in-out;
+      //   -o-transition: opacity 0.5s ease-in-out;
+      //   -ms-transition: opacity 0.5s ease-in-out;
+      // }
 
       .link3:hover:before {
         z-index: 2;
-        background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
+        background-image: url(../resources/previsualisation/structures.png);
         background-size: cover;
         background-repeat: no-repeat;
-        -webkit-transition: opacity .5s ease-in-out;
-        -moz-transition: opacity .5s ease-in-out;
-        -o-transition: opacity .5s ease-in-out;
-        -ms-transition: opacity .5s ease-in-out;
+        -webkit-transition: opacity 0.5s ease-in-out;
+        -moz-transition: opacity 0.5s ease-in-out;
+        -o-transition: opacity 0.5s ease-in-out;
+        -ms-transition: opacity 0.5s ease-in-out;
       }
 
       .link2:hover:before {
         z-index: 2;
-        background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
+        background-image: url(../resources/previsualisation/panthera_tigris.png);
         background-size: cover;
         background-repeat: no-repeat;
-        -webkit-transition: opacity .5s ease-in-out;
-        -moz-transition: opacity .5s ease-in-out;
-        -o-transition: opacity .5s ease-in-out;
-        -ms-transition: opacity .5s ease-in-out;
+        -webkit-transition: opacity 0.5s ease-in-out;
+        -moz-transition: opacity 0.5s ease-in-out;
+        -o-transition: opacity 0.5s ease-in-out;
+        -ms-transition: opacity 0.5s ease-in-out;
       }
 
       .link1:hover:before {
         z-index: 2;
-        background-image: url(../resources/portfolio/modulations/modulations-02.jpg);
+        background-image: url(../resources/previsualisation/animaux.png);
         background-size: cover;
         background-repeat: no-repeat;
-        -webkit-transition: opacity .5s ease-in-out;
-        -moz-transition: opacity .5s ease-in-out;
-        -o-transition: opacity .5s ease-in-out;
-        -ms-transition: opacity .5s ease-in-out;
+        -webkit-transition: opacity 0.5s ease-in-out;
+        -moz-transition: opacity 0.5s ease-in-out;
+        -o-transition: opacity 0.5s ease-in-out;
+        -ms-transition: opacity 0.5s ease-in-out;
       }
 
       span {
@@ -659,7 +658,9 @@ html {
 
     .col-right {
       z-index: 1;
-      background-image: url(../resources/portfolio/cartographies/paris.jpg);
+      background-image: url(../resources/previsualisation/previsualisation.png);
+      background-size: cover;
+      background-repeat: no-repeat;
     }
   }
 }
