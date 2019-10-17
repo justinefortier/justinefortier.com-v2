@@ -532,6 +532,11 @@ html body button:hover {
   padding: 0;
 }
 
+#footer #left-footer ul a:link,
+#footer #left-footer ul a:visited {
+  color: var(--light);
+}
+
 #footer #left-footer li {
   cursor: pointer;
 }

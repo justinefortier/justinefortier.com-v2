@@ -538,6 +538,11 @@ html {
       list-style-type: none;
       display: flex;
       padding: 0;
+
+      a:link,
+      a:visited {
+        color: var(--light);
+      }
     }
 
     li {
@@ -584,7 +589,6 @@ html {
 
     .socicon:hover {
       color: #121b35;
-      // border: none;
       background-color: #f3f3f3;
       transition: all 500ms ease-out;
     }
