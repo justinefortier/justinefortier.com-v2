@@ -78,22 +78,22 @@ html body a {
 
 html body h1 {
   font-family: "jubbew-semibold";
-  font-size: 4em;
+  font-size: 70px;
 }
 
 html body h2 {
-  font-family: "jubbew-bold";
-  color: var(--light-blue);
-  font-size: 3em;
-  letter-spacing: 0.1em;
+  font-family: "jubbew-semibold";
+  margin: 0;
+  font-size: 170px;
+  letter-spacing: 7px;
 }
 
 html body p {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.1em;
+  font-size: 20px;
   font-weight: 300;
   text-align: left;
-  line-height: 1.7em;
+  line-height: 37px;
 }
 
 html body #buttons {
@@ -101,17 +101,17 @@ html body #buttons {
 }
 
 html body button {
-  width: 18em;
-  height: 3em;
+  width: 270px;
+  height: 50px;
   background: none;
   font-family: "Montserrat", sans-serif;
-  font-size: 0.8em;
-  border: 0.15em solid var(--light);
+  font-size: 15px;
+  border: 1px solid var(--light);
   color: var(--light);
   text-transform: uppercase;
   font-weight: 400;
-  letter-spacing: 0.1em;
-  margin-top: 2.1em;
+  letter-spacing: 3px;
+  margin-top: 10px;
 }
 
 html body button:hover {
@@ -136,32 +136,32 @@ html body button:hover {
   grid-area: home;
 }
 
-.hello {
-  padding: 4em;
+.home-hello {
+  padding: 40px;
 }
 
-.hello h1 {
+.home-hello h1 {
   color: var(--secondary);
-  margin: 3.5em 0 0 3em;
-  line-height: 1.3em;
+  margin: 230px 0 0 200px;
+  line-height: 80px;
 }
 
-.hello h1 em {
+.home-hello h1 em {
   font-family: "jubbew-bold", sans-serif;
   font-style: normal;
-  font-size: 3.5em;
-  margin: 0 0 0 -0.03em;
+  font-size: 230px;
+  margin: 0 0 0 -7px;
 }
 
-.hello span {
+.home-hello span {
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
   color: var(--light);
-  font-size: 1.8em;
-  margin: 0 0 0 10em;
+  font-size: 30px;
+  margin: -20px 0 0 300px;
 }
 
-.hello .scrolldown .scroll-line {
+.home-hello .home-scrolldown .scroll-line {
   width: 2px;
   background: var(--light);
   position: absolute;
@@ -170,11 +170,11 @@ html body button:hover {
   bottom: 0;
 }
 
-.hello .scrolldown p {
+.home-hello .home-scrolldown p {
   margin: 0;
   line-height: 0;
   position: absolute;
-  font-size: 0.9em;
+  font-size: 12px;
   bottom: 90px;
   left: 51px;
   -webkit-writing-mode: vertical-lr;
@@ -183,7 +183,7 @@ html body button:hover {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 4px;
 }
 
 #about-me {
@@ -220,34 +220,30 @@ html body button:hover {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: colright;
-  margin-top: 4em;
+  margin-top: 90px;
 }
 
 #about-me .aboutme-col-right h2 {
   color: var(--primary);
-  margin: 0;
-  font-size: 10em;
 }
 
-#about-me .aboutme-col-right .presentation {
-  margin: 6em 0 7em 0;
+#about-me .aboutme-col-right .aboutme-presentation {
+  margin: 50px 0 110px 0;
 }
 
-#about-me .aboutme-col-right .presentation p {
+#about-me .aboutme-col-right .aboutme-presentation p {
   color: var(--primary);
-  font-size: 1.4em;
 }
 
-#about-me .aboutme-col-right .presentation button {
-  width: 13em;
+#about-me .aboutme-col-right .aboutme-presentation button {
+  width: 240px;
   background: var(--primary);
-  font-size: 0.8rem;
   color: var(--light);
-  margin-top: 2em;
+  margin-top: 20px;
   border-radius: 50px;
 }
 
-#about-me .aboutme-col-right .presentation button:hover {
+#about-me .aboutme-col-right .aboutme-presentation button:hover {
   background-color: var(--secondary);
   color: var(--light);
 }
@@ -270,38 +266,34 @@ html body button:hover {
       grid-template-columns: 50% 50%;
 }
 
-.works .row .col {
+.works .row .works-col-left {
   position: relative;
+  padding: 90px 20px 70px 90px;
 }
 
-.works .row .col-left {
-  position: relative;
-  padding: 4em 4em 3em 4em;
-}
-
-.works .row .col-left h2 {
+.works .row .works-col-left h2 {
   color: var(--light);
-  margin: 0;
-  font-size: 10em;
 }
 
-.works .row .col-left p {
+.works .row .works-col-left #works-list {
+  margin-top: 15px;
+}
+
+.works .row .works-col-left p {
   font-family: "Montserrat", sans-serif;
-  font-size: 1em;
+  font-size: 17px;
   font-weight: 100;
   color: var(--light);
-  line-height: 1.2em;
+  line-height: 37px;
   margin: 0;
-  padding: 0.2em 0;
 }
 
-.works .row .col-left a {
+.works .row .works-col-left a {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   color: var(--light);
   text-decoration: none;
-  line-height: 1.8em;
   padding: 6px 8px;
   background-size: 200% auto;
   background-position: 0 0;
@@ -311,19 +303,19 @@ html body button:hover {
   transition: all 500ms ease-out;
 }
 
-.works .row .col-left a span {
+.works .row .works-col-left a span {
   opacity: 0;
   font-weight: 200;
   text-transform: lowercase;
 }
 
-.works .row .col-left a:hover {
+.works .row .works-col-left a:hover {
   background-position: -100% 0;
   padding: 6px 8px;
   color: var(--light);
 }
 
-.works .row .col-left a:hover span {
+.works .row .works-col-left a:hover span {
   opacity: 1;
   -webkit-transition: opacity 1.2s ease-in-out;
   -moz-transition: opacity 1.2s ease-in-out;
@@ -331,7 +323,7 @@ html body button:hover {
   -ms-transition: opacity 1.2s ease-in-out;
 }
 
-.works .row .col-left a:before {
+.works .row .works-col-left a:before {
   content: "";
   position: absolute;
   top: 0;
@@ -342,11 +334,11 @@ html body button:hover {
   opacity: 0;
 }
 
-.works .row .col-left a:hover:before {
+.works .row .works-col-left a:hover:before {
   opacity: 1;
 }
 
-.works .row .col-left .link11:hover:before {
+.works .row .works-col-left .works-link10:hover:before {
   z-index: 2;
   background-image: url(../resources/previsualisation/jr_automobile.png);
   background-size: cover;
@@ -357,7 +349,7 @@ html body button:hover {
   -ms-transition: opacity 0.2s ease-in-out;
 }
 
-.works .row .col-left .link10:hover:before {
+.works .row .works-col-left .works-link9:hover:before {
   z-index: 2;
   background-image: url(../resources/previsualisation/jubbew.png);
   background-size: cover;
@@ -368,7 +360,7 @@ html body button:hover {
   -ms-transition: opacity 0.2s ease-in-out;
 }
 
-.works .row .col-left .link9:hover:before {
+.works .row .works-col-left .works-link8:hover:before {
   z-index: 2;
   background-image: url(../resources/previsualisation/codestrata.png);
   background-size: cover;
@@ -379,7 +371,7 @@ html body button:hover {
   -ms-transition: opacity 0.2s ease-in-out;
 }
 
-.works .row .col-left .link8:hover:before {
+.works .row .works-col-left .works-link7:hover:before {
   z-index: 2;
   background-image: url(../resources/previsualisation/modulations.png);
   background-size: cover;
@@ -390,7 +382,7 @@ html body button:hover {
   -ms-transition: opacity 0.5s ease-in-out;
 }
 
-.works .row .col-left .link7:hover:before {
+.works .row .works-col-left .works-link6:hover:before {
   z-index: 2;
   background-image: url(../resources/previsualisation/talkingspeakers.png);
   background-size: cover;
@@ -401,7 +393,7 @@ html body button:hover {
   -ms-transition: opacity 0.5s ease-in-out;
 }
 
-.works .row .col-left .link6:hover:before {
+.works .row .works-col-left .works-link5:hover:before {
   z-index: 2;
   background-image: url(../resources/previsualisation/ondes_sonores.png);
   background-size: cover;
@@ -412,7 +404,7 @@ html body button:hover {
   -ms-transition: opacity 0.5s ease-in-out;
 }
 
-.works .row .col-left .link5:hover:before {
+.works .row .works-col-left .works-link4:hover:before {
   z-index: 2;
   background-image: url(../resources/previsualisation/untitled.png);
   background-size: cover;
@@ -423,7 +415,7 @@ html body button:hover {
   -ms-transition: opacity 0.5s ease-in-out;
 }
 
-.works .row .col-left .link3:hover:before {
+.works .row .works-col-left .works-link3:hover:before {
   z-index: 2;
   background-image: url(../resources/previsualisation/structures.png);
   background-size: cover;
@@ -434,7 +426,7 @@ html body button:hover {
   -ms-transition: opacity 0.5s ease-in-out;
 }
 
-.works .row .col-left .link2:hover:before {
+.works .row .works-col-left .works-link2:hover:before {
   z-index: 2;
   background-image: url(../resources/previsualisation/panthera_tigris.png);
   background-size: cover;
@@ -445,7 +437,7 @@ html body button:hover {
   -ms-transition: opacity 0.5s ease-in-out;
 }
 
-.works .row .col-left .link1:hover:before {
+.works .row .works-col-left .works-link1:hover:before {
   z-index: 2;
   background-image: url(../resources/previsualisation/animaux.png);
   background-size: cover;
@@ -456,11 +448,11 @@ html body button:hover {
   -ms-transition: opacity 0.5s ease-in-out;
 }
 
-.works .row .col-left span {
+.works .row .works-col-left span {
   padding: 0 8px;
 }
 
-.works .row .col-right {
+.works .row .works-col-right {
   z-index: 1;
   background-image: url(../resources/previsualisation/previsualisation.png);
   background-size: cover;
@@ -472,13 +464,14 @@ html body button:hover {
   -ms-grid-column: 1;
   grid-area: contact;
   background-color: var(--light-blue);
-  padding: 5em 10em 5.5em 10em;
+  padding: 80px 0;
 }
 
 #contact h2 {
-  font-family: "jubbew-semibold";
   color: var(--light);
   text-align: center;
+  font-size: 55px;
+  margin-bottom: 40px;
 }
 
 #contact p {
@@ -495,7 +488,7 @@ html body button:hover {
   -ms-grid-column: 1;
   grid-area: footer;
   background-color: var(--primary);
-  padding: 2em 10em;
+  padding: 20px 100px;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "right-footer left-footer";
@@ -506,7 +499,7 @@ html body button:hover {
 }
 
 #footer p {
-  font-size: 0.7em;
+  font-size: 11px;
   text-transform: uppercase;
 }
 
@@ -514,23 +507,21 @@ html body button:hover {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: right-footer;
-  padding: 0 3em 0 0;
   border-right: 1px solid var(--light);
-  margin: 1fr 0 0.6em 0;
   position: relative;
 }
 
 #footer #right-footer p {
   position: absolute;
   bottom: 0;
-  line-height: 1.9em;
+  line-height: 20px;
 }
 
 #footer #left-footer {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: left-footer;
-  padding: 0 0 0 3em;
+  padding-left: 30px;
 }
 
 #footer #left-footer ul {
@@ -553,7 +544,6 @@ html body button:hover {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
