@@ -31,11 +31,9 @@
 
 <body>
 	<script src="./js/background.js"></script>
-	<div id="content">
-		<header>
-		</header>
-		<div id="home">
-			<section class="home-hello">
+	<div class="content-home">
+		<div id="cover">
+			<section class="cover-home">
 				<h1 data-sal-duration="400" data-sal="slide-left" data-sal-delay="100"
 					data-sal-easing="ease-out-bounce">
 					<em>H&#61442;&#61445;&#61445;O</em><br />
@@ -45,22 +43,23 @@
 					data-sal-easing="ease-out-bounce">
 					<span>et je suis graphiste illustratrice multimédia</span></div>
 
-				<div class="home-scrolldown">
-					<div class="scroll-line" data-sal-duration="1000" data-sal="slide-up" data-sal-delay="700"
-						data-sal-easing="ease-out-bounce"></div>
-					<p data-sal-duration="1000" data-sal="fade" data-sal-delay="700" data-sal-easing="ease-out-bounce">
-						Scrolldown</p>
-				</div>
+
 			</section>
+			<div class="scrolldown">
+				<div class="scroll-line" data-sal-duration="1000" data-sal="slide-up" data-sal-delay="700"
+					data-sal-easing="ease-out-bounce"></div>
+				<p data-sal-duration="1000" data-sal="fade" data-sal-delay="700" data-sal-easing="ease-out-bounce">
+					Scrolldown</p>
+			</div>
 		</div>
 
-		<div id="about-me">
+		<div class="about-me">
 
 			<div class="aboutme-col-left">
 				<div><img src="./resources/illustrations/justine.png" alt=""></div>
 			</div>
 			<div class="aboutme-col-right">
-				<h2>À propos</h2>
+				<h2 class="home-titles">À propos</h2>
 				<div class="aboutme-presentation">
 					<p>Passionnée de design, d'illustration, <br> de musique et...</p>
 					<p><a href="#"><button type="button">En savoir plus</button></a></p>
@@ -71,9 +70,10 @@
 		<div class="works">
 			<div class="row">
 				<div class="works-col-left">
-					<h2>Projets</h2>
-					<div id="works-list">
-						<p><a class="works-link10" href="#">JR automobile<span>——— Identité visuelle</span></a></p>
+					<h2 class="home-titles">Projets</h2>
+					<div class="works-list">
+						<p><a class="works-link10" href="./html/jrautomobile.html">JR automobile<span>——— Identité
+									visuelle</span></a></p>
 						<p><a class="works-link9" href="#">jubbew<span>———— Typographie</span></a></p>
 						<p><a class="works-link8" href="#">code{strata}<span>———— Application web</span></a></p>
 						<p><a class="works-link7" href="#">Modulations<span>———— Application de réalité
@@ -94,24 +94,30 @@
 		</div>
 	</div>
 
-	<div id="contact">
-		<h2>Contact</h2>
+	<div class="contact">
+		<h2 class="home-titles">Contact</h2>
 		<p><a href="mailto:fortier.justine@gmail.com"><button id="mail-button" type="button">Envoyer un
 					e-mail</button></a></p>
 	</div>
-	<div id="footer">
-		<div id="right-footer">
+	<div class="footer">
+		<div class="right-footer">
 			<p>Conception et réalisation Justine Fortier <br> © Copyright 2019 Justine Fortier | Tous droits
 				réservés</p>
 		</div>
-		<div id="left-footer">
+		<div class="left-footer">
 			<p>Me suivre</p>
 			<p>
 				<ul>
-					<a href="https://www.instagram.com/crabby.kobo/"><li class="socicon socicon-instagram"></li></a>
-					<a href="https://www.linkedin.com/in/justine-fortier/"><li class="socicon socicon-linkedin">
-					</li></a>
-					<a href="https://github.com/justinefortier"><li class="socicon socicon-github"></li></a>
+					<a href="https://www.instagram.com/crabby.kobo/">
+						<li class="socicon socicon-instagram"></li>
+					</a>
+					<a href="https://www.linkedin.com/in/justine-fortier/">
+						<li class="socicon socicon-linkedin">
+						</li>
+					</a>
+					<a href="https://github.com/justinefortier">
+						<li class="socicon socicon-github"></li>
+					</a>
 				</ul>
 			</p>
 		</div>

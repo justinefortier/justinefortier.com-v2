@@ -3,7 +3,7 @@
 // 1. Typographies
 // 2. Colors
 // 3. General
-// 4. Home
+// 4. Cover
 // 5. About me
 // 6. Works
 // 7. Contact
@@ -12,6 +12,11 @@
 //////// TYPOGRAPHIES ////////
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
+// @import url('https://fonts.fontself.com/dQAZJOE/jubbew-light.css');
+// @import url('https://fonts.fontself.com/dQAZJOE/jubbew-regular.css');
+// @import url('https://fonts.fontself.com/dQAZJOE/jubbew-medium.css');
+// @import url('https://fonts.fontself.com/dQAZJOE/jubbew-semibold.css');
+// @import url('https://fonts.fontself.com/dQAZJOE/jubbew-bold.css');
 
 @font-face {
   font-family: "jubbew-light";
@@ -106,6 +111,24 @@ html {
       font-family: "jubbew-semibold";
       margin: 0;
       font-size: 170px;
+    }
+
+    h3 {
+      font-family: "jubbew-semibold";
+      font-size: 80px;
+      color: var(--primary);
+      margin: 0 0 50px 0;
+      text-align: left;
+    }
+
+    .title-number {
+      font-family: "jubbew-medium";
+      font-size: 50px;
+      color: var(--light-blue);
+      font-style: normal;
+    }
+
+    .home-titles {
       letter-spacing: 7px;
     }
 
@@ -143,10 +166,10 @@ html {
   }
 }
 
-#content {
+.content-home {
   display: grid;
   grid-template-areas:
-    "home"
+    "cover"
     "aboutme"
     "works"
     "contact"
@@ -155,13 +178,13 @@ html {
   grid-template-rows: 100vh auto auto auto auto;
 }
 
-//////////// HOME ////////////
+//////////// COVER ////////////
 
-#home {
-  grid-area: home;
+#cover {
+  grid-area: cover;
 }
 
-.home-hello {
+.cover-home {
   padding: 40px;
 
   h1 {
@@ -185,34 +208,35 @@ html {
     margin: -20px 0 0 300px;
   }
 
-  .home-scrolldown {
-    .scroll-line {
-      width: 2px;
-      background: var(--light);
-      position: absolute;
-      height: 70px;
-      left: 50px;
-      bottom: 0;
-    }
+}
 
-    p {
-      margin: 0;
-      line-height: 0;
-      position: absolute;
-      font-size: 12px;
-      bottom: 90px;
-      left: 51px;
-      writing-mode: vertical-lr;
-      transform: rotate(180deg);
-      text-transform: uppercase;
-      letter-spacing: 4px;
-    }
+.scrolldown {
+  .scroll-line {
+    width: 2px;
+    background: var(--light);
+    position: absolute;
+    height: 70px;
+    left: 50px;
+    bottom: 0;
+  }
+
+  p {
+    margin: 0;
+    line-height: 0;
+    position: absolute;
+    font-size: 12px;
+    bottom: 90px;
+    left: 51px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-transform: uppercase;
+    letter-spacing: 4px;
   }
 }
 
 ////////// ABOUT ME //////////
 
-#about-me {
+.about-me {
   grid-area: aboutme;
   position: relative;
   background-color: var(--light);
@@ -311,11 +335,9 @@ html {
         padding: 6px 8px;
         background-size: 200% auto;
         background-position: 0 0;
-        background-image: linear-gradient(
-          to right,
-          rgba(255, 255, 255, 0) 50%,
-          var(--primary) 50%
-        );
+        background-image: linear-gradient(to right,
+            rgba(255, 255, 255, 0) 50%,
+            var(--primary) 50%);
         transition: all 500ms ease-out;
 
         span {
@@ -480,7 +502,7 @@ html {
 
 ////////// CONTACT //////////
 
-#contact {
+.contact {
   grid-area: contact;
   background-color: var(--light-blue);
   padding: 80px 0;
@@ -504,7 +526,7 @@ html {
 
 /////////// FOOTER ///////////
 
-#footer {
+.footer {
   grid-area: footer;
   background-color: var(--primary);
   padding: 20px 100px;
@@ -518,7 +540,7 @@ html {
     text-transform: uppercase;
   }
 
-  #right-footer {
+  .right-footer {
     grid-area: right-footer;
     border-right: 1px solid var(--light);
     position: relative;
@@ -530,7 +552,7 @@ html {
     }
   }
 
-  #left-footer {
+  .left-footer {
     grid-area: left-footer;
     padding-left: 30px;
 

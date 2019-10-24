@@ -1,0 +1,150 @@
+// TABLE OF CONTENTS :
+//
+// 1. General
+// 2. Cover
+// 3. Wrapper
+
+/////////// GENERAL //////////
+
+header {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background-color: var(--primary);
+
+    .logo {
+        height: 24px;
+        padding: 14px 0px 12px 25px;
+    }
+}
+
+.content-works {
+    display: grid;
+    grid-template-areas:
+        "cover"
+        "wrapper"
+        "contact"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 620px auto auto auto;
+}
+
+//////////// COVER ////////////
+
+#cover {
+    // position: relative;
+    background-color: var(--light);
+    // top: 50px;
+    // left: 0;
+    display: grid;
+    grid-template-areas:
+        "covcolleft covcolright";
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+    margin-top: 50px;
+
+    .cover-col-left {
+        z-index: 1;
+        position: relative;
+        padding: 90px 80px 100px 80px;
+
+        .works-title {
+            font-family: "jubbew-semibold";
+            font-size: 90px;
+            color: var(--primary);
+            margin: 0;
+        }
+
+        .works-category {
+            font-family: "Montserrat", sans-serif;
+            color: var(--light-blue);
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 37px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .works-informations {
+            position: absolute;
+            bottom: 100px;
+
+            .info-title {
+                font-family: "Montserrat", sans-serif;
+                color: var(--light-blue);
+                font-weight: 700;
+                font-size: 13px;
+                text-transform: uppercase;
+                margin-top: 10px;
+                margin-bottom: 0;
+            }
+
+            p {
+                color: var(--light-blue);
+                margin: 0;
+            }
+        }
+    }
+
+    .cover-col-right {
+        z-index: 0;
+        grid-area: covcolright;
+        background-image: url(../resources/covers/jr_automobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+////////// WRAPPER //////////
+
+.wrapper {
+    display: grid;
+    grid-template-areas:
+        "meta"
+        "description"
+        "big-image"
+        "text";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+
+    p {
+        text-align: center;
+    }
+
+    .meta {
+        background-color: var(--secondary);
+        padding: 80px 80px;
+
+        p {
+            color: var(--light);
+            padding: 0 100px;
+        }
+    }
+
+    .description {
+        background-color: var(--light);
+        padding: 100px;
+        text-align: center;
+
+        .text {
+            margin-bottom: 70px;
+
+            p {
+                color: var(--light-blue);
+                text-align: left;
+            }
+        }
+
+        .images {
+            margin-bottom: 90px;
+
+            img {
+                width: 70%;
+                // margin: 5px;
+            }
+        }
+    }
+}

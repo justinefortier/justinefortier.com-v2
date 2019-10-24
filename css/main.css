@@ -85,6 +85,24 @@ html body h2 {
   font-family: "jubbew-semibold";
   margin: 0;
   font-size: 170px;
+}
+
+html body h3 {
+  font-family: "jubbew-semibold";
+  font-size: 80px;
+  color: var(--primary);
+  margin: 0 0 50px 0;
+  text-align: left;
+}
+
+html body .title-number {
+  font-family: "jubbew-medium";
+  font-size: 50px;
+  color: var(--light-blue);
+  font-style: normal;
+}
+
+html body .home-titles {
   letter-spacing: 7px;
 }
 
@@ -120,40 +138,40 @@ html body button:hover {
   cursor: pointer;
 }
 
-#content {
+.content-home {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "home" "aboutme" "works" "contact" "footer";
+      grid-template-areas: "cover" "aboutme" "works" "contact" "footer";
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   -ms-grid-rows: 100vh auto auto auto auto;
       grid-template-rows: 100vh auto auto auto auto;
 }
 
-#home {
+#cover {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: home;
+  grid-area: cover;
 }
 
-.home-hello {
+.cover-home {
   padding: 40px;
 }
 
-.home-hello h1 {
+.cover-home h1 {
   color: var(--secondary);
   margin: 230px 0 0 200px;
   line-height: 80px;
 }
 
-.home-hello h1 em {
+.cover-home h1 em {
   font-family: "jubbew-bold", sans-serif;
   font-style: normal;
   font-size: 230px;
   margin: 0 0 0 -7px;
 }
 
-.home-hello span {
+.cover-home span {
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
   color: var(--light);
@@ -161,7 +179,7 @@ html body button:hover {
   margin: -20px 0 0 300px;
 }
 
-.home-hello .home-scrolldown .scroll-line {
+.scrolldown .scroll-line {
   width: 2px;
   background: var(--light);
   position: absolute;
@@ -170,7 +188,7 @@ html body button:hover {
   bottom: 0;
 }
 
-.home-hello .home-scrolldown p {
+.scrolldown p {
   margin: 0;
   line-height: 0;
   position: absolute;
@@ -186,7 +204,7 @@ html body button:hover {
   letter-spacing: 4px;
 }
 
-#about-me {
+.about-me {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: aboutme;
@@ -199,14 +217,14 @@ html body button:hover {
       grid-template-columns: 54% 46%;
 }
 
-#about-me .aboutme-col-left {
+.about-me .aboutme-col-left {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: colleft;
   position: relative;
 }
 
-#about-me .aboutme-col-left img {
+.about-me .aboutme-col-left img {
   width: 75%;
   position: absolute;
   margin-left: auto;
@@ -216,26 +234,26 @@ html body button:hover {
   bottom: 0;
 }
 
-#about-me .aboutme-col-right {
+.about-me .aboutme-col-right {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: colright;
   margin-top: 90px;
 }
 
-#about-me .aboutme-col-right h2 {
+.about-me .aboutme-col-right h2 {
   color: var(--primary);
 }
 
-#about-me .aboutme-col-right .aboutme-presentation {
+.about-me .aboutme-col-right .aboutme-presentation {
   margin: 50px 0 110px 0;
 }
 
-#about-me .aboutme-col-right .aboutme-presentation p {
+.about-me .aboutme-col-right .aboutme-presentation p {
   color: var(--primary);
 }
 
-#about-me .aboutme-col-right .aboutme-presentation button {
+.about-me .aboutme-col-right .aboutme-presentation button {
   width: 240px;
   background: var(--primary);
   color: var(--light);
@@ -243,7 +261,7 @@ html body button:hover {
   border-radius: 50px;
 }
 
-#about-me .aboutme-col-right .aboutme-presentation button:hover {
+.about-me .aboutme-col-right .aboutme-presentation button:hover {
   background-color: var(--secondary);
   color: var(--light);
 }
@@ -459,7 +477,7 @@ html body button:hover {
   background-repeat: no-repeat;
 }
 
-#contact {
+.contact {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: contact;
@@ -467,23 +485,23 @@ html body button:hover {
   padding: 80px 0;
 }
 
-#contact h2 {
+.contact h2 {
   color: var(--light);
   text-align: center;
   font-size: 55px;
   margin-bottom: 40px;
 }
 
-#contact p {
+.contact p {
   text-align: center;
 }
 
-#contact button:hover {
+.contact button:hover {
   background-color: var(--light);
   color: var(--light-blue);
 }
 
-#footer {
+.footer {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: footer;
@@ -498,12 +516,12 @@ html body button:hover {
       grid-template-rows: 1fr;
 }
 
-#footer p {
+.footer p {
   font-size: 11px;
   text-transform: uppercase;
 }
 
-#footer #right-footer {
+.footer .right-footer {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: right-footer;
@@ -511,20 +529,20 @@ html body button:hover {
   position: relative;
 }
 
-#footer #right-footer p {
+.footer .right-footer p {
   position: absolute;
   bottom: 0;
   line-height: 20px;
 }
 
-#footer #left-footer {
+.footer .left-footer {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: left-footer;
   padding-left: 30px;
 }
 
-#footer #left-footer ul {
+.footer .left-footer ul {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -532,16 +550,16 @@ html body button:hover {
   padding: 0;
 }
 
-#footer #left-footer ul a:link,
-#footer #left-footer ul a:visited {
+.footer .left-footer ul a:link,
+.footer .left-footer ul a:visited {
   color: var(--light);
 }
 
-#footer #left-footer li {
+.footer .left-footer li {
   cursor: pointer;
 }
 
-#footer #left-footer .socicon {
+.footer .left-footer .socicon {
   font-family: "Socicon" !important;
   speak: none;
   font-style: normal;
@@ -553,9 +571,9 @@ html body button:hover {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#footer #left-footer .socicon-instagram,
-#footer #left-footer .socicon-linkedin,
-#footer #left-footer .socicon-github {
+.footer .left-footer .socicon-instagram,
+.footer .left-footer .socicon-linkedin,
+.footer .left-footer .socicon-github {
   padding: 10px 10px 10px 10px;
   width: 25px;
   height: 25px;
@@ -565,28 +583,28 @@ html body button:hover {
   font-weight: 300;
 }
 
-#footer #left-footer .socicon-instagram {
+.footer .left-footer .socicon-instagram {
   padding-top: 11px;
   padding-left: 12px;
 }
 
-#footer #left-footer .socicon-linkedin {
+.footer .left-footer .socicon-linkedin {
   padding-left: 12px;
   margin: 0px 10px;
 }
 
-#footer #left-footer .socicon-github {
+.footer .left-footer .socicon-github {
   padding-top: 11px;
 }
 
-#footer #left-footer .socicon:hover {
+.footer .left-footer .socicon:hover {
   color: #121b35;
   background-color: #f3f3f3;
   -webkit-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
 }
 
-#footer #left-footer svg:hover {
+.footer .left-footer svg:hover {
   fill: var(--light);
 }
 /*# sourceMappingURL=main.css.map */

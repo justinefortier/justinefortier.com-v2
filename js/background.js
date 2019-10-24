@@ -14,7 +14,7 @@ let x1Direction = 1,
 function setup() {
 	canvas = createCanvas(windowWidth, windowHeight);
 	canvas.class('backgroundsketch');
-	canvas.parent("home")
+	canvas.parent("cover")
 	canvas.position(0, 0);
 	canvas.style('z-index', '-1');
 }
