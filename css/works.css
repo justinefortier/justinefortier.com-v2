@@ -8,8 +8,9 @@ header {
 }
 
 header .logo {
+  grid-area: logo;
   height: 24px;
-  padding: 14px 0px 12px 25px;
+  padding: 14px 65px 12px 80px;
 }
 
 .content-works {
@@ -23,6 +24,7 @@ header .logo {
 }
 
 #cover {
+  z-index: 0;
   background-color: var(--light);
   display: -ms-grid;
   display: grid;
@@ -44,7 +46,14 @@ header .logo {
   font-family: "jubbew-semibold";
   font-size: 90px;
   color: var(--primary);
-  margin: 0;
+  margin: 0 0 0 -5px;
+}
+
+#cover .cover-col-left .subtitle {
+  font-family: "jubbew-semibold";
+  color: var(--primary);
+  font-size: 45px;
+  margin: 10px 0 10px -5px;
 }
 
 #cover .cover-col-left .works-category {
@@ -55,7 +64,6 @@ header .logo {
   line-height: 37px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin: 0;
 }
 
 #cover .cover-col-left .works-informations {
@@ -89,13 +97,14 @@ header .logo {
 }
 
 .wrapper {
+  z-index: 1;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "meta" "description" "big-image" "text";
+      grid-template-areas: "meta" "description" "links";
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: auto auto auto auto;
-      grid-template-rows: auto auto auto auto;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
 }
 
 .wrapper p {
@@ -103,6 +112,9 @@ header .logo {
 }
 
 .wrapper .meta {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: meta;
   background-color: var(--secondary);
   padding: 80px 80px;
 }
@@ -113,8 +125,11 @@ header .logo {
 }
 
 .wrapper .description {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: description;
   background-color: var(--light);
-  padding: 100px;
+  padding: 100px 80px 20px 80px;
   text-align: center;
 }
 
@@ -132,6 +147,21 @@ header .logo {
 }
 
 .wrapper .description .images img {
-  width: 70%;
+  width: 80%;
+  margin: 5px;
+}
+
+.wrapper .links {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: links;
+  background-color: var(--light);
+  text-align: center;
+  padding-bottom: 90px;
+}
+
+.wrapper .links img {
+  width: 35px;
+  margin: 20px;
 }
 /*# sourceMappingURL=works.css.map */

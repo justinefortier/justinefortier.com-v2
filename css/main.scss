@@ -12,11 +12,6 @@
 //////// TYPOGRAPHIES ////////
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
-// @import url('https://fonts.fontself.com/dQAZJOE/jubbew-light.css');
-// @import url('https://fonts.fontself.com/dQAZJOE/jubbew-regular.css');
-// @import url('https://fonts.fontself.com/dQAZJOE/jubbew-medium.css');
-// @import url('https://fonts.fontself.com/dQAZJOE/jubbew-semibold.css');
-// @import url('https://fonts.fontself.com/dQAZJOE/jubbew-bold.css');
 
 @font-face {
   font-family: "jubbew-light";
@@ -444,7 +439,7 @@ html {
 
       .works-link4:hover:before {
         z-index: 2;
-        background-image: url(../resources/previsualisation/untitled.png);
+        background-image: url(../resources/previsualisation/structures.png);
         background-size: cover;
         background-repeat: no-repeat;
         -webkit-transition: opacity 0.5s ease-in-out;
@@ -455,7 +450,7 @@ html {
 
       .works-link3:hover:before {
         z-index: 2;
-        background-image: url(../resources/previsualisation/structures.png);
+        background-image: url(../resources/previsualisation/untitled.png);
         background-size: cover;
         background-repeat: no-repeat;
         -webkit-transition: opacity 0.5s ease-in-out;
@@ -612,7 +607,6 @@ html {
     .socicon:hover {
       color: #121b35;
       background-color: #f3f3f3;
-      transition: all 500ms ease-out;
     }
 
     svg:hover {

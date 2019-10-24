@@ -14,9 +14,11 @@ header {
     width: 100%;
     background-color: var(--primary);
 
+
     .logo {
+        grid-area: logo;
         height: 24px;
-        padding: 14px 0px 12px 25px;
+        padding: 14px 65px 12px 80px;
     }
 }
 
@@ -34,10 +36,8 @@ header {
 //////////// COVER ////////////
 
 #cover {
-    // position: relative;
+    z-index: 0;
     background-color: var(--light);
-    // top: 50px;
-    // left: 0;
     display: grid;
     grid-template-areas:
         "covcolleft covcolright";
@@ -54,7 +54,14 @@ header {
             font-family: "jubbew-semibold";
             font-size: 90px;
             color: var(--primary);
-            margin: 0;
+            margin: 0 0 0 -5px;
+        }
+
+        .subtitle {
+            font-family: "jubbew-semibold";
+            color: var(--primary);
+            font-size: 45px;
+            margin: 10px 0 10px -5px;
         }
 
         .works-category {
@@ -65,7 +72,6 @@ header {
             line-height: 37px;
             letter-spacing: 2px;
             text-transform: uppercase;
-            margin: 0;
         }
 
         .works-informations {
@@ -101,20 +107,21 @@ header {
 ////////// WRAPPER //////////
 
 .wrapper {
+    z-index: 1;
     display: grid;
     grid-template-areas:
         "meta"
         "description"
-        "big-image"
-        "text";
+        "links";
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto;
 
     p {
         text-align: center;
     }
 
     .meta {
+        grid-area: meta;
         background-color: var(--secondary);
         padding: 80px 80px;
 
@@ -125,8 +132,9 @@ header {
     }
 
     .description {
+        grid-area: description;
         background-color: var(--light);
-        padding: 100px;
+        padding: 100px 80px 20px 80px;
         text-align: center;
 
         .text {
@@ -142,9 +150,22 @@ header {
             margin-bottom: 90px;
 
             img {
-                width: 70%;
-                // margin: 5px;
+                width: 80%;
+                margin: 5px;
             }
         }
+    }
+
+    .links {
+        grid-area: links;
+        background-color: var(--light);
+        text-align: center;
+        padding-bottom: 90px;
+
+        img {
+            width: 35px;
+            margin: 20px;
+        }
+
     }
 }

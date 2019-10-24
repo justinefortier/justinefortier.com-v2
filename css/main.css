@@ -424,7 +424,7 @@ html body button:hover {
 
 .works .row .works-col-left .works-link4:hover:before {
   z-index: 2;
-  background-image: url(../resources/previsualisation/untitled.png);
+  background-image: url(../resources/previsualisation/structures.png);
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-transition: opacity 0.5s ease-in-out;
@@ -435,7 +435,7 @@ html body button:hover {
 
 .works .row .works-col-left .works-link3:hover:before {
   z-index: 2;
-  background-image: url(../resources/previsualisation/structures.png);
+  background-image: url(../resources/previsualisation/untitled.png);
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-transition: opacity 0.5s ease-in-out;
@@ -600,8 +600,6 @@ html body button:hover {
 .footer .left-footer .socicon:hover {
   color: #121b35;
   background-color: #f3f3f3;
-  -webkit-transition: all 500ms ease-out;
-  transition: all 500ms ease-out;
 }
 
 .footer .left-footer svg:hover {
