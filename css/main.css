@@ -57,7 +57,7 @@
 :root {
   --primary: #121b35;
   --light-blue: #002445;
-  --secondary: #e9a050;
+  --secondary: #e2a966;
   --light: #f3f3f3;
 }
 
@@ -112,6 +112,15 @@ html body p {
   font-weight: 300;
   text-align: left;
   line-height: 37px;
+}
+
+html body .artwork-name {
+  font-style: italic;
+}
+
+html body .italic {
+  font-style: italic;
+  font-weight: 400;
 }
 
 html body #buttons {

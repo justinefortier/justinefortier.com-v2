@@ -78,7 +78,7 @@
 :root {
   --primary: #121b35;
   --light-blue: #002445;
-  --secondary: #e9a050;
+  --secondary: #e2a966;
   --light: #f3f3f3;
 }
 
@@ -133,6 +133,15 @@ html {
       font-weight: 300;
       text-align: left;
       line-height: 37px;
+    }
+
+    .artwork-name {
+      font-style: italic;
+    }
+
+    .italic {
+      font-style: italic;
+      font-weight: 400;
     }
 
     #buttons {
@@ -202,7 +211,6 @@ html {
     font-size: 30px;
     margin: -20px 0 0 300px;
   }
-
 }
 
 .scrolldown {

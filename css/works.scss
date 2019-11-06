@@ -17,8 +17,8 @@ header {
 
     .logo {
         grid-area: logo;
-        height: 24px;
-        padding: 14px 65px 12px 80px;
+        height: 27px;
+        padding: 12px 65px 11px 80px;
     }
 }
 
@@ -30,7 +30,7 @@ header {
         "contact"
         "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 620px auto auto auto;
+    grid-template-rows: 650px auto auto auto;
 }
 
 //////////// COVER ////////////
@@ -48,13 +48,13 @@ header {
     .cover-col-left {
         z-index: 1;
         position: relative;
-        padding: 90px 80px 100px 80px;
+        padding: 90px 0 100px 80px;
 
         .works-title {
             font-family: "jubbew-semibold";
             font-size: 90px;
             color: var(--primary);
-            margin: 0 0 0 -5px;
+            margin: 0 0 10px -5px;
         }
 
         .subtitle {
@@ -69,14 +69,22 @@ header {
             color: var(--light-blue);
             font-size: 20px;
             font-weight: 400;
-            line-height: 37px;
+            // line-height: 37px;
             letter-spacing: 2px;
             text-transform: uppercase;
         }
 
+        .collaboration {
+            font-family: "Montserrat", sans-serif;
+            color: var(--light-blue);
+            font-size: 15px;
+            margin-top: 0;
+            line-height: 20px;
+        }
+
         .works-informations {
             position: absolute;
-            bottom: 100px;
+            bottom: 80px;
 
             .info-title {
                 font-family: "Montserrat", sans-serif;
@@ -98,7 +106,6 @@ header {
     .cover-col-right {
         z-index: 0;
         grid-area: covcolright;
-        background-image: url(../resources/covers/jr_automobile.png);
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -123,11 +130,15 @@ header {
     .meta {
         grid-area: meta;
         background-color: var(--secondary);
-        padding: 80px 80px;
+        padding: 60px 60px;
 
         p {
             color: var(--light);
             padding: 0 100px;
+        }
+
+        .artwork-name {
+            font-weight: 400;
         }
     }
 
@@ -138,21 +149,70 @@ header {
         text-align: center;
 
         .text {
-            margin-bottom: 70px;
+            margin-bottom: 80px;
 
             p {
                 color: var(--light-blue);
                 text-align: left;
             }
+
+            .buttons {
+                margin-top: 60px;
+                text-align: center;
+
+                button {
+                    margin: 10px;
+                }
+            }
+
+            button {
+                background: var(--primary);
+                border: none;
+                color: var(--light);
+            }
+
+            button:hover {
+                background: var(--secondary);
+                cursor: pointer;
+            }
         }
 
         .images {
-            margin-bottom: 90px;
+            margin: 0 auto 90px auto;
+            width: 60%;
 
-            img {
-                width: 80%;
-                margin: 5px;
+            .artwork {
+                margin-bottom: 60px;
+
+                img {
+                    width: 100%;
+                    margin: 5px;
+                }
+
+                .cartel {
+                    margin-top: 20px;
+
+                    .cartel-title {
+                        font-family: "Montserrat", sans-serif;
+                        color: var(--light-blue);
+                        font-weight: 500;
+
+                        .cartel-bold-title {
+                            font-style: italic;
+                            font-weight: 600;
+                        }
+                    }
+
+                    p {
+                        font-family: "Montserrat", sans-serif;
+                        color: var(--light-blue);
+                        margin: 0;
+                    }
+
+                }
             }
+
+
         }
     }
 
@@ -162,9 +222,11 @@ header {
         text-align: center;
         padding-bottom: 90px;
 
+
         img {
             width: 35px;
             margin: 20px;
+            cursor: pointer;
         }
 
     }
