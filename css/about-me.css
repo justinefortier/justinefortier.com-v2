@@ -1,0 +1,204 @@
+header {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background-color: var(--primary);
+}
+
+header .logo {
+  grid-area: logo;
+  height: 27px;
+  padding: 12px 65px 11px 80px;
+}
+
+.about-me-content {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "cover" "wrapper" "contact" "footer";
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 650px auto auto auto;
+      grid-template-rows: 650px auto auto auto;
+}
+
+#cover {
+  z-index: 0;
+  background-color: var(--secondary);
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "covcolleft covcolright";
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  margin-top: 50px;
+}
+
+#cover .cover-col-left {
+  z-index: 1;
+  position: relative;
+  padding: 90px 0 100px 80px;
+}
+
+#cover .cover-col-left .about-me-title {
+  font-family: "jubbew-semibold";
+  font-size: 170px;
+  color: var(--light);
+  margin: 20px 0 10px -5px;
+}
+
+#cover .cover-col-left .about-me-subtitle {
+  font-family: "Montserrat", sans-serif;
+  color: var(--light);
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-left: 60px;
+  margin-top: 40px;
+}
+
+#cover .cover-col-right {
+  z-index: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: covcolright;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  z-index: 1;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "meta" "description" "links";
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+}
+
+.wrapper p {
+  text-align: center;
+}
+
+.wrapper .description {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: description;
+  background-color: var(--light);
+  padding: 100px 80px 20px 80px;
+  text-align: center;
+}
+
+.wrapper .description .text {
+  margin-bottom: 80px;
+}
+
+.wrapper .description .text p {
+  color: var(--light-blue);
+  text-align: left;
+}
+
+.wrapper .description .text ol {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+  line-height: 37px;
+  color: var(--light-blue);
+}
+
+.wrapper .description .text .media {
+  width: 60%;
+  padding-top: 50px;
+  margin: auto;
+}
+
+.wrapper .description .text .media img {
+  width: 100%;
+}
+
+.wrapper .description .text .media video {
+  width: 100%;
+}
+
+.wrapper .description .text .media .cartel {
+  margin-top: 20px;
+}
+
+.wrapper .description .text .media .cartel .cartel-title {
+  font-family: "Montserrat", sans-serif;
+  color: var(--light-blue);
+  font-weight: 500;
+}
+
+.wrapper .description .text .media .cartel .cartel-title .cartel-bold-title {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.wrapper .description .text .media .cartel p {
+  font-family: "Montserrat", sans-serif;
+  color: var(--light-blue);
+  margin: 0;
+  text-align: center;
+}
+
+.wrapper .description .text .buttons {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.wrapper .description .text .buttons button {
+  margin: 10px;
+}
+
+.wrapper .description .text button {
+  background: var(--primary);
+  border: none;
+  color: var(--light);
+}
+
+.wrapper .description .text button:hover {
+  background: var(--secondary);
+  cursor: pointer;
+}
+
+.wrapper .description .images {
+  margin: 0 auto 90px auto;
+  width: 60%;
+}
+
+.wrapper .description .images .artwork {
+  margin-bottom: 60px;
+}
+
+.wrapper .description .images .artwork img {
+  width: 100%;
+  margin: 5px;
+}
+
+.wrapper .description .images .artwork .cartel {
+  margin-top: 20px;
+}
+
+.wrapper .description .images .artwork .cartel .cartel-title {
+  font-family: "Montserrat", sans-serif;
+  color: var(--light-blue);
+  font-weight: 500;
+}
+
+.wrapper .description .images .artwork .cartel .cartel-title .cartel-bold-title {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.wrapper .description .images .artwork .cartel p {
+  font-family: "Montserrat", sans-serif;
+  color: var(--light-blue);
+  margin: 0;
+}
+/*# sourceMappingURL=about-me.css.map */

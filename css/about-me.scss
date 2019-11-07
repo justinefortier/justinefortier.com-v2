@@ -22,7 +22,7 @@ header {
     }
 }
 
-.content-works {
+.about-me-content {
     display: grid;
     grid-template-areas:
         "cover"
@@ -37,7 +37,7 @@ header {
 
 #cover {
     z-index: 0;
-    background-color: var(--light);
+    background-color: var(--secondary);
     display: grid;
     grid-template-areas:
         "covcolleft covcolright";
@@ -50,56 +50,23 @@ header {
         position: relative;
         padding: 90px 0 100px 80px;
 
-        .works-title {
+        .about-me-title {
             font-family: "jubbew-semibold";
-            font-size: 90px;
-            color: var(--primary);
-            margin: 0 0 10px -5px;
+            font-size: 170px;
+            color: var(--light);
+            margin: 20px 0 10px -5px;
         }
 
-        .subtitle {
-            font-family: "jubbew-semibold";
-            color: var(--primary);
-            font-size: 45px;
-            margin: 10px 0 10px -5px;
-        }
-
-        .works-category {
+        .about-me-subtitle {
             font-family: "Montserrat", sans-serif;
-            color: var(--light-blue);
+            color: var(--light);
             font-size: 20px;
             font-weight: 400;
             // line-height: 37px;
             letter-spacing: 2px;
             text-transform: uppercase;
-        }
-
-        .collaboration {
-            font-family: "Montserrat", sans-serif;
-            color: var(--light-blue);
-            font-size: 15px;
-            margin-top: 0;
-            line-height: 20px;
-        }
-
-        .works-informations {
-            position: absolute;
-            bottom: 80px;
-
-            .info-title {
-                font-family: "Montserrat", sans-serif;
-                color: var(--light-blue);
-                font-weight: 700;
-                font-size: 13px;
-                text-transform: uppercase;
-                margin-top: 10px;
-                margin-bottom: 0;
-            }
-
-            p {
-                color: var(--light-blue);
-                margin: 0;
-            }
+            margin-left: 60px;
+            margin-top: 40px;
         }
     }
 
@@ -125,21 +92,6 @@ header {
 
     p {
         text-align: center;
-    }
-
-    .meta {
-        grid-area: meta;
-        background-color: var(--secondary);
-        padding: 60px 60px;
-
-        p {
-            color: var(--light);
-            padding: 0 100px;
-        }
-
-        .artwork-name {
-            font-weight: 400;
-        }
     }
 
     .description {
@@ -255,19 +207,6 @@ header {
                     }
                 }
             }
-        }
-    }
-
-    .links {
-        grid-area: links;
-        background-color: var(--light);
-        text-align: center;
-        padding-bottom: 90px;
-
-        img {
-            width: 35px;
-            margin: 20px;
-            cursor: pointer;
         }
     }
 }
