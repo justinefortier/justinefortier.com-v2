@@ -1,35 +1,35 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
 @font-face {
   font-family: "jubbew-light";
-  src: url("../typo/jubbew-light-webfont.woff2") format("woff2"), url("../typo/jubbew-light-webfont.woff") format("woff");
+  src: url("../medias/typo/jubbew-light-webfont.woff2") format("woff2"), url("../medias/typo/jubbew-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "jubbew-regular";
-  src: url("../typo/jubbew-regular-webfont.woff2") format("woff2"), url("../typo/jubbew-regular-webfont.woff") format("woff");
+  src: url("../medias/typo/jubbew-regular-webfont.woff2") format("woff2"), url("../medias/typo/jubbew-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "jubbew-medium";
-  src: url("../typo/jubbew-medium-webfont.woff2") format("woff2"), url("../typo/jubbew-medium-webfont.woff") format("woff");
+  src: url("../medias/typo/jubbew-medium-webfont.woff2") format("woff2"), url("../medias/typo/jubbew-medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "jubbew-semibold";
-  src: url("../typo/jubbew-semibold-webfont.woff2") format("woff2"), url("../typo/jubbew-semibold-webfont.woff") format("woff");
+  src: url("../medias/typo/jubbew-semibold-webfont.woff2") format("woff2"), url("../medias/typo/jubbew-semibold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "jubbew-bold";
-  src: url("../typo/jubbew-bold-webfont.woff2") format("woff2"), url("../typo/jubbew-bold-webfont.woff") format("woff");
+  src: url("../medias/typo/jubbew-bold-webfont.woff2") format("woff2"), url("../medias/typo/jubbew-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -367,7 +367,7 @@ html body button:hover {
 
 .works .row .works-col-left .works-link10:hover:before {
   z-index: 2;
-  background-image: url(../resources/previsualisation/jr_automobile.png);
+  background-image: url(../medias/previsualisation/jr_automobile.png);
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-transition: opacity 0.2s ease-in-out;
@@ -378,7 +378,7 @@ html body button:hover {
 
 .works .row .works-col-left .works-link9:hover:before {
   z-index: 2;
-  background-image: url(../resources/previsualisation/jubbew.png);
+  background-image: url(../medias/previsualisation/jubbew.png);
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-transition: opacity 0.2s ease-in-out;
@@ -389,7 +389,7 @@ html body button:hover {
 
 .works .row .works-col-left .works-link8:hover:before {
   z-index: 2;
-  background-image: url(../resources/previsualisation/codestrata.png);
+  background-image: url(../medias/previsualisation/codestrata.png);
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-transition: opacity 0.2s ease-in-out;
@@ -400,7 +400,7 @@ html body button:hover {
 
 .works .row .works-col-left .works-link7:hover:before {
   z-index: 2;
-  background-image: url(../resources/previsualisation/modulations.png);
+  background-image: url(../medias/previsualisation/modulations.png);
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-transition: opacity 0.5s ease-in-out;
@@ -411,7 +411,7 @@ html body button:hover {
 
 .works .row .works-col-left .works-link6:hover:before {
   z-index: 2;
-  background-image: url(../resources/previsualisation/talkingspeakers.png);
+  background-image: url(../medias/previsualisation/talkingspeakers.png);
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-transition: opacity 0.5s ease-in-out;
@@ -422,7 +422,7 @@ html body button:hover {
 
 .works .row .works-col-left .works-link5:hover:before {
   z-index: 2;
-  background-image: url(../resources/previsualisation/ondes_sonores.png);
+  background-image: url(../medias/previsualisation/ondes_sonores.png);
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-transition: opacity 0.5s ease-in-out;
@@ -433,7 +433,7 @@ html body button:hover {
 
 .works .row .works-col-left .works-link4:hover:before {
   z-index: 2;
-  background-image: url(../resources/previsualisation/structures.png);
+  background-image: url(../medias/previsualisation/structures.png);
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-transition: opacity 0.5s ease-in-out;
@@ -444,7 +444,7 @@ html body button:hover {
 
 .works .row .works-col-left .works-link3:hover:before {
   z-index: 2;
-  background-image: url(../resources/previsualisation/untitled.png);
+  background-image: url(../medias/previsualisation/untitled.png);
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-transition: opacity 0.5s ease-in-out;
@@ -455,7 +455,7 @@ html body button:hover {
 
 .works .row .works-col-left .works-link2:hover:before {
   z-index: 2;
-  background-image: url(../resources/previsualisation/panthera_tigris.png);
+  background-image: url(../medias/previsualisation/panthera_tigris.png);
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-transition: opacity 0.5s ease-in-out;
@@ -466,7 +466,7 @@ html body button:hover {
 
 .works .row .works-col-left .works-link1:hover:before {
   z-index: 2;
-  background-image: url(../resources/previsualisation/animaux.png);
+  background-image: url(../medias/previsualisation/animaux.png);
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-transition: opacity 0.5s ease-in-out;
@@ -481,7 +481,7 @@ html body button:hover {
 
 .works .row .works-col-right {
   z-index: 1;
-  background-image: url(../resources/previsualisation/previsualisation.png);
+  background-image: url(../medias/previsualisation/previsualisation.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
