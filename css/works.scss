@@ -156,6 +156,52 @@ header {
                 text-align: left;
             }
 
+            ol {
+                font-family: "Montserrat", sans-serif;
+                font-size: 20px;
+                font-weight: 300;
+                text-align: left;
+                line-height: 37px;
+                color: var(--light-blue);
+            }
+
+            .media {
+                width: 60%;
+                padding-top: 50px;
+                margin: auto;
+
+                img {
+                    width: 100%;
+                }
+
+                video {
+                    width: 100%;
+                }
+
+                .cartel {
+                    margin-top: 20px;
+
+                    .cartel-title {
+                        font-family: "Montserrat", sans-serif;
+                        color: var(--light-blue);
+                        font-weight: 500;
+
+                        .cartel-bold-title {
+                            font-style: italic;
+                            font-weight: 600;
+                        }
+                    }
+
+                    p {
+                        font-family: "Montserrat", sans-serif;
+                        color: var(--light-blue);
+                        margin: 0;
+                        text-align: center;
+                    }
+
+                }
+            }
+
             .buttons {
                 margin-top: 60px;
                 text-align: center;

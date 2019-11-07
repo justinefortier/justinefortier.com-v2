@@ -152,6 +152,51 @@ header .logo {
   text-align: left;
 }
 
+.wrapper .description .text ol {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+  line-height: 37px;
+  color: var(--light-blue);
+}
+
+.wrapper .description .text .media {
+  width: 60%;
+  padding-top: 50px;
+  margin: auto;
+}
+
+.wrapper .description .text .media img {
+  width: 100%;
+}
+
+.wrapper .description .text .media video {
+  width: 100%;
+}
+
+.wrapper .description .text .media .cartel {
+  margin-top: 20px;
+}
+
+.wrapper .description .text .media .cartel .cartel-title {
+  font-family: "Montserrat", sans-serif;
+  color: var(--light-blue);
+  font-weight: 500;
+}
+
+.wrapper .description .text .media .cartel .cartel-title .cartel-bold-title {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.wrapper .description .text .media .cartel p {
+  font-family: "Montserrat", sans-serif;
+  color: var(--light-blue);
+  margin: 0;
+  text-align: center;
+}
+
 .wrapper .description .text .buttons {
   margin-top: 60px;
   text-align: center;

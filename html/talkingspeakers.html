@@ -61,7 +61,41 @@
                 <h3><em class="title-number">01.</em> Concept</h3>
 
                 <div class="text">
-                    <p></p>
+                    <p><em class="italic">talkingSpeakers</em> est une installation sonore dont le propos est le
+                        détournement de technologies
+                        développées par Google.</p>
+                    <p>Il s'agit de deux machines autonomes et indépendantes l'une de l'autre, qui possèdent toutes deux
+                        une oreille (un microphone) et une bouche (le haut-parleur) leur
+                        permettant ainsi d'entendre et de répéter ce qui a été entendu.</p>
+                    <p>De fait, deux haut-parleurs, A et B, se font face. A prononce une phrase qui est écoutée, au
+                        moyen
+                        de son micro, par B. Une fois que A a terminé, B répète la phrase que A, à
+                        son tour, écoute. Puis A répète la phrase pendant que B l’écoute. Puis B répète, A écoute. A
+                        écoute, B répète. Et ainsi de suite. C'est du fait de ce processus même que le visiteur est
+                        invité à participer ou non à la conversation tenue par les machines.
+                        <br> Toutefois, il arrive que A
+                        ou B n’entende pas très bien ou
+                        qu’ils ne comprennent pas correctement ce qui est dit. Résultat : la phrase mal comprise est
+                        répétée mais avec des erreurs. Cela ne compromet pas pour autant le bon déroulement du processus
+                        puisque la phrase mal comprise, et répétée avec des erreurs, sera écoutée par l’autre
+                        haut-parleur puis répétée, avec ou sans erreur.</p>
+                    <p>Dans le programme, trois règles sont prévues pour permettre l'autonomie et la pérennité de
+                        l'installation :
+                        <ol>
+                            <li>Lorsque la machine n’enregistre qu’un mot, alors elle doit envoyer une requête à Google
+                                en lançant une recherche sur www.google.com à partir de ce mot et lire la meta
+                                description du premier résultat de recherche obtenu ;</li>
+                            <li>Lorsque la machine répète trois fois de suite une phrase parfaitement identique, alors
+                                elle enregistre cette phrase dans un document nommé <em class="italic">Phrases préférées
+                                    de Google</em> et doit composer une
+                                phrase de 21 mots piochés aléatoirement depuis ledit document ;</li>
+                            <li>Lorsque la machine entend sans réussir à déterminer correctement ce qui a été dit, alors
+                                elle doit puiser au hasard un mot du catalogue des <em class="italic">Phrases préférées
+                                    de Google</em> et doit envoyer une requête à Google en lançant une recherche sur
+                                www.google.com à partir de ce mot et lire la meta description du premier résultat de
+                                recherche obtenu.</li>
+                        </ol>
+                    </p>
                 </div>
 
                 <div class="images">
@@ -90,9 +124,26 @@
                 <h3><em class="title-number">02.</em> Réalisation</h3>
 
                 <div class="text">
-                    <p>Cette installation repose sur l'utilisation de l’API Cloud Speech-to-Text de Google, un système
-                        de reconnaissance vocale en temps réel.
+                    <p>Cette installation s’appuie largement sur l’API Cloud Speech-to-Text, un
+                        système de reconnaissance vocale en temps réel qui permet de convertir le son en texte en «
+                        exploitant des modèles de réseaux neuronaux performants » et qui se base sur le <em
+                            class="italic">deep learning</em>, un sous-ensemble du <em class="italic">machine
+                            learning</em>. Il s’agit d’une méthode d’apprentissage machine dit « profond » — qui utilise
+                        des réseaux de neurones artificiels — rendant la machine capable de s’améliorer de façon
+                        autonome. Autrement dit, cette API utilise des algorithmes qui lui permettent de s’améliorer
+                        d’elle-même au fur et à mesure que nous l’utilisons. Cette technologie est celle sur laquelle se
+                        fonde notamment Google Assistant ou Google Home.
                     </p>
+
+                    <div class="media">
+                        <img src="../resources/portfolio/signature/sans_signature/talkingspeakers-05.png"
+                            alt="Schéma technique de talkingSpeakers">
+
+                        <div class="cartel">
+                            <p class="cartel-title">Schéma de l’installation <em class="italic">talkingSpeakers</em>.
+                            </p>
+                        </div>
+                    </div>
 
                     <p class="buttons">
                         <a href="https://github.com/justinefortier/talkingSpeakers"><button
