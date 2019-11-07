@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/justinefortier/justinefortier.com-v2#readme",
   "dependencies": {
-    "sal.js": "^0.6.2"
+    "sal.js": "^0.6.3"
   }
 }
