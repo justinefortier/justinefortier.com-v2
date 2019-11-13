@@ -65,7 +65,7 @@ header .logo {
   margin-left: 60px;
 }
 
-#cover .cover-col-left .text-cascade-3 {
+#cover .cover-col-left .text-cascade-2 {
   margin-left: 90px;
 }
 
@@ -133,185 +133,51 @@ header .logo {
   text-align: justify;
 }
 
-.wrapper .description .skills {
+.wrapper .description .skills-box {
   width: 60%;
   margin: 80px auto 150px auto;
 }
 
-.wrapper .description .skills ul {
-  padding: 0;
+.wrapper .description .skills-box .skill {
+  margin-top: 30px;
+  margin-bottom: 5px;
 }
 
-.wrapper .description .skills ul li {
-  position: relative;
-  list-style: none;
-  margin: 50px auto;
-  text-align: left;
-  color: var(--primary);
-}
-
-.wrapper .description .skills ul li:before {
-  content: "";
-  position: absolute;
-  top: calc(100% + 10px);
-  left: 0;
+.wrapper .description .skills-box .progress {
   width: 100%;
-  height: 15px;
-  background-color: rgba(0, 36, 69, 0.5);
+  height: 20px;
   border-radius: 50px;
+  background-color: rgba(0, 36, 69, 0.4);
+  line-height: 22px;
 }
 
-.wrapper .description .skills ul li:after {
-  content: "";
-  position: absolute;
-  top: calc(100% + 10px);
-  left: 0;
-  width: 0;
-  height: 15px;
-  background: -webkit-gradient(linear, left top, right top, from(var(--light-blue)), to(var(--primary)));
-  background: linear-gradient(to right, var(--light-blue), var(--primary));
+.wrapper .description .skills-box .progress .percent {
+  height: 20px;
   border-radius: 50px;
-  -webkit-animation-duration: 4.7s;
-          animation-duration: 4.7s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  text-align: right;
+  color: var(--light);
+  padding-right: 10px;
+  -webkit-animation: animate .5s linear infinite;
+          animation: animate .5s linear infinite;
+  background: linear-gradient(120deg, var(--light-blue) 33%, var(--primary) 33%, var(--primary) 66%, var(--light-blue) 66%, var(--light-blue) 99%);
+  background-size: 60px 60px;
 }
 
-.wrapper .description .skills ul li.illustrator:after {
-  -webkit-animation-name: illustrator;
-          animation-name: illustrator;
-}
-
-@-webkit-keyframes illustrator {
-  to {
-    width: 90%;
+@-webkit-keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 60px 0;
   }
 }
 
-@keyframes illustrator {
-  to {
-    width: 90%;
+@keyframes animate {
+  0% {
+    background-position: 0 0;
   }
-}
-
-.wrapper .description .skills ul li.photoshop:after {
-  -webkit-animation-name: photoshop;
-          animation-name: photoshop;
-}
-
-@-webkit-keyframes photoshop {
-  to {
-    width: 85%;
-  }
-}
-
-@keyframes photoshop {
-  to {
-    width: 85%;
-  }
-}
-
-.wrapper .description .skills ul li.indesign:after {
-  -webkit-animation-name: indesign;
-          animation-name: indesign;
-}
-
-@-webkit-keyframes indesign {
-  to {
-    width: 80%;
-  }
-}
-
-@keyframes indesign {
-  to {
-    width: 80%;
-  }
-}
-
-.wrapper .description .skills ul li.premiere-pro:after {
-  -webkit-animation-name: premierepro;
-          animation-name: premierepro;
-}
-
-@-webkit-keyframes premierepro {
-  to {
-    width: 75%;
-  }
-}
-
-@keyframes premierepro {
-  to {
-    width: 75%;
-  }
-}
-
-.wrapper .description .skills ul li.lightroom:after {
-  -webkit-animation-name: lightroom;
-          animation-name: lightroom;
-}
-
-@-webkit-keyframes lightroom {
-  to {
-    width: 60%;
-  }
-}
-
-@keyframes lightroom {
-  to {
-    width: 60%;
-  }
-}
-
-.wrapper .description .skills ul li.html-css:after {
-  -webkit-animation-name: htmlcss;
-          animation-name: htmlcss;
-}
-
-@-webkit-keyframes htmlcss {
-  to {
-    width: 85%;
-  }
-}
-
-@keyframes htmlcss {
-  to {
-    width: 85%;
-  }
-}
-
-.wrapper .description .skills ul li.javascript:after {
-  -webkit-animation-name: javascript;
-          animation-name: javascript;
-}
-
-@-webkit-keyframes javascript {
-  to {
-    width: 40%;
-  }
-}
-
-@keyframes javascript {
-  to {
-    width: 40%;
-  }
-}
-
-.wrapper .description .skills ul li.ux-ui-design:after {
-  -webkit-animation-name: uxuidesign;
-          animation-name: uxuidesign;
-}
-
-@-webkit-keyframes uxuidesign {
-  to {
-    width: 85%;
-  }
-}
-
-@keyframes uxuidesign {
-  to {
-    width: 85%;
+  100% {
+    background-position: 60px 0;
   }
 }
 
