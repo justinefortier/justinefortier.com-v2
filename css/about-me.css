@@ -19,8 +19,8 @@ header .logo {
       grid-template-areas: "cover" "wrapper" "contact" "footer";
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 650px auto auto auto;
-      grid-template-rows: 650px auto auto auto;
+  -ms-grid-rows: 580px auto auto auto;
+      grid-template-rows: 580px auto auto auto;
 }
 
 #cover {
@@ -29,8 +29,8 @@ header .logo {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "covcolleft covcolright";
-  -ms-grid-columns: 40% 60%;
-      grid-template-columns: 40% 60%;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
   -ms-grid-rows: 100%;
       grid-template-rows: 100%;
   margin-top: 50px;
@@ -46,7 +46,7 @@ header .logo {
   font-family: "jubbew-semibold";
   font-size: 170px;
   color: var(--light);
-  margin: 20px 0 10px -5px;
+  margin: 20px 0 50px -5px;
 }
 
 #cover .cover-col-left .about-me-subtitle {
@@ -54,10 +54,19 @@ header .logo {
   color: var(--light);
   font-size: 20px;
   font-weight: 400;
+  line-height: 30px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+#cover .cover-col-left .text-cascade-1 {
   margin-left: 60px;
-  margin-top: 40px;
+}
+
+#cover .cover-col-left .text-cascade-3 {
+  margin-left: 90px;
 }
 
 #cover .cover-col-right {
@@ -93,112 +102,222 @@ header .logo {
   text-align: center;
 }
 
-.wrapper .description .text {
-  margin-bottom: 80px;
-}
-
-.wrapper .description .text p {
+.wrapper .description p {
   color: var(--light-blue);
   text-align: left;
 }
 
-.wrapper .description .text ol {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  text-align: left;
-  line-height: 37px;
-  color: var(--light-blue);
-}
-
-.wrapper .description .text .media {
-  width: 60%;
-  padding-top: 50px;
-  margin: auto;
-}
-
-.wrapper .description .text .media img {
-  width: 100%;
-}
-
-.wrapper .description .text .media video {
-  width: 100%;
-}
-
-.wrapper .description .text .media .cartel {
-  margin-top: 20px;
-}
-
-.wrapper .description .text .media .cartel .cartel-title {
-  font-family: "Montserrat", sans-serif;
-  color: var(--light-blue);
-  font-weight: 500;
-}
-
-.wrapper .description .text .media .cartel .cartel-title .cartel-bold-title {
-  font-style: italic;
-  font-weight: 600;
-}
-
-.wrapper .description .text .media .cartel p {
-  font-family: "Montserrat", sans-serif;
-  color: var(--light-blue);
-  margin: 0;
-  text-align: center;
-}
-
-.wrapper .description .text .buttons {
+.wrapper .description .buttons {
   margin-top: 60px;
   text-align: center;
 }
 
-.wrapper .description .text .buttons button {
+.wrapper .description .buttons button {
   margin: 10px;
 }
 
-.wrapper .description .text button {
+.wrapper .description button {
   background: var(--primary);
   border: none;
   color: var(--light);
 }
 
-.wrapper .description .text button:hover {
+.wrapper .description button:hover {
   background: var(--secondary);
   cursor: pointer;
 }
 
-.wrapper .description .images {
-  margin: 0 auto 90px auto;
+.wrapper .description .who-i-am {
   width: 60%;
+  margin: 80px auto 150px auto;
+  text-align: justify;
 }
 
-.wrapper .description .images .artwork {
-  margin-bottom: 60px;
+.wrapper .description .skills {
+  width: 60%;
+  margin: 80px auto 150px auto;
 }
 
-.wrapper .description .images .artwork img {
+.wrapper .description .skills ul {
+  padding: 0;
+}
+
+.wrapper .description .skills ul li {
+  position: relative;
+  list-style: none;
+  margin: 50px auto;
+  text-align: left;
+  color: var(--primary);
+}
+
+.wrapper .description .skills ul li:before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
   width: 100%;
-  margin: 5px;
+  height: 15px;
+  background-color: rgba(0, 36, 69, 0.5);
+  border-radius: 50px;
 }
 
-.wrapper .description .images .artwork .cartel {
-  margin-top: 20px;
+.wrapper .description .skills ul li:after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 0;
+  height: 15px;
+  background: -webkit-gradient(linear, left top, right top, from(var(--light-blue)), to(var(--primary)));
+  background: linear-gradient(to right, var(--light-blue), var(--primary));
+  border-radius: 50px;
+  -webkit-animation-duration: 4.7s;
+          animation-duration: 4.7s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
-.wrapper .description .images .artwork .cartel .cartel-title {
-  font-family: "Montserrat", sans-serif;
-  color: var(--light-blue);
-  font-weight: 500;
+.wrapper .description .skills ul li.illustrator:after {
+  -webkit-animation-name: illustrator;
+          animation-name: illustrator;
 }
 
-.wrapper .description .images .artwork .cartel .cartel-title .cartel-bold-title {
-  font-style: italic;
-  font-weight: 600;
+@-webkit-keyframes illustrator {
+  to {
+    width: 90%;
+  }
 }
 
-.wrapper .description .images .artwork .cartel p {
-  font-family: "Montserrat", sans-serif;
-  color: var(--light-blue);
-  margin: 0;
+@keyframes illustrator {
+  to {
+    width: 90%;
+  }
+}
+
+.wrapper .description .skills ul li.photoshop:after {
+  -webkit-animation-name: photoshop;
+          animation-name: photoshop;
+}
+
+@-webkit-keyframes photoshop {
+  to {
+    width: 85%;
+  }
+}
+
+@keyframes photoshop {
+  to {
+    width: 85%;
+  }
+}
+
+.wrapper .description .skills ul li.indesign:after {
+  -webkit-animation-name: indesign;
+          animation-name: indesign;
+}
+
+@-webkit-keyframes indesign {
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes indesign {
+  to {
+    width: 80%;
+  }
+}
+
+.wrapper .description .skills ul li.premiere-pro:after {
+  -webkit-animation-name: premierepro;
+          animation-name: premierepro;
+}
+
+@-webkit-keyframes premierepro {
+  to {
+    width: 75%;
+  }
+}
+
+@keyframes premierepro {
+  to {
+    width: 75%;
+  }
+}
+
+.wrapper .description .skills ul li.lightroom:after {
+  -webkit-animation-name: lightroom;
+          animation-name: lightroom;
+}
+
+@-webkit-keyframes lightroom {
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes lightroom {
+  to {
+    width: 60%;
+  }
+}
+
+.wrapper .description .skills ul li.html-css:after {
+  -webkit-animation-name: htmlcss;
+          animation-name: htmlcss;
+}
+
+@-webkit-keyframes htmlcss {
+  to {
+    width: 85%;
+  }
+}
+
+@keyframes htmlcss {
+  to {
+    width: 85%;
+  }
+}
+
+.wrapper .description .skills ul li.javascript:after {
+  -webkit-animation-name: javascript;
+          animation-name: javascript;
+}
+
+@-webkit-keyframes javascript {
+  to {
+    width: 40%;
+  }
+}
+
+@keyframes javascript {
+  to {
+    width: 40%;
+  }
+}
+
+.wrapper .description .skills ul li.ux-ui-design:after {
+  -webkit-animation-name: uxuidesign;
+          animation-name: uxuidesign;
+}
+
+@-webkit-keyframes uxuidesign {
+  to {
+    width: 85%;
+  }
+}
+
+@keyframes uxuidesign {
+  to {
+    width: 85%;
+  }
+}
+
+.wrapper .description .exhibitions {
+  width: 60%;
+  margin: 80px auto 150px auto;
+  text-align: justify;
 }
 /*# sourceMappingURL=about-me.css.map */

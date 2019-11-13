@@ -95,6 +95,14 @@ html body h3 {
   text-align: left;
 }
 
+html body h4 {
+  font-family: "jubbew-semibold";
+  font-size: 35px;
+  color: var(--primary);
+  margin: 60px 0 0 0;
+  text-align: left;
+}
+
 html body .title-number {
   font-family: "jubbew-medium";
   font-size: 50px;
