@@ -94,6 +94,22 @@ html {
     margin: 0;
     overflow-x: hidden;
 
+    header {
+      z-index: 3;
+      position: fixed;
+      top: 0;
+      height: 50px;
+      width: 100%;
+      background-color: var(--primary);
+
+
+      .logo {
+        grid-area: logo;
+        height: 27px;
+        padding: 12px 65px 11px 80px;
+      }
+    }
+
     a {
       text-decoration: none;
     }
@@ -541,7 +557,7 @@ html {
 .footer {
   grid-area: footer;
   background-color: var(--primary);
-  padding: 20px 100px;
+  padding: 20px 80px;
   display: grid;
   grid-template-areas: "right-footer left-footer";
   grid-template-columns: 1fr auto;
