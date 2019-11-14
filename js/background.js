@@ -22,7 +22,7 @@ function setup() {
 function draw() {
 	background(18, 27, 53);
 
-	fill(0, 36, 69);
+	fill(10, 44, 81);
 	noStroke();
 
 	height = windowHeight;
