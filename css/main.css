@@ -605,9 +605,13 @@ html body button:hover {
   padding-left: 12px;
 }
 
+.footer .left-footer .jubbew {
+  margin: 0 4px 0 8px;
+}
+
 .footer .left-footer .socicon-linkedin {
   padding-left: 12px;
-  margin: 0px 10px;
+  margin: 0 8px 0 4px;
 }
 
 .footer .left-footer .socicon-github {
