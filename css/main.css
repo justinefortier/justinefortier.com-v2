@@ -121,7 +121,7 @@ html body h4 {
 html body .title-number {
   font-family: "jubbew-medium";
   font-size: 50px;
-  color: var(--light-blue);
+  color: var(--primary);
   font-style: normal;
 }
 
