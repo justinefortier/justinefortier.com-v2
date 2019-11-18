@@ -116,13 +116,19 @@ html {
 
     h1 {
       font-family: "jubbew-semibold";
-      font-size: 70px;
+      font-size: 4rem;
+    }
+
+    @media all and (max-width: 970px) {
+      h1 {
+        font-size: 3.1rem;
+      }
     }
 
     h2 {
       font-family: "jubbew-semibold";
       margin: 0;
-      font-size: 170px;
+      font-size: 11rem;
     }
 
     h3 {
@@ -154,10 +160,10 @@ html {
 
     p {
       font-family: "Montserrat", sans-serif;
-      font-size: 20px;
+      font-size: 1.2rem;
       font-weight: 300;
       text-align: left;
-      line-height: 37px;
+      line-height: 1.8rem;
     }
 
     .artwork-name {
@@ -178,7 +184,7 @@ html {
       height: 50px;
       background: none;
       font-family: "Montserrat", sans-serif;
-      font-size: 15px;
+      font-size: 0.9rem;
       border: 1px solid var(--light);
       color: var(--light);
       text-transform: uppercase;
@@ -207,25 +213,53 @@ html {
   grid-template-rows: 100vh auto auto auto auto;
 }
 
+@media all and (max-width: 690px) {
+  .content-home {
+    grid-template-rows: auto auto auto auto auto;
+  }
+}
+
 //////////// COVER ////////////
 
 #cover {
   grid-area: cover;
+
+  @media all and (max-width: 690px) {
+    .scrolldown {
+      display: none;
+    }
+  }
 }
 
 .cover-home {
-  padding: 40px;
+  padding: 20% 4rem 4rem 16%;
+
+  img {
+    display: none;
+  }
 
   h1 {
     color: var(--secondary);
-    margin: 230px 0 0 200px;
-    line-height: 80px;
+    margin: 0;
+    line-height: 4.7rem;
 
     em {
       font-family: "jubbew-bold", sans-serif;
       font-style: normal;
-      font-size: 230px;
-      margin: 0 0 0 -7px;
+      font-size: 14rem;
+      margin: 0 0 0 -0.4rem
+    }
+
+    @media all and (max-width: 970px) {
+      em {
+        font-size: 11rem;
+      }
+    }
+  }
+
+  @media all and (max-width: 970px) {
+    h1 {
+      line-height: 3.8rem;
     }
   }
 
@@ -233,8 +267,34 @@ html {
     font-family: "Montserrat", sans-serif;
     font-weight: 200;
     color: var(--light);
-    font-size: 30px;
-    margin: -20px 0 0 300px;
+    font-size: 1.8rem;
+    margin: -4rem 0 0 10%;
+  }
+
+  @media all and (max-width: 970px) {
+    span {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media all and (max-width: 690px) {
+  .cover-home {
+    padding: 20% 0;
+
+    h1 {
+      display: none;
+    }
+
+    .subtitle {
+      display: none;
+    }
+
+    img {
+      display: block;
+      width: 50%;
+      margin: auto;
+    }
   }
 }
 
@@ -252,15 +312,17 @@ html {
     margin: 0;
     line-height: 0;
     position: absolute;
-    font-size: 12px;
+    font-size: 0.8rem;
     bottom: 90px;
     left: 51px;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 0.3rem;
   }
 }
+
+
 
 ////////// ABOUT ME //////////
 
@@ -295,7 +357,7 @@ html {
       color: var(--primary);
     }
 
-    .aboutme-presentation {
+    .aboutme-sentence {
       margin: 50px 0 110px 0;
 
       p {
@@ -305,15 +367,62 @@ html {
       button {
         width: 240px;
         background: var(--primary);
-        // font-size: 0.8rem;
         color: var(--light);
         margin-top: 20px;
         border-radius: 50px;
       }
 
+      @media all and (max-width: 599px) {
+        button {
+          width: 210px;
+        }
+      }
+
       button:hover {
         background-color: var(--secondary);
         color: var(--light);
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1023px) {
+  .about-me {
+    grid-template-areas:
+      "colright"
+      "colleft";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+
+    .aboutme-col-left {
+      text-align: center;
+
+      img {
+        position: static;
+        width: 70%;
+        margin: 0 auto -10px auto;
+      }
+    }
+
+    .aboutme-col-right {
+      text-align: center;
+
+      .aboutme-sentence {
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1023px) {
+  .about-me {
+    .aboutme-col-right {
+      margin: 12% auto 5% auto;
+
+      .aboutme-sentence {
+        margin: 0 auto;
       }
     }
   }
@@ -341,8 +450,8 @@ html {
         color: var(--light);
       }
 
-      #works-list {
-        margin-top: 15px;
+      .works-list {
+        margin-top: 5%;
       }
 
       p {
@@ -524,6 +633,22 @@ html {
       background-image: url(../medias/previsualisation/previsualisation.png);
       background-size: cover;
       background-repeat: no-repeat;
+    }
+  }
+
+  @media all and (max-width: 1023px) {
+    .row {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+
+      .works-col-left {
+        text-align: center;
+        padding: 12% 0;
+
+        .works-list {
+          margin-top: 7%;
+        }
+      }
     }
   }
 }

@@ -93,13 +93,19 @@ html body a {
 
 html body h1 {
   font-family: "jubbew-semibold";
-  font-size: 70px;
+  font-size: 4rem;
+}
+
+@media all and (max-width: 970px) {
+  html body h1 {
+    font-size: 3.1rem;
+  }
 }
 
 html body h2 {
   font-family: "jubbew-semibold";
   margin: 0;
-  font-size: 170px;
+  font-size: 11rem;
 }
 
 html body h3 {
@@ -131,10 +137,10 @@ html body .home-titles {
 
 html body p {
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 300;
   text-align: left;
-  line-height: 37px;
+  line-height: 1.8rem;
 }
 
 html body .artwork-name {
@@ -155,7 +161,7 @@ html body button {
   height: 50px;
   background: none;
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-size: 0.9rem;
   border: 1px solid var(--light);
   color: var(--light);
   text-transform: uppercase;
@@ -180,35 +186,87 @@ html body button:hover {
       grid-template-rows: 100vh auto auto auto auto;
 }
 
+@media all and (max-width: 690px) {
+  .content-home {
+    -ms-grid-rows: auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
+  }
+}
+
 #cover {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: cover;
 }
 
+@media all and (max-width: 690px) {
+  #cover .scrolldown {
+    display: none;
+  }
+}
+
 .cover-home {
-  padding: 40px;
+  padding: 20% 4rem 4rem 16%;
+}
+
+.cover-home img {
+  display: none;
 }
 
 .cover-home h1 {
   color: var(--secondary);
-  margin: 230px 0 0 200px;
-  line-height: 80px;
+  margin: 0;
+  line-height: 4.7rem;
 }
 
 .cover-home h1 em {
   font-family: "jubbew-bold", sans-serif;
   font-style: normal;
-  font-size: 230px;
-  margin: 0 0 0 -7px;
+  font-size: 14rem;
+  margin: 0 0 0 -0.4rem;
+}
+
+@media all and (max-width: 970px) {
+  .cover-home h1 em {
+    font-size: 11rem;
+  }
+}
+
+@media all and (max-width: 970px) {
+  .cover-home h1 {
+    line-height: 3.8rem;
+  }
 }
 
 .cover-home span {
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
   color: var(--light);
-  font-size: 30px;
-  margin: -20px 0 0 300px;
+  font-size: 1.8rem;
+  margin: -4rem 0 0 10%;
+}
+
+@media all and (max-width: 970px) {
+  .cover-home span {
+    font-size: 1.4rem;
+  }
+}
+
+@media all and (max-width: 690px) {
+  .cover-home {
+    padding: 20% 0;
+  }
+  .cover-home h1 {
+    display: none;
+  }
+  .cover-home .subtitle {
+    display: none;
+  }
+  .cover-home img {
+    display: block;
+    width: 50%;
+    margin: auto;
+  }
 }
 
 .scrolldown .scroll-line {
@@ -224,7 +282,7 @@ html body button:hover {
   margin: 0;
   line-height: 0;
   position: absolute;
-  font-size: 12px;
+  font-size: 0.8rem;
   bottom: 90px;
   left: 51px;
   -webkit-writing-mode: vertical-lr;
@@ -233,7 +291,7 @@ html body button:hover {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 0.3rem;
 }
 
 .about-me {
@@ -277,15 +335,15 @@ html body button:hover {
   color: var(--primary);
 }
 
-.about-me .aboutme-col-right .aboutme-presentation {
+.about-me .aboutme-col-right .aboutme-sentence {
   margin: 50px 0 110px 0;
 }
 
-.about-me .aboutme-col-right .aboutme-presentation p {
+.about-me .aboutme-col-right .aboutme-sentence p {
   color: var(--primary);
 }
 
-.about-me .aboutme-col-right .aboutme-presentation button {
+.about-me .aboutme-col-right .aboutme-sentence button {
   width: 240px;
   background: var(--primary);
   color: var(--light);
@@ -293,9 +351,48 @@ html body button:hover {
   border-radius: 50px;
 }
 
-.about-me .aboutme-col-right .aboutme-presentation button:hover {
+@media all and (max-width: 599px) {
+  .about-me .aboutme-col-right .aboutme-sentence button {
+    width: 210px;
+  }
+}
+
+.about-me .aboutme-col-right .aboutme-sentence button:hover {
   background-color: var(--secondary);
   color: var(--light);
+}
+
+@media all and (max-width: 1023px) {
+  .about-me {
+        grid-template-areas: "colright" "colleft";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+  }
+  .about-me .aboutme-col-left {
+    text-align: center;
+  }
+  .about-me .aboutme-col-left img {
+    position: static;
+    width: 70%;
+    margin: 0 auto -10px auto;
+  }
+  .about-me .aboutme-col-right {
+    text-align: center;
+  }
+  .about-me .aboutme-col-right .aboutme-sentence p {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 1023px) {
+  .about-me .aboutme-col-right {
+    margin: 12% auto 5% auto;
+  }
+  .about-me .aboutme-col-right .aboutme-sentence {
+    margin: 0 auto;
+  }
 }
 
 .works {
@@ -325,8 +422,8 @@ html body button:hover {
   color: var(--light);
 }
 
-.works .row .works-col-left #works-list {
-  margin-top: 15px;
+.works .row .works-col-left .works-list {
+  margin-top: 5%;
 }
 
 .works .row .works-col-left p {
@@ -507,6 +604,22 @@ html body button:hover {
   background-image: url(../medias/previsualisation/previsualisation.png);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media all and (max-width: 1023px) {
+  .works .row {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+  }
+  .works .row .works-col-left {
+    text-align: center;
+    padding: 12% 0;
+  }
+  .works .row .works-col-left .works-list {
+    margin-top: 7%;
+  }
 }
 
 .contact {
