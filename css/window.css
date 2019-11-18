@@ -17,7 +17,7 @@
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: filters;
-  margin: 120px auto 0 calc(80px - 5px);
+  margin: 90px auto 0 calc(80px - 5px);
   text-align: left;
 }
 

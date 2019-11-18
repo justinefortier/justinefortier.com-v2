@@ -457,14 +457,15 @@ html {
 
     .works-col-left {
       position: relative;
-      padding: 90px 20px 70px 90px;
+      padding: 90px 20px 90px 90px;
 
       h2 {
         color: var(--light);
       }
 
       .works-list {
-        margin-top: 5%;
+        margin-top: 1.6rem;
+        margin-bottom: 1.4rem;
       }
 
       p {
@@ -476,7 +477,7 @@ html {
         margin: 0;
       }
 
-      a {
+      .highlighter {
         font-family: "Montserrat", sans-serif;
         font-weight: 400;
         text-transform: uppercase;
@@ -497,7 +498,7 @@ html {
         }
       }
 
-      a:hover {
+      .highlighter:hover {
         background-position: -100% 0;
         padding: 6px 8px;
         color: var(--light);
@@ -511,7 +512,7 @@ html {
         }
       }
 
-      a:before {
+      .highlighter:before {
         content: "";
         position: absolute;
         top: 0;
@@ -522,13 +523,13 @@ html {
         opacity: 0;
       }
 
-      a:hover:before {
+      .highlighter:hover:before {
         opacity: 1;
       }
 
       .works-link10:hover:before {
         z-index: 2;
-        background-image: url(../medias/previsualisation/jr_automobile.png);
+        background-image: url(../medias/previsualisations/home/jr_automobile.png);
         background-size: cover;
         background-repeat: no-repeat;
         -webkit-transition: opacity 0.2s ease-in-out;
@@ -539,7 +540,7 @@ html {
 
       .works-link9:hover:before {
         z-index: 2;
-        background-image: url(../medias/previsualisation/jubbew.png);
+        background-image: url(../medias/previsualisations/home/jubbew.png);
         background-size: cover;
         background-repeat: no-repeat;
         -webkit-transition: opacity 0.2s ease-in-out;
@@ -550,7 +551,7 @@ html {
 
       .works-link8:hover:before {
         z-index: 2;
-        background-image: url(../medias/previsualisation/codestrata.png);
+        background-image: url(../medias/previsualisations/home/codestrata.png);
         background-size: cover;
         background-repeat: no-repeat;
         -webkit-transition: opacity 0.2s ease-in-out;
@@ -561,7 +562,7 @@ html {
 
       .works-link7:hover:before {
         z-index: 2;
-        background-image: url(../medias/previsualisation/modulations.png);
+        background-image: url(../medias/previsualisations/home/modulations.png);
         background-size: cover;
         background-repeat: no-repeat;
         -webkit-transition: opacity 0.5s ease-in-out;
@@ -572,7 +573,7 @@ html {
 
       .works-link6:hover:before {
         z-index: 2;
-        background-image: url(../medias/previsualisation/talkingspeakers.png);
+        background-image: url(../medias/previsualisations/home/talkingspeakers.png);
         background-size: cover;
         background-repeat: no-repeat;
         -webkit-transition: opacity 0.5s ease-in-out;
@@ -583,7 +584,7 @@ html {
 
       .works-link5:hover:before {
         z-index: 2;
-        background-image: url(../medias/previsualisation/ondes_sonores.png);
+        background-image: url(../medias/previsualisations/home/ondes_sonores.png);
         background-size: cover;
         background-repeat: no-repeat;
         -webkit-transition: opacity 0.5s ease-in-out;
@@ -594,7 +595,7 @@ html {
 
       .works-link4:hover:before {
         z-index: 2;
-        background-image: url(../medias/previsualisation/structures.png);
+        background-image: url(../medias/previsualisations/home/structures.png);
         background-size: cover;
         background-repeat: no-repeat;
         -webkit-transition: opacity 0.5s ease-in-out;
@@ -605,7 +606,7 @@ html {
 
       .works-link3:hover:before {
         z-index: 2;
-        background-image: url(../medias/previsualisation/untitled.png);
+        background-image: url(../medias/previsualisations/home/untitled.png);
         background-size: cover;
         background-repeat: no-repeat;
         -webkit-transition: opacity 0.5s ease-in-out;
@@ -616,7 +617,7 @@ html {
 
       .works-link2:hover:before {
         z-index: 2;
-        background-image: url(../medias/previsualisation/panthera_tigris.png);
+        background-image: url(../medias/previsualisations/home/panthera_tigris.png);
         background-size: cover;
         background-repeat: no-repeat;
         -webkit-transition: opacity 0.5s ease-in-out;
@@ -627,7 +628,7 @@ html {
 
       .works-link1:hover:before {
         z-index: 2;
-        background-image: url(../medias/previsualisation/animaux.png);
+        background-image: url(../medias/previsualisations/home/animaux.png);
         background-size: cover;
         background-repeat: no-repeat;
         -webkit-transition: opacity 0.5s ease-in-out;
@@ -638,6 +639,19 @@ html {
 
       span {
         padding: 0 8px;
+      }
+
+      button {
+        width: 240px;
+        background: var(--secondary);
+        color: var(--light);
+        margin-top: 20px;
+        border-radius: 50px;
+      }
+
+      button:hover {
+        background-color: var(--light);
+        color: var(--secondary);
       }
     }
 
