@@ -486,11 +486,9 @@ html {
         padding: 6px 8px;
         background-size: 200% auto;
         background-position: 0 0;
-        background-image: linear-gradient(
-          to right,
-          rgba(255, 255, 255, 0) 50%,
-          var(--primary) 50%
-        );
+        background-image: linear-gradient(to right,
+            rgba(255, 255, 255, 0) 50%,
+            var(--primary) 50%);
         transition: all 500ms ease-out;
 
         span {
@@ -757,7 +755,6 @@ html {
     grid-area: left-footer;
     border-right: 1px solid var(--light);
     position: relative;
-    // text-align: center;
 
     img {
       position: absolute;
