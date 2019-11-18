@@ -197,7 +197,7 @@ html body button:hover {
 .content-home {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "cover" "aboutme" "works" "contact" "footer";
+      grid-template-areas: "cover" "aboutme" "works" "window" "contact" "footer";
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   -ms-grid-rows: 100vh auto auto auto auto;
@@ -629,7 +629,7 @@ html body button:hover {
 }
 
 .contact {
-  -ms-grid-row: 4;
+  -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: contact;
   background-color: var(--light-blue);
@@ -653,7 +653,7 @@ html body button:hover {
 }
 
 .footer {
-  -ms-grid-row: 5;
+  -ms-grid-row: 6;
   -ms-grid-column: 1;
   grid-area: footer;
   background-color: var(--primary);

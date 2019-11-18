@@ -1,15 +1,18 @@
 .content-works {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "cover" "wrapper" "contact" "footer";
+      grid-template-areas: "cover" "wrapper";
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 650px auto auto auto;
-      grid-template-rows: 650px auto auto auto;
+  -ms-grid-rows: 650px auto;
+      grid-template-rows: 650px auto;
 }
 
 #cover {
   z-index: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: cover;
   background-color: var(--light);
   display: -ms-grid;
   display: grid;
@@ -23,6 +26,9 @@
 
 #cover .cover-col-left {
   z-index: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: covcolleft;
   position: relative;
   padding: 90px 0 100px 80px;
 }

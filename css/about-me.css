@@ -1,7 +1,7 @@
 .about-me-content {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "cover" "wrapper" "contact" "footer";
+      grid-template-areas: "cover" "wrapper";
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   -ms-grid-rows: 580px auto auto auto;
@@ -10,6 +10,9 @@
 
 #cover {
   z-index: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: cover;
   background-color: var(--secondary);
   margin-top: 50px;
   padding: 90px 80px 100px 80px;

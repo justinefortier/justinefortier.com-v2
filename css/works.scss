@@ -10,17 +10,16 @@
     display: grid;
     grid-template-areas:
         "cover"
-        "wrapper"
-        "contact"
-        "footer";
+        "wrapper";
     grid-template-columns: 1fr;
-    grid-template-rows: 650px auto auto auto;
+    grid-template-rows: 650px auto;
 }
 
 //////////// COVER ////////////
 
 #cover {
     z-index: 0;
+    grid-area: cover;
     background-color: var(--light);
     display: grid;
     grid-template-areas:
@@ -31,6 +30,7 @@
 
     .cover-col-left {
         z-index: 1;
+        grid-area: covcolleft;
         position: relative;
         padding: 90px 0 100px 80px;
 
