@@ -272,7 +272,7 @@ html body button:hover {
 
 @media all and (max-width: 690px) {
   .cover-home {
-    padding: 15% 0;
+    padding: 20% 0;
   }
   .cover-home h1 {
     display: none;
@@ -703,7 +703,7 @@ html body button:hover {
   padding: 20px 80px;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "right-footer left-footer";
+      grid-template-areas: "left-footer right-footer";
   -ms-grid-columns: 1fr auto;
       grid-template-columns: 1fr auto;
   -ms-grid-rows: 1fr;
@@ -715,28 +715,76 @@ html body button:hover {
   text-transform: uppercase;
 }
 
-.footer .right-footer {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: right-footer;
-  border-right: 1px solid var(--light);
-  position: relative;
+.footer .follow-me {
+  margin-bottom: -0.5rem;
 }
 
-.footer .right-footer p {
-  position: absolute;
-  bottom: 0;
-  line-height: 20px;
+@media all and (max-width: 860px) {
+  .footer .follow-me {
+    margin-bottom: -0.5rem;
+  }
+}
+
+@media all and (max-width: 580px) {
+  .footer p {
+    text-align: center;
+  }
 }
 
 .footer .left-footer {
   -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   grid-area: left-footer;
+  border-right: 1px solid var(--light);
+  position: relative;
+}
+
+.footer .left-footer img {
+  position: absolute;
+  bottom: 17px;
+  left: 0;
+  height: 28px;
+}
+
+@media all and (max-width: 580px) {
+  .footer .left-footer img {
+    position: static;
+  }
+}
+
+.footer .left-footer p {
+  position: absolute;
+  bottom: 0;
+  left: 3.7rem;
+  line-height: 20px;
+}
+
+@media all and (max-width: 580px) {
+  .footer .left-footer .copyright {
+    display: none;
+  }
+}
+
+@media all and (max-width: 860px) {
+  .footer .left-footer {
+    border-right: none;
+  }
+}
+
+@media all and (max-width: 580px) {
+  .footer .left-footer {
+    text-align: center;
+  }
+}
+
+.footer .right-footer {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: right-footer;
   padding-left: 30px;
 }
 
-.footer .left-footer ul {
+.footer .right-footer ul {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -744,16 +792,16 @@ html body button:hover {
   padding: 0;
 }
 
-.footer .left-footer ul a:link,
-.footer .left-footer ul a:visited {
+.footer .right-footer ul a:link,
+.footer .right-footer ul a:visited {
   color: var(--light);
 }
 
-.footer .left-footer li {
+.footer .right-footer li {
   cursor: pointer;
 }
 
-.footer .left-footer .socicon {
+.footer .right-footer .socicon {
   font-family: "Socicon" !important;
   speak: none;
   font-style: normal;
@@ -765,9 +813,9 @@ html body button:hover {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.footer .left-footer .socicon-instagram,
-.footer .left-footer .socicon-linkedin,
-.footer .left-footer .socicon-github {
+.footer .right-footer .socicon-instagram,
+.footer .right-footer .socicon-linkedin,
+.footer .right-footer .socicon-github {
   padding: 10px 10px 10px 10px;
   width: 25px;
   height: 25px;
@@ -777,30 +825,55 @@ html body button:hover {
   font-weight: 300;
 }
 
-.footer .left-footer .socicon-instagram {
+.footer .right-footer .socicon-instagram {
   padding-top: 11px;
   padding-left: 12px;
 }
 
-.footer .left-footer .jubbew {
+.footer .right-footer .jubbew {
   margin: 0 4px 0 8px;
 }
 
-.footer .left-footer .socicon-linkedin {
+.footer .right-footer .socicon-linkedin {
   padding-left: 12px;
   margin: 0 8px 0 4px;
 }
 
-.footer .left-footer .socicon-github {
+.footer .right-footer .socicon-github {
   padding-top: 11px;
 }
 
-.footer .left-footer .socicon:hover {
+.footer .right-footer .socicon:hover {
   color: #121b35;
   background-color: #f3f3f3;
 }
 
-.footer .left-footer svg:hover {
+.footer .right-footer svg:hover {
   fill: var(--light);
+}
+
+@media all and (max-width: 860px) {
+  .footer .right-footer {
+    padding-left: 0px;
+    margin-bottom: 4rem;
+  }
+}
+
+@media all and (max-width: 580px) {
+  .footer .right-footer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+  }
+}
+
+@media all and (max-width: 860px) {
+  .footer {
+        grid-template-areas: "right-footer" "left-footer";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */
