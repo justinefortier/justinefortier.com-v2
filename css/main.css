@@ -105,7 +105,25 @@ html body h1 {
 html body h2 {
   font-family: "jubbew-semibold";
   margin: 0;
-  font-size: 11rem;
+  font-size: 10rem;
+}
+
+@media all and (max-width: 1200px) {
+  html body h2 {
+    font-size: 9rem;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  html body h2 {
+    font-size: 8rem;
+  }
+}
+
+@media all and (max-width: 600px) {
+  html body h2 {
+    font-size: 6rem;
+  }
 }
 
 html body h3 {
@@ -315,7 +333,7 @@ html body button:hover {
 }
 
 .about-me .aboutme-col-left img {
-  width: 75%;
+  width: 70%;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -351,18 +369,12 @@ html body button:hover {
   border-radius: 50px;
 }
 
-@media all and (max-width: 599px) {
-  .about-me .aboutme-col-right .aboutme-sentence button {
-    width: 210px;
-  }
-}
-
 .about-me .aboutme-col-right .aboutme-sentence button:hover {
   background-color: var(--secondary);
   color: var(--light);
 }
 
-@media all and (max-width: 1023px) {
+@media all and (max-width: 970px) {
   .about-me {
         grid-template-areas: "colright" "colleft";
     -ms-grid-columns: 1fr;
@@ -375,23 +387,17 @@ html body button:hover {
   }
   .about-me .aboutme-col-left img {
     position: static;
-    width: 70%;
+    width: 60%;
     margin: 0 auto -10px auto;
   }
   .about-me .aboutme-col-right {
     text-align: center;
   }
+  .about-me .aboutme-col-right .aboutme-sentence {
+    margin-bottom: 8%;
+  }
   .about-me .aboutme-col-right .aboutme-sentence p {
     text-align: center;
-  }
-}
-
-@media all and (max-width: 1023px) {
-  .about-me .aboutme-col-right {
-    margin: 12% auto 5% auto;
-  }
-  .about-me .aboutme-col-right .aboutme-sentence {
-    margin: 0 auto;
   }
 }
 
