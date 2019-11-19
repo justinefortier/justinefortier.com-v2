@@ -35,9 +35,27 @@
 
 #cover .cover-col-left .works-title {
   font-family: "jubbew-semibold";
-  font-size: 90px;
+  font-size: 5.5rem;
   color: var(--primary);
   margin: 0 0 10px -5px;
+}
+
+@media all and (max-width: 680px) {
+  #cover .cover-col-left .works-title {
+    font-size: 5rem;
+  }
+}
+
+@media all and (max-width: 580px) {
+  #cover .cover-col-left .works-title {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 500px) {
+  #cover .cover-col-left .works-title {
+    font-size: 4rem;
+  }
 }
 
 #cover .cover-col-left .subtitle {
@@ -47,21 +65,39 @@
   margin: 10px 0 10px -5px;
 }
 
+@media all and (max-width: 580px) {
+  #cover .cover-col-left .subtitle {
+    text-align: center;
+  }
+}
+
 #cover .cover-col-left .works-category {
   font-family: "Montserrat", sans-serif;
   color: var(--primary);
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
+@media all and (max-width: 500px) {
+  #cover .cover-col-left .works-category {
+    font-size: 1rem;
+  }
+}
+
 #cover .cover-col-left .collaboration {
   font-family: "Montserrat", sans-serif;
   color: var(--primary);
-  font-size: 15px;
-  margin-top: 0;
+  font-size: 0.9rem;
+  margin-top: 0.1rem;
   line-height: 20px;
+}
+
+@media all and (max-width: 580px) {
+  #cover .cover-col-left .collaboration {
+    text-align: center;
+  }
 }
 
 #cover .cover-col-left .works-informations {
@@ -73,15 +109,39 @@
   font-family: "Montserrat", sans-serif;
   color: var(--primary);
   font-weight: 700;
-  font-size: 13px;
+  font-size: 0.8rem;
   text-transform: uppercase;
-  margin-top: 10px;
+  margin-top: 0.9rem;
   margin-bottom: 0;
 }
 
 #cover .cover-col-left .works-informations p {
   color: var(--light-blue);
   margin: 0;
+}
+
+@media all and (max-width: 580px) {
+  #cover .cover-col-left .works-informations p {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 580px) {
+  #cover .cover-col-left .works-informations {
+    position: absolute;
+  }
+}
+
+@media all and (max-width: 950px) {
+  #cover .cover-col-left {
+    padding: 90px 80px 100px 80px;
+  }
+}
+
+@media all and (max-width: 580px) {
+  #cover .cover-col-left {
+    text-align: center;
+  }
 }
 
 #cover .cover-col-right {
@@ -91,6 +151,27 @@
   grid-area: covcolright;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media all and (max-width: 950px) {
+  #cover .cover-col-right {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  #cover {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+}
+
+@media all and (max-width: 950px) {
+  #cover {
+        grid-template-areas: "covcolleft";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .wrapper {
@@ -113,7 +194,7 @@
   -ms-grid-column: 1;
   grid-area: meta;
   background-color: var(--secondary);
-  padding: 60px 60px;
+  padding: 60px 80px;
 }
 
 .wrapper .meta p {
@@ -123,6 +204,12 @@
 
 .wrapper .meta .artwork-name {
   font-weight: 400;
+}
+
+@media all and (max-width: 900px) {
+  .wrapper .meta p {
+    padding: 0;
+  }
 }
 
 .wrapper .description {
@@ -148,7 +235,7 @@
   font-size: 20px;
   font-weight: 300;
   text-align: left;
-  line-height: 37px;
+  line-height: 2.2rem;
   color: var(--light-blue);
 }
 
@@ -190,6 +277,30 @@
 
 .wrapper .description .text .media .cartel .italic {
   font-weight: 600;
+}
+
+@media all and (max-width: 1200px) {
+  .wrapper .description .text .media {
+    width: 70%;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .wrapper .description .text .media {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .wrapper .description .text .media {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .wrapper .description .text .media {
+    width: 100%;
+  }
 }
 
 .wrapper .description .text .buttons {
@@ -245,6 +356,30 @@
   font-family: "Montserrat", sans-serif;
   color: var(--light-blue);
   margin: 0;
+}
+
+@media all and (max-width: 1200px) {
+  .wrapper .description .images {
+    width: 70%;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .wrapper .description .images {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .wrapper .description .images {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .wrapper .description .images {
+    width: 100%;
+  }
 }
 
 .wrapper .links {

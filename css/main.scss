@@ -109,6 +109,12 @@ html {
       }
     }
 
+    @media all and (max-width: 580px) {
+      header {
+        text-align: center;
+      }
+    }
+
     a {
       text-decoration: none;
     }
@@ -180,7 +186,7 @@ html {
       font-size: 1.2rem;
       font-weight: 300;
       text-align: left;
-      line-height: 1.8rem;
+      line-height: 2.2rem;
     }
 
     .artwork-name {
@@ -655,9 +661,98 @@ html {
         border-radius: 50px;
       }
 
+      @media all and (max-width: 970px) {
+        button {
+          margin-bottom: 13rem;
+        }
+      }
+
+      @media all and (max-width: 880px) {
+        button {
+          margin-bottom: 12rem;
+        }
+      }
+
+      @media all and (max-width: 810px) {
+        button {
+          margin-bottom: 11rem;
+        }
+      }
+
+      @media all and (max-width: 760px) {
+        button {
+          margin-bottom: 10rem;
+        }
+      }
+
+      @media all and (max-width: 700px) {
+        button {
+          margin-bottom: 9rem;
+        }
+      }
+
+      @media all and (max-width: 640px) {
+        button {
+          margin-bottom: 8rem;
+        }
+      }
+
+      @media all and (max-width: 600px) {
+        button {
+          margin-bottom: 9rem;
+        }
+      }
+
+      @media all and (max-width: 520px) {
+        button {
+          margin-bottom: 8rem;
+        }
+      }
+
+      @media all and (max-width: 500px) {
+        button {
+          margin-bottom: 9rem;
+        }
+      }
+
       button:hover {
         background-color: var(--light);
         color: var(--secondary);
+      }
+
+      img {
+        display: none;
+      }
+
+      @media all and (max-width: 970px) {
+        img {
+          display: block;
+          position: absolute;
+          margin-left: auto;
+          margin-right: auto;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 55%;
+        }
+      }
+
+      @media all and (max-width: 970px) {
+        img {
+          width: 55%;
+        }
+      }
+
+      @media all and (max-width: 600px) {
+        img {
+          width: 65%;
+        }
+      }
+
+      @media all and (max-width: 600px) {
+        img {
+          width: 75%;
+        }
       }
     }
 
@@ -701,12 +796,6 @@ html {
     text-align: center;
     font-size: 4rem;
     margin-bottom: 40px;
-  }
-
-  @media all and (max-width: 600px) {
-    h2 {
-      font-size: 6rem;
-    }
   }
 
   p {
