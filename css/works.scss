@@ -15,6 +15,12 @@
     grid-template-rows: 650px auto;
 }
 
+@media all and (max-width: 580px) {
+    .content-works {
+        grid-template-rows: auto auto;
+    }
+}
+
 //////////// COVER ////////////
 
 #cover {
@@ -62,13 +68,16 @@
         .subtitle {
             font-family: "jubbew-semibold";
             color: var(--primary);
-            font-size: 45px;
+            font-size: 2.7rem;
             margin: 10px 0 10px -5px;
+            line-height: 2.7rem;
         }
 
         @media all and (max-width: 580px) {
             .subtitle {
                 text-align: center;
+                font-size: 2.3rem;
+                line-height: 2.2rem;
             }
         }
 
@@ -129,7 +138,8 @@
 
         @media all and (max-width: 580px) {
             .works-informations {
-                position: absolute;
+                position: static;
+                margin-top: 4rem;
             }
         }
     }
@@ -143,6 +153,7 @@
     @media all and (max-width: 580px) {
         .cover-col-left {
             text-align: center;
+            padding-bottom: 70px;
         }
     }
 
@@ -170,7 +181,7 @@
     #cover {
         grid-template-areas:
             "covcolleft";
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
     }
 }
 
@@ -330,7 +341,7 @@
 
                 img {
                     width: 100%;
-                    margin: 5px;
+                    margin: 5px 0;
                 }
 
                 .cartel {
@@ -388,7 +399,7 @@
         padding-bottom: 90px;
 
         img {
-            width: 35px;
+            height: 4rem;
             margin: 20px;
             cursor: pointer;
         }

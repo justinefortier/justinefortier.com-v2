@@ -84,7 +84,13 @@ html body header {
 html body header .logo {
   grid-area: logo;
   height: 27px;
-  padding: 12px 65px 11px 80px;
+  padding: 12px 0 11px 80px;
+}
+
+@media all and (max-width: 580px) {
+  html body header .logo {
+    padding-left: 0;
+  }
 }
 
 @media all and (max-width: 580px) {
@@ -134,10 +140,16 @@ html body h2 {
 
 html body h3 {
   font-family: "jubbew-semibold";
-  font-size: 80px;
+  font-size: 5rem;
   color: var(--primary);
   margin: 0 0 50px 0;
   text-align: left;
+}
+
+@media all and (max-width: 580px) {
+  html body h3 {
+    font-size: 3rem;
+  }
 }
 
 html body h4 {
@@ -150,9 +162,15 @@ html body h4 {
 
 html body .title-number {
   font-family: "jubbew-medium";
-  font-size: 50px;
+  font-size: 3rem;
   color: var(--primary);
   font-style: normal;
+}
+
+@media all and (max-width: 580px) {
+  html body .title-number {
+    font-size: 2.3rem;
+  }
 }
 
 html body .home-titles {
