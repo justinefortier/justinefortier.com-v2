@@ -17,8 +17,7 @@
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: filters;
-  margin: 90px auto 0 calc(80px - 5px);
-  text-align: left;
+  margin: 90px calc(80px - 5px) 0 calc(80px - 5px);
 }
 
 .filters #filters {
@@ -49,19 +48,24 @@
   color: var(--light);
 }
 
+@media all and (max-width: 580px) {
+  .filters #filters {
+    text-align: center;
+  }
+}
+
 #windows {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: windows;
-  width: 100%;
-  margin: 1rem auto 1rem calc(80px - 16px);
+  margin: 1rem calc(80px - 16px) 1rem calc(80px - 16px);
 }
 
 #windows .portfolio {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
-  width: 28%;
+  width: 30%;
   margin: 1rem;
   display: none;
   float: left;
@@ -112,6 +116,20 @@
 #windows .portfolio .portfolio-wrapper .label .category {
   display: block;
   font-size: 0.7em;
+}
+
+@media all and (max-width: 1090px) {
+  #windows .portfolio {
+    margin: 0.7rem;
+    width: 45%;
+  }
+}
+
+@media all and (max-width: 660px) {
+  #windows .portfolio {
+    margin: 0.7rem;
+    width: 100%;
+  }
 }
 
 #windows .portfolio:hover .label {
