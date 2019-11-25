@@ -160,6 +160,12 @@ html {
       }
     }
 
+    @media all and (max-width: 414px) {
+      h2 {
+        font-size: 4rem;
+      }
+    }
+
     h3 {
       font-family: "jubbew-semibold";
       font-size: 5rem;
@@ -443,6 +449,12 @@ html {
       }
     }
   }
+
+  @media all and (max-width: 414px) {
+    .aboutme-col-right {
+      margin-top: 70px;
+    }
+  }
 }
 
 @media all and (max-width: 970px) {
@@ -472,6 +484,19 @@ html {
         p {
           text-align: center;
         }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 414px) {
+  .about-me {
+    padding: 0 50px;
+
+    .aboutme-col-left {
+      img {
+        margin-top: 20px;
+        width: 100%;
       }
     }
   }
@@ -758,6 +783,12 @@ html {
         }
       }
 
+      @media all and (max-width: 414px) {
+        button {
+          margin-bottom: 8rem;
+        }
+      }
+
       button:hover {
         background-color: var(--light);
         color: var(--secondary);
@@ -776,12 +807,6 @@ html {
           left: 0;
           right: 0;
           bottom: 0;
-          width: 55%;
-        }
-      }
-
-      @media all and (max-width: 970px) {
-        img {
           width: 55%;
         }
       }
@@ -811,6 +836,12 @@ html {
       }
     }
 
+    @media all and (max-width: 414px) {
+      .works-col-left {
+        padding: 70px 0;
+      }
+    }
+
     .works-col-right {
       z-index: 1;
       background-image: url(../medias/previsualisation/previsualisation.png);
@@ -826,6 +857,12 @@ html {
     }
   }
 }
+
+// @media all and (max-width: 414px) {
+//   .works {
+//     padding: 0 50px;
+//   }
+// }
 
 ////////// CONTACT //////////
 

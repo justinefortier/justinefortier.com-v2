@@ -139,6 +139,12 @@ html body h2 {
   }
 }
 
+@media all and (max-width: 414px) {
+  html body h2 {
+    font-size: 4rem;
+  }
+}
+
 html body h3 {
   font-family: "jubbew-semibold";
   font-size: 5rem;
@@ -422,6 +428,12 @@ html body button:hover {
   color: var(--light);
 }
 
+@media all and (max-width: 414px) {
+  .about-me .aboutme-col-right {
+    margin-top: 70px;
+  }
+}
+
 @media all and (max-width: 970px) {
   .about-me {
         grid-template-areas: "colright" "colleft";
@@ -446,6 +458,16 @@ html body button:hover {
   }
   .about-me .aboutme-col-right .aboutme-sentence p {
     text-align: center;
+  }
+}
+
+@media all and (max-width: 414px) {
+  .about-me {
+    padding: 0 50px;
+  }
+  .about-me .aboutme-col-left img {
+    margin-top: 20px;
+    width: 100%;
   }
 }
 
@@ -735,6 +757,12 @@ html body button:hover {
   }
 }
 
+@media all and (max-width: 414px) {
+  .works .row .works-col-left button {
+    margin-bottom: 8rem;
+  }
+}
+
 .works .row .works-col-left button:hover {
   background-color: var(--light);
   color: var(--secondary);
@@ -753,12 +781,6 @@ html body button:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    width: 55%;
-  }
-}
-
-@media all and (max-width: 970px) {
-  .works .row .works-col-left img {
     width: 55%;
   }
 }
@@ -783,6 +805,12 @@ html body button:hover {
   .works .row .works-col-left p {
     text-align: center;
     margin-top: 2rem;
+  }
+}
+
+@media all and (max-width: 414px) {
+  .works .row .works-col-left {
+    padding: 70px 0;
   }
 }
 
