@@ -181,7 +181,7 @@ html body h3 {
 
 @media all and (max-width: 375px) {
   html body h3 {
-    font-size: 2.3rem;
+    font-size: 1.9rem;
   }
 }
 
@@ -196,6 +196,7 @@ html body h4 {
 @media all and (max-width: 375px) {
   html body h4 {
     margin-top: 40px;
+    font-size: 1.8rem;
   }
 }
 
@@ -226,7 +227,7 @@ html body .title-number {
 
 @media all and (max-width: 375px) {
   html body .title-number {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 }
 
