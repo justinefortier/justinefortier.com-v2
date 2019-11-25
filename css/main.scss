@@ -317,8 +317,8 @@ html {
   display: grid;
   grid-template-areas:
     "cover"
-    "aboutme"
     "works"
+    "aboutme"
     "window"
     "contact"
     "footer";
@@ -459,7 +459,7 @@ html {
 .about-me {
   grid-area: aboutme;
   position: relative;
-  background-color: var(--light);
+  background-color: var(--secondary);
   display: grid;
   grid-template-areas: "colleft colright";
   grid-template-columns: 54% 46%;
@@ -484,19 +484,19 @@ html {
     margin-top: 90px;
 
     h2 {
-      color: var(--primary);
+      color: var(--light);
     }
 
     .aboutme-sentence {
       margin: 50px 0 110px 0;
 
       p {
-        color: var(--primary);
+        color: var(--light);
       }
 
       button {
         width: 240px;
-        background: var(--primary);
+        background: var(--secondary);
         color: var(--light);
         margin-top: 20px;
         border-radius: 50px;
@@ -509,8 +509,8 @@ html {
       }
 
       button:hover {
-        background-color: var(--secondary);
-        color: var(--light);
+        background-color: var(--light);
+        color: var(--secondary);
       }
     }
   }
@@ -536,7 +536,13 @@ html {
       img {
         position: static;
         width: 60%;
-        margin: 0 auto -10px auto;
+        margin: 0 auto;
+      }
+
+      @media all and (max-width: 970px) {
+        img {
+          margin-bottom: -4px;
+        }
       }
     }
 
@@ -578,7 +584,7 @@ html {
 .works {
   grid-area: works;
   position: relative;
-  background-color: var(--secondary);
+  background-color: var(--light);
   width: 100%;
 
   .row {
@@ -592,7 +598,7 @@ html {
       padding: 90px 20px 90px 80px;
 
       h2 {
-        color: var(--light);
+        color: var(--primary);
       }
 
       .works-list {
@@ -626,7 +632,7 @@ html {
         font-family: "Montserrat", sans-serif;
         font-weight: 400;
         text-transform: uppercase;
-        color: var(--light);
+        color: var(--primary);
         text-decoration: none;
         padding: 6px 8px;
         background-size: 200% auto;
@@ -794,7 +800,7 @@ html {
 
       button {
         width: 240px;
-        background: var(--secondary);
+        background: var(--primary);
         color: var(--light);
         margin-top: 20px;
         border-radius: 50px;
@@ -867,8 +873,8 @@ html {
       }
 
       button:hover {
-        background-color: var(--light);
-        color: var(--secondary);
+        background-color: var(--secondary);
+        color: var(--light);
       }
 
       img {
