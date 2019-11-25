@@ -88,6 +88,18 @@
   }
 }
 
+@media all and (max-width: 500px) {
+  #cover .about-me-subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+@media all and (max-width: 320px) {
+  #cover .about-me-subtitle {
+    font-size: 0.8rem;
+  }
+}
+
 #cover .text-cascade-1 {
   margin-left: 60px;
 }
@@ -111,6 +123,18 @@
 @media all and (max-width: 580px) {
   #cover .text-cascade-2 {
     margin-left: 0;
+  }
+}
+
+@media all and (max-width: 414px) {
+  #cover {
+    padding: 60px 50px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  #cover {
+    padding: 60px 30px;
   }
 }
 
@@ -194,6 +218,12 @@
   text-align: justify;
 }
 
+@media all and (max-width: 414px) {
+  .wrapper .description .who-i-am p {
+    text-align: left;
+  }
+}
+
 @media all and (max-width: 1000px) {
   .wrapper .description .who-i-am {
     width: 70%;
@@ -212,6 +242,13 @@
   }
 }
 
+@media all and (max-width: 414px) {
+  .wrapper .description .who-i-am {
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+}
+
 .wrapper .description .skills-box {
   width: 60%;
   margin: 80px auto 150px auto;
@@ -220,6 +257,12 @@
 .wrapper .description .skills-box .skill {
   margin-top: 30px;
   margin-bottom: 5px;
+}
+
+@media all and (max-width: 414px) {
+  .wrapper .description .skills-box .skill {
+    margin-top: 15px;
+  }
 }
 
 .wrapper .description .skills-box .progress {
@@ -278,6 +321,13 @@
   }
 }
 
+@media all and (max-width: 414px) {
+  .wrapper .description .skills-box {
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+}
+
 .wrapper .description .exhibitions {
   width: 60%;
   margin: 80px auto 240px auto;
@@ -309,6 +359,13 @@
   }
 }
 
+@media all and (max-width: 414px) {
+  .wrapper .description .exhibitions {
+    margin-top: 0;
+    margin-bottom: 170px;
+  }
+}
+
 .wrapper .description .illu-shaka {
   z-index: 2;
   position: absolute;
@@ -334,6 +391,18 @@
 @media all and (max-width: 500px) {
   .wrapper .description .illu-shaka {
     width: 330px;
+  }
+}
+
+@media all and (max-width: 414px) {
+  .wrapper .description .illu-shaka {
+    width: 270px;
+  }
+}
+
+@media all and (max-width: 414px) {
+  .wrapper .description {
+    padding: 5rem 50px;
   }
 }
 

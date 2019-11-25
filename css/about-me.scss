@@ -93,6 +93,18 @@
         }
     }
 
+    @media all and (max-width: 500px) {
+        .about-me-subtitle {
+            font-size: 0.9rem;
+        }
+    }
+
+    @media all and (max-width: 320px) {
+        .about-me-subtitle {
+            font-size: 0.8rem;
+        }
+    }
+
     .text-cascade-1 {
         margin-left: 60px;
     }
@@ -117,6 +129,18 @@
         .text-cascade-2 {
             margin-left: 0;
         }
+    }
+}
+
+@media all and (max-width: 414px) {
+    #cover {
+        padding: 60px 50px;
+    }
+}
+
+@media all and (max-width: 320px) {
+    #cover {
+        padding: 60px 30px;
     }
 }
 
@@ -195,6 +219,12 @@
             p {
                 text-align: justify;
             }
+
+            @media all and (max-width: 414px) {
+                p {
+                    text-align: left;
+                }
+            }
         }
 
         @media all and (max-width: 1000px) {
@@ -215,6 +245,13 @@
             }
         }
 
+        @media all and (max-width: 414px) {
+            .who-i-am {
+                margin-top: 0;
+                margin-bottom: 80px;
+            }
+        }
+
         .skills-box {
             width: 60%;
             margin: 80px auto 150px auto;
@@ -222,6 +259,12 @@
             .skill {
                 margin-top: 30px;
                 margin-bottom: 5px;
+            }
+
+            @media all and (max-width: 414px) {
+                .skill {
+                    margin-top: 15px;
+                }
             }
 
             .progress {
@@ -272,6 +315,13 @@
             }
         }
 
+        @media all and (max-width: 414px) {
+            .skills-box {
+                margin-top: 0;
+                margin-bottom: 80px;
+            }
+        }
+
         .exhibitions {
             width: 60%;
             margin: 80px auto 240px auto;
@@ -303,6 +353,13 @@
             }
         }
 
+        @media all and (max-width: 414px) {
+            .exhibitions {
+                margin-top: 0;
+                margin-bottom: 170px;
+            }
+        }
+
         .illu-shaka {
             z-index: 2;
             position: absolute;
@@ -329,6 +386,18 @@
             .illu-shaka {
                 width: 330px;
             }
+        }
+
+        @media all and (max-width: 414px) {
+            .illu-shaka {
+                width: 270px;
+            }
+        }
+    }
+
+    @media all and (max-width: 414px) {
+        .description {
+            padding: 5rem 50px;
         }
     }
 

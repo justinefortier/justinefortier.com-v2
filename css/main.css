@@ -172,12 +172,31 @@ html body h3 {
   }
 }
 
+@media all and (max-width: 414px) {
+  html body h3 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  html body h3 {
+    font-size: 2.3rem;
+  }
+}
+
 html body h4 {
   font-family: "jubbew-semibold";
   font-size: 35px;
   color: var(--primary);
   margin: 60px 0 0 0;
   text-align: left;
+}
+
+@media all and (max-width: 375px) {
+  html body h4 {
+    margin-top: 40px;
+  }
 }
 
 html body .title-number {
@@ -199,6 +218,18 @@ html body .title-number {
   }
 }
 
+@media all and (max-width: 414px) {
+  html body .title-number {
+    font-size: 1.9rem;
+  }
+}
+
+@media all and (max-width: 375px) {
+  html body .title-number {
+    font-size: 1.7rem;
+  }
+}
+
 html body .home-titles {
   letter-spacing: 7px;
 }
@@ -209,6 +240,12 @@ html body p {
   font-weight: 300;
   text-align: left;
   line-height: 2.2rem;
+}
+
+@media all and (max-width: 414px) {
+  html body p {
+    font-size: 1rem;
+  }
 }
 
 html body .artwork-name {
@@ -236,6 +273,13 @@ html body button {
   font-weight: 400;
   letter-spacing: 3px;
   margin-top: 10px;
+}
+
+@media all and (max-width: 414px) {
+  html body button {
+    font-size: 0.8rem;
+    width: 240px;
+  }
 }
 
 html body button:hover {
@@ -434,6 +478,12 @@ html body button:hover {
   color: var(--light);
   margin-top: 20px;
   border-radius: 50px;
+}
+
+@media all and (max-width: 414px) {
+  .about-me .aboutme-col-right .aboutme-sentence button {
+    width: 210px;
+  }
 }
 
 .about-me .aboutme-col-right .aboutme-sentence button:hover {
@@ -816,7 +866,7 @@ html body button:hover {
   }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 500px) {
   .works .row .works-col-left img {
     width: 75%;
   }
