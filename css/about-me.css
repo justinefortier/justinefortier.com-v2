@@ -8,6 +8,13 @@
       grid-template-rows: 580px auto auto auto;
 }
 
+@media all and (max-width: 680px) {
+  .about-me-content {
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+  }
+}
+
 #cover {
   z-index: 0;
   -ms-grid-row: 1;
@@ -20,29 +27,91 @@
 
 #cover .about-me-title {
   font-family: "jubbew-semibold";
-  font-size: 170px;
+  font-size: 11rem;
   color: var(--light);
-  margin: 20px 0 50px -5px;
+  margin: 20px 0 30px -5px;
+}
+
+@media all and (max-width: 900px) {
+  #cover .about-me-title {
+    font-size: 10rem;
+  }
+}
+
+@media all and (max-width: 800px) {
+  #cover .about-me-title {
+    font-size: 9rem;
+  }
+}
+
+@media all and (max-width: 760px) {
+  #cover .about-me-title {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 680px) {
+  #cover .about-me-title {
+    font-size: 5rem;
+  }
+}
+
+@media all and (max-width: 500px) {
+  #cover .about-me-title {
+    font-size: 4rem;
+  }
 }
 
 #cover .about-me-subtitle {
   font-family: "Montserrat", sans-serif;
   color: var(--light);
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 2rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 5px;
 }
 
+@media all and (max-width: 760px) {
+  #cover .about-me-subtitle {
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+
+@media all and (max-width: 580px) {
+  #cover .about-me-subtitle {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+}
+
 #cover .text-cascade-1 {
   margin-left: 60px;
 }
 
+@media all and (max-width: 840px) {
+  #cover .text-cascade-1 {
+    margin-left: 0;
+  }
+}
+
 #cover .text-cascade-2 {
   margin-left: 90px;
+}
+
+@media all and (max-width: 840px) {
+  #cover .text-cascade-2 {
+    margin-left: 30px;
+  }
+}
+
+@media all and (max-width: 580px) {
+  #cover .text-cascade-2 {
+    margin-left: 0;
+  }
 }
 
 .illu-justine {
@@ -51,6 +120,19 @@
   top: 100px;
   right: 130px;
   width: 470px;
+}
+
+@media all and (max-width: 1350px) {
+  .illu-justine {
+    width: 400px;
+    top: 170px;
+  }
+}
+
+@media all and (max-width: 1250px) {
+  .illu-justine {
+    display: none;
+  }
 }
 
 .wrapper {
@@ -112,6 +194,24 @@
   text-align: justify;
 }
 
+@media all and (max-width: 1000px) {
+  .wrapper .description .who-i-am {
+    width: 70%;
+  }
+}
+
+@media all and (max-width: 850px) {
+  .wrapper .description .who-i-am {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .wrapper .description .who-i-am {
+    width: 100%;
+  }
+}
+
 .wrapper .description .skills-box {
   width: 60%;
   margin: 80px auto 150px auto;
@@ -160,10 +260,53 @@
   }
 }
 
+@media all and (max-width: 1000px) {
+  .wrapper .description .skills-box {
+    width: 70%;
+  }
+}
+
+@media all and (max-width: 850px) {
+  .wrapper .description .skills-box {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .wrapper .description .skills-box {
+    width: 100%;
+  }
+}
+
 .wrapper .description .exhibitions {
   width: 60%;
   margin: 80px auto 240px auto;
   text-align: justify;
+}
+
+@media all and (max-width: 1000px) {
+  .wrapper .description .exhibitions {
+    width: 70%;
+    margin-bottom: 300px;
+  }
+}
+
+@media all and (max-width: 850px) {
+  .wrapper .description .exhibitions {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .wrapper .description .exhibitions {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .wrapper .description .exhibitions {
+    margin-bottom: 250px;
+  }
 }
 
 .wrapper .description .illu-shaka {
@@ -174,6 +317,24 @@
   width: 465px;
   margin: 0;
   padding: 0;
+}
+
+@media all and (max-width: 1250px) {
+  .wrapper .description .illu-shaka {
+    width: 400px;
+  }
+}
+
+@media all and (max-width: 850px) {
+  .wrapper .description .illu-shaka {
+    width: 350px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .wrapper .description .illu-shaka {
+    width: 330px;
+  }
 }
 
 .wrapper .cv {

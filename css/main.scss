@@ -79,7 +79,7 @@
   --primary: #121b35;
   // --light-blue: #002445;
   --light-blue: #0a2c51;
-  --secondary: #e2a966;
+  --secondary: rgb(226, 169, 102);
   --light: #f3f3f3;
 }
 
@@ -168,6 +168,12 @@ html {
       text-align: left;
     }
 
+    @media all and (max-width: 680px) {
+      h3 {
+        font-size: 4rem;
+      }
+    }
+
     @media all and (max-width: 580px) {
       h3 {
         font-size: 3rem;
@@ -187,6 +193,12 @@ html {
       font-size: 3rem;
       color: var(--primary);
       font-style: normal;
+    }
+
+    @media all and (max-width: 680px) {
+      .title-number {
+        font-size: 2.7rem;
+      }
     }
 
     @media all and (max-width: 580px) {
