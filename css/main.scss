@@ -299,6 +299,12 @@ html {
   padding: 5px;
 }
 
+@media all and (max-width: 414px) {
+  .important-information {
+    font-size: 0.8rem;
+  }
+}
+
 //////////// COVER ////////////
 
 #cover {
@@ -798,7 +804,7 @@ html {
 
       @media all and (max-width: 414px) {
         button {
-          margin-bottom: 7rem;
+          margin-bottom: 6.6rem;
         }
       }
 

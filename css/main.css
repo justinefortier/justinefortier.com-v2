@@ -272,6 +272,12 @@ html body button:hover {
   padding: 5px;
 }
 
+@media all and (max-width: 414px) {
+  .important-information {
+    font-size: 0.8rem;
+  }
+}
+
 #cover {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -772,7 +778,7 @@ html body button:hover {
 
 @media all and (max-width: 414px) {
   .works .row .works-col-left button {
-    margin-bottom: 7rem;
+    margin-bottom: 6.6rem;
   }
 }
 
