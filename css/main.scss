@@ -77,10 +77,10 @@
 
 :root {
   --primary: #121b35;
-  // --light-blue: #002445;
   --light-blue: #0a2c51;
-  --secondary: rgb(226, 169, 102);
+  --secondary: #e2a966;
   --light: #f3f3f3;
+  --info: #e9726b;
 }
 
 /////////// GENERAL //////////
@@ -271,6 +271,19 @@ html {
   .content-home {
     grid-template-rows: auto auto auto auto auto;
   }
+}
+
+///////////// INFO ////////////
+
+.important-information {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--info);
+  text-align: center;
+  padding: 5px;
 }
 
 //////////// COVER ////////////
