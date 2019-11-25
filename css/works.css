@@ -65,6 +65,12 @@
   }
 }
 
+@media all and (max-width: 414px) {
+  #cover .cover-col-left .works-title {
+    font-size: 3rem;
+  }
+}
+
 #cover .cover-col-left .subtitle {
   font-family: "jubbew-semibold";
   color: var(--primary);
@@ -77,6 +83,13 @@
   #cover .cover-col-left .subtitle {
     text-align: center;
     font-size: 2.3rem;
+    line-height: 2.2rem;
+  }
+}
+
+@media all and (max-width: 414px) {
+  #cover .cover-col-left .subtitle {
+    font-size: 2rem;
     line-height: 2.2rem;
   }
 }
@@ -96,11 +109,17 @@
   }
 }
 
+@media all and (max-width: 414px) {
+  #cover .cover-col-left .works-category {
+    font-size: 0.8rem;
+  }
+}
+
 #cover .cover-col-left .collaboration {
   font-family: "Montserrat", sans-serif;
   color: var(--primary);
   font-size: 0.9rem;
-  margin-top: 0.1rem;
+  margin-top: 0.2rem;
   line-height: 20px;
 }
 
@@ -125,14 +144,27 @@
   margin-bottom: 0;
 }
 
+@media all and (max-width: 580px) {
+  #cover .cover-col-left .works-informations .info-title {
+    font-size: 0.7rem;
+  }
+}
+
 #cover .cover-col-left .works-informations p {
   color: var(--light-blue);
   margin: 0;
+  line-height: 1.7rem;
 }
 
 @media all and (max-width: 580px) {
   #cover .cover-col-left .works-informations p {
     text-align: center;
+  }
+}
+
+@media all and (max-width: 414px) {
+  #cover .cover-col-left .works-informations p {
+    line-height: 1.5rem;
   }
 }
 
@@ -153,6 +185,12 @@
   #cover .cover-col-left {
     text-align: center;
     padding-bottom: 70px;
+  }
+}
+
+@media all and (max-width: 414px) {
+  #cover .cover-col-left {
+    padding: 50px 30px;
   }
 }
 
@@ -224,6 +262,18 @@
   }
 }
 
+@media all and (max-width: 414px) {
+  .wrapper .meta {
+    padding: 20px 50px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .wrapper .meta {
+    padding: 20px 30px;
+  }
+}
+
 .wrapper .description {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -244,11 +294,18 @@
 
 .wrapper .description .text ol {
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 300;
   text-align: left;
   line-height: 2.2rem;
   color: var(--light-blue);
+}
+
+@media all and (max-width: 414px) {
+  .wrapper .description .text ol {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
 }
 
 .wrapper .description .text .media {
@@ -267,6 +324,7 @@
 
 .wrapper .description .text .media .cartel {
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .wrapper .description .text .media .cartel .cartel-title {
@@ -289,6 +347,12 @@
 
 .wrapper .description .text .media .cartel .italic {
   font-weight: 600;
+}
+
+@media all and (max-width: 414px) {
+  .wrapper .description .text .media .cartel {
+    margin-top: 5px;
+  }
 }
 
 @media all and (max-width: 1200px) {
@@ -335,6 +399,12 @@
   cursor: pointer;
 }
 
+@media all and (max-width: 414px) {
+  .wrapper .description .text {
+    margin-bottom: 0;
+  }
+}
+
 .wrapper .description .images {
   margin: 0 auto 90px auto;
   width: 60%;
@@ -351,6 +421,7 @@
 
 .wrapper .description .images .artwork .cartel {
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .wrapper .description .images .artwork .cartel .cartel-title {
@@ -368,6 +439,18 @@
   font-family: "Montserrat", sans-serif;
   color: var(--light-blue);
   margin: 0;
+}
+
+@media all and (max-width: 414px) {
+  .wrapper .description .images .artwork .cartel {
+    margin-top: 5px;
+  }
+}
+
+@media all and (max-width: 414px) {
+  .wrapper .description .images .artwork {
+    margin-bottom: 0px;
+  }
 }
 
 @media all and (max-width: 1200px) {
@@ -394,6 +477,24 @@
   }
 }
 
+@media all and (max-width: 414px) {
+  .wrapper .description .images {
+    margin-bottom: 80px;
+  }
+}
+
+@media all and (max-width: 414px) {
+  .wrapper .description {
+    padding: 5rem 50px 2rem 50px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .wrapper .description {
+    padding: 5rem 30px 2rem 30px;
+  }
+}
+
 .wrapper .links {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
@@ -407,5 +508,11 @@
   height: 4rem;
   margin: 20px;
   cursor: pointer;
+}
+
+@media all and (max-width: 414px) {
+  .wrapper .links img {
+    height: 2.6rem;
+  }
 }
 /*# sourceMappingURL=works.css.map */
