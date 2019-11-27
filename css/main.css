@@ -902,7 +902,7 @@ html body button:hover {
 
 .works .row .works-col-right {
   z-index: 1;
-  background-image: url(../medias/previsualisation/previsualisation.png);
+  background-image: url(../medias/previsualisations/home/previsualisation.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
