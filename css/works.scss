@@ -313,8 +313,65 @@
                     width: 100%;
                 }
 
-                video {
-                    width: 100%;
+                iframe {
+                    width: 720px;
+                    height: 405px;
+                }
+
+                @media all and (max-width: 1360px) {
+                    iframe {
+                        width: 640px;
+                        height: 360px;
+                    }
+                }
+
+                @media all and (max-width: 1075px) {
+                    iframe {
+                        width: 560px;
+                        height: 315px;
+                    }
+                }
+
+                @media all and (max-width: 865px) {
+                    iframe {
+                        width: 480px;
+                        height: 270px;
+                    }
+                }
+
+                @media all and (max-width: 695px) {
+                    iframe {
+                        width: 360px;
+                        height: 202.5px;
+                    }
+                }
+
+                @media all and (max-width: 580px) {
+                    iframe {
+                        width: 340px;
+                        height: 191.25px;
+                    }
+                }
+
+                @media all and (max-width: 414px) {
+                    iframe {
+                        width: 314px;
+                        height: 176.625px;
+                    }
+                }
+
+                @media all and (max-width: 375px) {
+                    iframe {
+                        width: 275px;
+                        height: 154.687px;
+                    }
+                }
+
+                @media all and (max-width: 320px) {
+                    iframe {
+                        width: 260px;
+                        height: 146.25px;
+                    }
                 }
 
                 .cartel {
@@ -372,6 +429,8 @@
             @media all and (max-width: 600px) {
                 .media {
                     width: 100%;
+                    margin-left: 0;
+                    margin-right: 0;
                 }
             }
 
