@@ -854,6 +854,21 @@ html body button:hover {
   color: var(--light);
 }
 
+.works .row .works-col-left .see-the-window {
+  display: none;
+}
+
+@media all and (max-width: 970px) {
+  .works .row .works-col-left .see-more {
+    display: none;
+  }
+  .works .row .works-col-left .see-the-window {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .works .row .works-col-left img {
   display: none;
 }

@@ -877,6 +877,22 @@ html {
         color: var(--light);
       }
 
+      .see-the-window {
+        display: none;
+      }
+
+      @media all and (max-width: 970px) {
+        .see-more {
+          display: none;
+        }
+
+        .see-the-window {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
       img {
         display: none;
       }
