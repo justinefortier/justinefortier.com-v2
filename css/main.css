@@ -121,15 +121,21 @@ html body h2 {
   font-size: 10rem;
 }
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1320px) {
   html body h2 {
     font-size: 9rem;
   }
 }
 
-@media all and (max-width: 1100px) {
+@media all and (max-width: 1200px) {
   html body h2 {
     font-size: 8rem;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  html body h2 {
+    font-size: 7rem;
   }
 }
 
@@ -434,8 +440,8 @@ html body button:hover {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "colleft colright";
-  -ms-grid-columns: 54% 46%;
-      grid-template-columns: 54% 46%;
+  -ms-grid-columns: 55% 45%;
+      grid-template-columns: 55% 45%;
 }
 
 .about-me .aboutme-col-left {
@@ -446,13 +452,31 @@ html body button:hover {
 }
 
 .about-me .aboutme-col-left img {
-  width: 70%;
+  width: 527px;
   position: absolute;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+@media all and (max-width: 1320px) {
+  .about-me .aboutme-col-left img {
+    width: 517px;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .about-me .aboutme-col-left img {
+    width: 504px;
+  }
+}
+
+@media all and (max-width: 1080px) {
+  .about-me .aboutme-col-left img {
+    width: 475px;
+  }
 }
 
 .about-me .aboutme-col-right {
@@ -520,6 +544,18 @@ html body button:hover {
 @media all and (max-width: 970px) and (max-width: 970px) {
   .about-me .aboutme-col-left img {
     margin-bottom: -4px;
+  }
+}
+
+@media all and (max-width: 970px) and (max-width: 600px) {
+  .about-me .aboutme-col-left img {
+    width: 65%;
+  }
+}
+
+@media all and (max-width: 970px) and (max-width: 500px) {
+  .about-me .aboutme-col-left img {
+    width: 75%;
   }
 }
 
