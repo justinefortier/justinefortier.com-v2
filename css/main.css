@@ -798,7 +798,7 @@ html body button:hover {
 
 .works .row .works-col-left .works-link1:hover:before {
   z-index: 2;
-  background-image: url(../medias/previsualisations/home/animaux.png);
+  background-image: url(../medias/previsualisations/home/geometric_animals.png);
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-transition: opacity 0.5s ease-in-out;
