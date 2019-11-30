@@ -856,6 +856,7 @@ html {
 
       @media all and (max-width: 810px) {
         button {
+          margin-top: 3.8rem;
           margin-bottom: 11rem;
         }
       }
@@ -898,6 +899,14 @@ html {
 
       @media all and (max-width: 414px) {
         button {
+          margin-top: 3.7rem;
+          margin-bottom: 7.5rem;
+        }
+      }
+
+      @media all and (max-width: 375px) {
+        button {
+          margin-top: 3.5rem;
           margin-bottom: 6.6rem;
         }
       }
