@@ -313,6 +313,13 @@ html body button:hover {
   }
 }
 
+@media all and (orientation: portrait) {
+  .content-home {
+    -ms-grid-rows: auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
+  }
+}
+
 .important-information {
   z-index: 10;
   position: absolute;
@@ -337,6 +344,12 @@ html body button:hover {
 }
 
 @media all and (max-width: 690px) {
+  #cover .scrolldown {
+    display: none;
+  }
+}
+
+@media all and (orientation: portrait) {
   #cover .scrolldown {
     display: none;
   }
@@ -403,6 +416,35 @@ html body button:hover {
     display: block;
     width: 50%;
     margin: auto;
+  }
+}
+
+@media all and (orientation: portrait) {
+  .cover-home {
+    padding: 20% 0;
+  }
+  .cover-home h1 {
+    display: none;
+  }
+  .cover-home .subtitle {
+    display: none;
+  }
+  .cover-home img {
+    display: block;
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@media all and (orientation: portrait) and (min-width: 768px) {
+  .cover-home img {
+    width: 45%;
+  }
+}
+
+@media all and (orientation: portrait) and (min-width: 1024px) {
+  .cover-home img {
+    width: 35%;
   }
 }
 
@@ -543,7 +585,7 @@ html body button:hover {
 
 @media all and (max-width: 970px) and (max-width: 970px) {
   .about-me .aboutme-col-left img {
-    margin-bottom: -4px;
+    margin-bottom: -5px;
   }
 }
 

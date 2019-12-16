@@ -21,6 +21,12 @@
     }
 }
 
+@media all and (orientation: portrait) {
+    .content-works {
+        grid-template-rows: auto auto;
+    }
+}
+
 //////////// COVER ////////////
 
 #cover {
@@ -71,6 +77,12 @@
             }
         }
 
+        @media all and (orientation: portrait) {
+            .works-title {
+                text-align: center;
+            }
+        }
+
         .subtitle {
             font-family: "jubbew-semibold";
             color: var(--primary);
@@ -84,6 +96,12 @@
                 text-align: center;
                 font-size: 2.3rem;
                 line-height: 2.2rem;
+            }
+        }
+
+        @media all and (orientation: portrait) {
+            .subtitle {
+                text-align: center;
             }
         }
 
@@ -129,6 +147,12 @@
             }
         }
 
+        @media all and (orientation: portrait) {
+            .collaboration {
+                text-align: center;
+            }
+        }
+
         .works-informations {
             position: absolute;
             bottom: 80px;
@@ -166,9 +190,22 @@
                     line-height: 1.5rem;
                 }
             }
+
+            @media all and (orientation: portrait) {
+                p {
+                    text-align: center;
+                }
+            }
         }
 
         @media all and (max-width: 580px) {
+            .works-informations {
+                position: static;
+                margin-top: 4rem;
+            }
+        }
+
+        @media all and (orientation: portrait) {
             .works-informations {
                 position: static;
                 margin-top: 4rem;
@@ -195,6 +232,13 @@
         }
     }
 
+    @media all and (orientation: portrait) {
+        .cover-col-left {
+            text-align: center;
+            padding: 90px 0 70px 0;
+        }
+    }
+
     .cover-col-right {
         z-index: 0;
         grid-area: covcolright;
@@ -203,6 +247,12 @@
     }
 
     @media all and (max-width: 950px) {
+        .cover-col-right {
+            display: none;
+        }
+    }
+
+    @media all and (orientation: portrait) {
         .cover-col-right {
             display: none;
         }
@@ -216,6 +266,14 @@
 }
 
 @media all and (max-width: 950px) {
+    #cover {
+        grid-template-areas:
+            "covcolleft";
+        grid-template-columns: auto;
+    }
+}
+
+@media all and (orientation: portrait) {
     #cover {
         grid-template-areas:
             "covcolleft";

@@ -338,6 +338,12 @@ html {
   }
 }
 
+@media all and (orientation: portrait) {
+  .content-home {
+    grid-template-rows: auto auto auto auto auto;
+  }
+}
+
 ///////////// INFO ////////////
 
 .important-information {
@@ -363,6 +369,12 @@ html {
   grid-area: cover;
 
   @media all and (max-width: 690px) {
+    .scrolldown {
+      display: none;
+    }
+  }
+
+  @media all and (orientation: portrait) {
     .scrolldown {
       display: none;
     }
@@ -432,6 +444,38 @@ html {
       display: block;
       width: 50%;
       margin: auto;
+    }
+  }
+}
+
+@media all and (orientation: portrait) {
+  .cover-home {
+    padding: 20% 0;
+
+    h1 {
+      display: none;
+    }
+
+    .subtitle {
+      display: none;
+    }
+
+    img {
+      display: block;
+      width: 50%;
+      margin: auto;
+    }
+
+    @media all and (min-width: 768px) {
+      img {
+        width: 45%;
+      }
+    }
+
+    @media all and (min-width: 1024px) {
+      img {
+        width: 35%;
+      }
     }
   }
 }
@@ -565,7 +609,7 @@ html {
 
       @media all and (max-width: 970px) {
         img {
-          margin-bottom: -4px;
+          margin-bottom: -5px; /////////////////////////// NEED TO TEST
         }
       }
 
