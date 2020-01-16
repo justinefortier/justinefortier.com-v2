@@ -1181,10 +1181,7 @@ html body button:hover {
 .footer .right-footer .socicon-instagram {
   padding-top: 11px;
   padding-left: 12px;
-}
-
-.footer .right-footer .jubbew {
-  margin: 0 4px 0 8px;
+  margin-right: 4px;
 }
 
 .footer .right-footer .socicon-linkedin {
