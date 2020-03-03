@@ -764,9 +764,31 @@ html {
         opacity: 1;
       }
 
+      .works-link12:hover:before {
+        z-index: 2;
+        background-image: url(../medias/previsualisations/home/be-the-change.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-transition: opacity 0.2s ease-in-out;
+        -moz-transition: opacity 0.2s ease-in-out;
+        -o-transition: opacity 0.2s ease-in-out;
+        -ms-transition: opacity 0.2s ease-in-out;
+      }
+
+      .works-link11:hover:before {
+        z-index: 2;
+        background-image: url(../medias/previsualisations/home/crabby-kobo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-transition: opacity 0.2s ease-in-out;
+        -moz-transition: opacity 0.2s ease-in-out;
+        -o-transition: opacity 0.2s ease-in-out;
+        -ms-transition: opacity 0.2s ease-in-out;
+      }
+
       .works-link10:hover:before {
         z-index: 2;
-        background-image: url(../medias/previsualisations/home/jr_automobile.png);
+        background-image: url(../medias/previsualisations/home/jr-automobile.png);
         background-size: cover;
         background-repeat: no-repeat;
         -webkit-transition: opacity 0.2s ease-in-out;
@@ -788,7 +810,7 @@ html {
 
       .works-link8:hover:before {
         z-index: 2;
-        background-image: url(../medias/previsualisations/home/codestrata.png);
+        background-image: url(../medias/previsualisations/home/code-strata.png);
         background-size: cover;
         background-repeat: no-repeat;
         -webkit-transition: opacity 0.2s ease-in-out;
@@ -821,7 +843,7 @@ html {
 
       .works-link5:hover:before {
         z-index: 2;
-        background-image: url(../medias/previsualisations/home/ondes_sonores.png);
+        background-image: url(../medias/previsualisations/home/ondes-sonores.png);
         background-size: cover;
         background-repeat: no-repeat;
         -webkit-transition: opacity 0.5s ease-in-out;
@@ -854,7 +876,7 @@ html {
 
       .works-link2:hover:before {
         z-index: 2;
-        background-image: url(../medias/previsualisations/home/panthera_tigris.png);
+        background-image: url(../medias/previsualisations/home/panthera-tigris.png);
         background-size: cover;
         background-repeat: no-repeat;
         -webkit-transition: opacity 0.5s ease-in-out;
@@ -865,7 +887,7 @@ html {
 
       .works-link1:hover:before {
         z-index: 2;
-        background-image: url(../medias/previsualisations/home/geometric_animals.png);
+        background-image: url(../medias/previsualisations/home/geometric-animals.png);
         background-size: cover;
         background-repeat: no-repeat;
         -webkit-transition: opacity 0.5s ease-in-out;
