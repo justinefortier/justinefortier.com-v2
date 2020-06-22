@@ -2385,30 +2385,24 @@ html body button:hover {
 }
 
 .footer .right-footer .socicon-instagram,
+.footer .right-footer .socicon-dribbble,
 .footer .right-footer .socicon-linkedin,
 .footer .right-footer .socicon-github {
   padding: 10px 10px 10px 10px;
+  margin: 0 2px;
   width: 25px;
   height: 25px;
   font-size: 23px;
   border: 1px solid #fff;
   border-radius: 50%;
   font-weight: 300;
+  padding-left: 12px;
+  padding-right: 10px;
+  padding-top: 11px;
 }
 
 .footer .right-footer .socicon-instagram {
-  padding-top: 11px;
-  padding-left: 12px;
-  margin-right: 4px;
-}
-
-.footer .right-footer .socicon-linkedin {
-  padding-left: 12px;
-  margin: 0 8px 0 4px;
-}
-
-.footer .right-footer .socicon-github {
-  padding-top: 11px;
+  margin-left: 0;
 }
 
 .footer .right-footer .socicon:hover {
