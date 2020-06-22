@@ -31,8 +31,8 @@
   display: -ms-grid;
   display: grid;
       grid-template-areas: "covcolleft covcolright";
-  -ms-grid-columns: 40% 60%;
-      grid-template-columns: 40% 60%;
+  -ms-grid-columns: 45% 55%;
+      grid-template-columns: 45% 55%;
   -ms-grid-rows: 100%;
       grid-template-rows: 100%;
   margin-top: 50px;
@@ -244,8 +244,11 @@
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: covcolright;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-clip-path: polygon(17% 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(17% 0, 100% 0, 100% 100%, 0 100%);
 }
 
 @media all and (max-width: 950px) {
